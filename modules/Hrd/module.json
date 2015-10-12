@@ -1,0 +1,15 @@
+{
+    "name": "Hrd",
+    "alias": "hrd",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\Hrd\\Providers\\HrdServiceProvider"
+    ],
+    "aliases":{},
+    "files": [
+        "start.php"
+    ]
+}

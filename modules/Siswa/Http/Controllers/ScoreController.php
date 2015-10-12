@@ -13,6 +13,7 @@ class ScoreController extends Controller {
 
     public function __construct()
     {
+        parent::__construct();
         $this->middleware('admin');
     }
 	
@@ -36,7 +37,7 @@ class ScoreController extends Controller {
             ->whereIn('scores.student_id', $students_id)
             ->get();
 
-        //dd($selectedContract);
+//        dd($contracts);
 
         if(count($score) > 0){
             foreach($score as $scr){

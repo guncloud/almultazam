@@ -40,9 +40,9 @@
                     <div class="widget widget-shadow text-center">
                         <div class="widget-header">
                             <div class="widget-header-content">
-                                <a class="avatar avatar-lg" href="javascript:void(0)">
-                                    <img src="{{ asset('/portraits/5.jpg') }}" alt="...">
-                                </a>
+                                {{--<a class="avatar avatar-lg" href="javascript:void(0)">--}}
+                                    {{--<img src="{{ asset('/portraits/5.jpg') }}" alt="...">--}}
+                                {{--</a>--}}
                                 <div class="profile-user">{{ $student->nama }}, <small>{{ ($student->jenis_kelamin == 'l') ? 'Laki - laki' : 'Perempuan' }}</small></div>
                                 <div class="profile-job">
                                     <ul class="list-unstyled">

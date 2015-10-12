@@ -146,6 +146,7 @@ return [
 		'App\Providers\RouteServiceProvider',
 		'Pingpong\Modules\ModulesServiceProvider',
 		'Pingpong\Trusty\TrustyServiceProvider',
+		'Maatwebsite\Excel\ExcelServiceProvider',
 	],
 
 	/*
@@ -197,6 +198,7 @@ return [
 		'Trusty'      => 'Pingpong\Trusty\Facades\Trusty',
 		'Role'        => 'Pingpong\Trusty\Role',
 		'Permission'  => 'Pingpong\Trusty\Permission',
+        'Excel' => 'Maatwebsite\Excel\Facades\Excel',
 	],
 
 ];

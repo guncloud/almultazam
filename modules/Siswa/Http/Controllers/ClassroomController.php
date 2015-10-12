@@ -10,6 +10,7 @@ class ClassroomController extends Controller {
 
     public function __construct()
     {
+        parent::__construct();
         $this->middleware('admin');
     }
 	
@@ -17,8 +18,6 @@ class ClassroomController extends Controller {
 	{
         $obj = new Classroom;
         $classrooms = $obj->getClassrooms();
-
-        //dd($classrooms);
 
         $teacher = new Teacher;
         $teachers = $teacher->getTeachers();

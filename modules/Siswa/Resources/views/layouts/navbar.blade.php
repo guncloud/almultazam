@@ -1,4 +1,4 @@
-@inject('config', 'Modules\Siswa\Entities\Config')
+{{--@inject('config', 'Modules\Siswa\Entities\Config')--}}
 
 <nav class="site-navbar navbar navbar-default navbar-fixed-top navbar-mega" role="navigation">
 
@@ -97,7 +97,7 @@
             <ul class="nav navbar-toolbar navbar-right navbar-toolbar-right">
                 <li class="hidden-float">
                     <a class="icon " data-toggle="collapse" href="#" role="button">
-
+                        {{ $year }}
                         {{--@if($config->getYear() == 'unset')--}}
                             {{--<span class="badge badge-radius badge-danger badge-md">--}}
                             {{--<i class="icon fa-warning"></i>--}}

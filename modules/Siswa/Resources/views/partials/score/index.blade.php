@@ -23,7 +23,7 @@
                                 @endforeach
                             </select>
                         @else
-                            <p>Data kelas tidak ada</p>
+                            <p>Data mata pelajaran tidak ada</p>
                         @endif
                     </div>
                     <div class="form-group">
