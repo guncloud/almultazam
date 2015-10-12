@@ -144,23 +144,23 @@
                                                     @foreach($contracts as $v)
                                                         <tr>
                                                             <td>{{ $v->subject }} SM : {{ $v->semester }}</td>
-                                                            <td>{{ $scores[$v->id]->uh_1 }}</td>
-                                                            <td>{{ $scores[$v->id]->uh_2 }}</td>
-                                                            <td>{{ $scores[$v->id]->uh_3 }}</td>
-                                                            <td>{{ $scores[$v->id]->uh_4 }}</td>
-                                                            <td>{{ $scores[$v->id]->uts }}</td>
-                                                            <td>{{ $scores[$v->id]->uas }}</td>
+                                                            <td>{{ @$scores[$v->id]->uh_1 }}</td>
+                                                            <td>{{ @$scores[$v->id]->uh_2 }}</td>
+                                                            <td>{{ @$scores[$v->id]->uh_3 }}</td>
+                                                            <td>{{ @$scores[$v->id]->uh_4 }}</td>
+                                                            <td>{{ @$scores[$v->id]->uts }}</td>
+                                                            <td>{{ @$scores[$v->id]->uas }}</td>
                                                             <td>
-                                                                {{ $scores[$v->id]->skor }}
-                                                                @if($scores[$v->id]->skor < 50)
+                                                                {{ @$scores[$v->id]->skor }}
+                                                                @if(@$scores[$v->id]->skor < 50)
                                                                     <span class="badge badge-danger">E</span>
-                                                                @elseif($scores[$v->id]->skor < 58)
+                                                                @elseif(@$scores[$v->id]->skor < 58)
                                                                     <span class="badge badge-warning">D</span>
-                                                                @elseif($scores[$v->id]->skor < 66)
+                                                                @elseif(@$scores[$v->id]->skor < 66)
                                                                     <span class="badge badge-default">C</span>
-                                                                @elseif($scores[$v->id]->skor <= 75)
+                                                                @elseif(@$scores[$v->id]->skor <= 75)
                                                                     <span class="badge badge-primary">B</span>
-                                                                @elseif($scores[$v->id]->skor > 76)
+                                                                @elseif(@$scores[$v->id]->skor > 76)
                                                                     <span class="badge badge-success">A</span>
                                                                 @else
                                                                     -

@@ -2,1103 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c1d9262-9728-434c-b6c9-c29860564306" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/Hrd/Resources/views/partials/position/index.blade.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/poster.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/photos/11647366_755652887876777_76471647_n.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/photos/DSC_3191.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/photos/bnn.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/photos/php50vNBI" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/photos/phpj6wqUx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/ace.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/ace.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/ace.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/ext-beautify.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/ext-chromevox.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/ext-elastic_tabstops_lite.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/ext-emmet.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/ext-error_marker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/ext-keybinding_menu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/ext-language_tools.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/ext-linking.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/ext-modelist.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/ext-old_ie.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/ext-searchbox.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/ext-settings_menu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/ext-spellcheck.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/ext-split.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/ext-static_highlight.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/ext-statusbar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/ext-textarea.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/ext-themelist.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/ext-whitespace.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/images/codefolding-fold-button-states.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/images/expand-marker.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/keybinding-emacs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/keybinding-vim.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-abap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-abc.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-actionscript.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-ada.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-apache_conf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-applescript.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-asciidoc.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-assembly_x86.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-autohotkey.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-batchfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-c9search.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-c_cpp.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-cirru.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-clojure.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-cobol.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-coffee.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-coldfusion.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-csharp.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-css.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-curly.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-d.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-dart.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-diff.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-django.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-dockerfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-dot.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-eiffel.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-ejs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-elixir.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-elm.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-erlang.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-forth.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-ftl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-gcode.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-gherkin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-gitignore.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-glsl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-golang.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-groovy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-haml.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-handlebars.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-haskell.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-haxe.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-html.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-html_ruby.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-ini.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-io.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-jack.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-jade.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-java.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-javascript.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-json.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-jsoniq.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-jsp.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-jsx.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-julia.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-latex.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-lean.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-less.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-liquid.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-lisp.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-live_script.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-livescript.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-logiql.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-lsl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-lua.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-luapage.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-lucene.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-makefile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-markdown.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-mask.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-matlab.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-mavens_mate_log.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-maze.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-mel.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-mips_assembler.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-mipsassembler.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-mushcode.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-mysql.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-nix.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-objectivec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-ocaml.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-pascal.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-perl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-pgsql.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-php.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-plain_text.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-powershell.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-praat.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-prolog.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-properties.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-protobuf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-python.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-r.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-rdoc.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-rhtml.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-ruby.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-rust.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-sass.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-scad.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-scala.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-scheme.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-scss.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-sh.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-sjs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-smarty.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-snippets.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-soy_template.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-space.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-sql.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-sqlserver.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-stylus.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-svg.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-tcl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-tex.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-text.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-textile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-toml.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-twig.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-typescript.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-vala.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-vbscript.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-velocity.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-verilog.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-vhdl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-xml.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-xquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/mode-yaml.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/abap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/abc.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/actionscript.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/ada.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/apache_conf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/applescript.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/asciidoc.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/assembly_x86.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/autohotkey.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/batchfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/c9search.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/c_cpp.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/cirru.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/clojure.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/cobol.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/coffee.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/coldfusion.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/csharp.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/css.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/curly.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/d.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/dart.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/diff.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/django.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/dockerfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/dot.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/eiffel.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/ejs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/elixir.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/elm.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/erlang.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/forth.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/ftl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/gcode.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/gherkin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/gitignore.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/glsl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/golang.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/groovy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/haml.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/handlebars.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/haskell.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/haxe.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/html.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/html_ruby.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/ini.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/io.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/jack.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/jade.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/java.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/javascript.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/json.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/jsoniq.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/jsp.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/jsx.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/julia.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/latex.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/lean.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/less.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/liquid.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/lisp.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/live_script.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/livescript.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/logiql.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/lsl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/lua.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/luapage.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/lucene.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/makefile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/markdown.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/mask.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/matlab.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/maze.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/mel.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/mips_assembler.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/mipsassembler.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/mushcode.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/mysql.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/nix.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/objectivec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/ocaml.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/pascal.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/perl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/pgsql.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/php.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/plain_text.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/powershell.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/praat.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/prolog.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/properties.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/protobuf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/python.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/r.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/rdoc.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/rhtml.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/ruby.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/rust.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/sass.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/scad.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/scala.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/scheme.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/scss.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/sh.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/sjs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/smarty.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/snippets.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/soy_template.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/space.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/sql.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/sqlserver.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/stylus.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/svg.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/tcl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/tex.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/text.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/textile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/toml.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/twig.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/typescript.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/vala.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/vbscript.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/velocity.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/verilog.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/vhdl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/xml.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/xquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/snippets/yaml.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/theme-ambiance.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/theme-chaos.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/theme-chrome.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/theme-clouds.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/theme-clouds_midnight.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/theme-cobalt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/theme-crimson_editor.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/theme-dawn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/theme-dreamweaver.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/theme-eclipse.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/theme-github.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/theme-idle_fingers.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/theme-iplastic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/theme-katzenmilch.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/theme-kr_theme.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/theme-kuroir.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/theme-merbivore.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/theme-merbivore_soft.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/theme-mono_industrial.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/theme-monokai.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/theme-pastel_on_dark.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/theme-solarized_dark.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/theme-solarized_light.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/theme-sqlserver.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/theme-terminal.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/theme-textmate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/theme-tomorrow.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/theme-tomorrow_night.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/theme-tomorrow_night_blue.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/theme-tomorrow_night_bright.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/theme-tomorrow_night_eighties.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/theme-twilight.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/theme-vibrant_ink.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/theme-xcode.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/worker-coffee.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/worker-css.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/worker-html.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/worker-javascript.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/worker-json.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/worker-lua.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/worker-php.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/worker-xml.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ace/worker-xquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/alertify-js/alertify.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/alertify-js/alertify.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/alertify-js/alertify.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/alertify-js/alertify.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/angular-sanitize/angular-sanitize.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/angular-sanitize/angular-sanitize.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/angular-sanitize/angular-sanitize.min.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/angular-ui-bootstrap/ui-bootstrap-tpls.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/angular-ui-bootstrap/ui-bootstrap-tpls.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/angular-ui-bootstrap/ui-bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/angular-ui-bootstrap/ui-bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/angular-ui-grid/ui-grid.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/angular-ui-grid/ui-grid.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/angular-ui-grid/ui-grid.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/angular-ui-grid/ui-grid.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/angular-ui-grid/ui-grid.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/angular-ui-grid/ui-grid.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/angular-ui-grid/ui-grid.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/angular-ui-grid/ui-grid.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/angular-ui-router/angular-ui-router.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/angular-ui-router/angular-ui-router.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/angular-ui-sortable/sortable.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/angular/angular.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/angular/angular.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/angular/angular.min.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/asbreadcrumbs/jquery-asBreadcrumbs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/asbreadcrumbs/jquery-asBreadcrumbs.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ascolor/jquery-asColor.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ascolor/jquery-asColor.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ascolorpicker/asColorPicker.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ascolorpicker/asColorPicker.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ascolorpicker/images/alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ascolorpicker/images/hue.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ascolorpicker/images/saturation.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ascolorpicker/images/transparent.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ascolorpicker/jquery-asColorPicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ascolorpicker/jquery-asColorPicker.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/asgradient/jquery-asGradient.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/asgradient/jquery-asGradient.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/aspaginator/jquery.asPaginator.altLists.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/aspaginator/jquery.asPaginator.altLists.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/aspaginator/jquery.asPaginator.goTo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/aspaginator/jquery.asPaginator.goTo.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/aspaginator/jquery.asPaginator.info.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/aspaginator/jquery.asPaginator.info.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/aspaginator/jquery.asPaginator.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/aspaginator/jquery.asPaginator.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/aspieprogress/asPieProgress.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/aspieprogress/asPieProgress.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/aspieprogress/jquery-asPieProgress.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/aspieprogress/jquery-asPieProgress.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/asprogress/jquery-asProgress.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/asprogress/jquery-asProgress.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/asrange/asRange.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/asrange/asRange.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/asrange/jquery-asRange.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/asrange/jquery-asRange.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/asspinner/asSpinner.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/asspinner/asSpinner.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/asspinner/jquery-asSpinner.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/asspinner/jquery-asSpinner.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/blueimp-canvas-to-blob/canvas-to-blob.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/blueimp-canvas-to-blob/canvas-to-blob.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/blueimp-file-upload/jquery.fileupload-audio.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/blueimp-file-upload/jquery.fileupload-image.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/blueimp-file-upload/jquery.fileupload-process.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/blueimp-file-upload/jquery.fileupload-ui.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/blueimp-file-upload/jquery.fileupload-validate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/blueimp-file-upload/jquery.fileupload-video.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/blueimp-file-upload/jquery.fileupload.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/blueimp-file-upload/jquery.fileupload.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/blueimp-file-upload/jquery.fileupload.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/blueimp-load-image/load-image.all.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/blueimp-tmpl/tmpl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/blueimp-tmpl/tmpl.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootbox/bootbox.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-contextmenu/bootstrap-contextmenu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-hover-dropdown/bootstrap-hover-dropdown.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-markdown/bootstrap-markdown.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-markdown/bootstrap-markdown.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-markdown/bootstrap-markdown.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-maxlength/bootstrap-maxlength.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-maxlength/bootstrap-maxlength.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-maxlength/bootstrap-maxlength.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-maxlength/bootstrap-maxlength.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-select/bootstrap-select.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-select/bootstrap-select.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-select/bootstrap-select.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-select/bootstrap-select.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-table/bootstrap-table-all.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-table/bootstrap-table-all.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-table/bootstrap-table.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-table/bootstrap-table.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-table/bootstrap-table.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-table/bootstrap-table.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-table/extensions/angular/bootstrap-table-angular.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-table/extensions/angular/bootstrap-table-angular.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-table/extensions/cookie/bootstrap-table-cookie.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-table/extensions/cookie/bootstrap-table-cookie.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-table/extensions/editable/bootstrap-table-editable.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-table/extensions/editable/bootstrap-table-editable.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-table/extensions/export/bootstrap-table-export.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-table/extensions/export/bootstrap-table-export.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-table/extensions/filter-control/bootstrap-table-filter-control.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-table/extensions/filter-control/bootstrap-table-filter-control.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-table/extensions/filter/bootstrap-table-filter.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-table/extensions/filter/bootstrap-table-filter.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-table/extensions/flat-json/bootstrap-table-flat-json.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-table/extensions/flat-json/bootstrap-table-flat-json.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-table/extensions/key-events/bootstrap-table-key-events.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-table/extensions/key-events/bootstrap-table-key-events.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-table/extensions/mobile/bootstrap-table-mobile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-table/extensions/mobile/bootstrap-table-mobile.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-table/extensions/multiple-sort/bootstrap-table-multiple-sort.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-table/extensions/multiple-sort/bootstrap-table-multiple-sort.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-table/extensions/natural-sorting/bootstrap-table-natural-sorting.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-table/extensions/natural-sorting/bootstrap-table-natural-sorting.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-table/extensions/reorder-columns/bootstrap-table-reorder-columns.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-table/extensions/reorder-columns/bootstrap-table-reorder-columns.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-table/extensions/reorder-rows/bootstrap-table-reorder-rows.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-table/extensions/reorder-rows/bootstrap-table-reorder-rows.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-table/extensions/reorder-rows/bootstrap-table-reorder-rows.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-table/extensions/resizable/bootstrap-table-resizable.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-table/extensions/resizable/bootstrap-table-resizable.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-table/extensions/toolbar/bootstrap-table-toolbar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-table/extensions/toolbar/bootstrap-table-toolbar.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-tagsinput/bootstrap-tagsinput.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-tagsinput/bootstrap-tagsinput.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-tagsinput/bootstrap-tagsinput.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-tagsinput/bootstrap-tagsinput.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-tagsinput/bootstrap-tagsinput.min.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-tokenfield/bootstrap-tokenfield.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-tokenfield/bootstrap-tokenfield.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-tokenfield/bootstrap-tokenfield.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-tokenfield/bootstrap-tokenfield.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-touchspin/bootstrap-touchspin.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-touchspin/bootstrap-touchspin.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-touchspin/jquery.bootstrap-touchspin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-touchspin/jquery.bootstrap-touchspin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-treeview/bootstrap-treeview.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-treeview/bootstrap-treeview.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-treeview/bootstrap-treeview.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/bootstrap-treeview/bootstrap-treeview.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/c3/c3.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/c3/c3.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/c3/c3.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/c3/c3.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/card/card.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/card/card.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/card/jquery.card.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/chart-js/Chart.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/chart-js/Chart.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/chartist-js/chartist.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/chartist-js/chartist.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/chartist-js/chartist.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/chartist-js/chartist.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/chartist-js/chartist.min.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/clockpicker/bootstrap-clockpicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/clockpicker/bootstrap-clockpicker.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/clockpicker/clockpicker.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/clockpicker/clockpicker.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/clockpicker/jquery-clockpicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/clockpicker/jquery-clockpicker.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/addon/comment/comment.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/addon/comment/continuecomment.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/addon/dialog/dialog.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/addon/dialog/dialog.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/addon/display/fullscreen.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/addon/display/fullscreen.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/addon/display/panel.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/addon/display/placeholder.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/addon/display/rulers.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/addon/edit/closebrackets.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/addon/edit/closetag.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/addon/edit/continuelist.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/addon/edit/matchbrackets.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/addon/edit/matchtags.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/addon/edit/trailingspace.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/addon/fold/brace-fold.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/addon/fold/comment-fold.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/addon/fold/foldcode.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/addon/fold/foldgutter.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/addon/fold/foldgutter.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/addon/fold/indent-fold.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/addon/fold/markdown-fold.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/addon/fold/xml-fold.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/addon/hint/anyword-hint.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/addon/hint/css-hint.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/addon/hint/html-hint.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/addon/hint/javascript-hint.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/addon/hint/show-hint.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/addon/hint/show-hint.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/addon/hint/sql-hint.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/addon/hint/xml-hint.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/addon/lint/coffeescript-lint.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/addon/lint/css-lint.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/addon/lint/javascript-lint.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/addon/lint/json-lint.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/addon/lint/lint.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/addon/lint/lint.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/addon/lint/yaml-lint.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/addon/merge/merge.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/addon/merge/merge.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/addon/mode/loadmode.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/addon/mode/multiplex.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/addon/mode/multiplex_test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/addon/mode/overlay.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/addon/mode/simple.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/addon/runmode/colorize.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/addon/runmode/runmode-standalone.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/addon/runmode/runmode.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/addon/runmode/runmode.node.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/addon/scroll/annotatescrollbar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/addon/scroll/scrollpastend.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/addon/scroll/simplescrollbars.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/addon/scroll/simplescrollbars.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/addon/search/match-highlighter.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/addon/search/matchesonscrollbar.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/addon/search/matchesonscrollbar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/addon/search/search.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/addon/search/searchcursor.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/addon/selection/active-line.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/addon/selection/mark-selection.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/addon/selection/selection-pointer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/addon/tern/tern.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/addon/tern/tern.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/addon/tern/worker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/addon/wrap/hardwrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/codemirror.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/codemirror.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/codemirror.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/apl/apl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/asciiarmor/asciiarmor.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/asn.1/asn.1.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/asterisk/asterisk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/brainfuck/brainfuck.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/clike/clike.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/clojure/clojure.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/cmake/cmake.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/cobol/cobol.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/coffeescript/coffeescript.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/commonlisp/commonlisp.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/css/css.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/cypher/cypher.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/d/d.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/dart/dart.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/diff/diff.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/django/django.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/dockerfile/dockerfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/dtd/dtd.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/dylan/dylan.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/ebnf/ebnf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/ecl/ecl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/eiffel/eiffel.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/elm/elm.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/erlang/erlang.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/factor/factor.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/forth/forth.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/fortran/fortran.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/gas/gas.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/gfm/gfm.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/gherkin/gherkin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/go/go.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/groovy/groovy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/haml/haml.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/handlebars/handlebars.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/haskell/haskell.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/haxe/haxe.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/htmlembedded/htmlembedded.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/htmlmixed/htmlmixed.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/http/http.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/idl/idl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/jade/jade.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/javascript/javascript.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/jinja2/jinja2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/julia/julia.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/kotlin/kotlin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/livescript/livescript.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/lua/lua.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/markdown/markdown.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/mathematica/mathematica.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/meta.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/mirc/mirc.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/mllike/mllike.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/modelica/modelica.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/mumps/mumps.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/nginx/nginx.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/ntriples/ntriples.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/octave/octave.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/pascal/pascal.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/pegjs/pegjs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/perl/perl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/php/php.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/pig/pig.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/properties/properties.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/puppet/puppet.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/python/python.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/q/q.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/r/r.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/rpm/rpm.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/rst/rst.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/ruby/ruby.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/rust/rust.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/sass/sass.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/scheme/scheme.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/shell/shell.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/sieve/sieve.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/slim/slim.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/smalltalk/smalltalk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/smarty/smarty.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/solr/solr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/soy/soy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/sparql/sparql.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/spreadsheet/spreadsheet.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/sql/sql.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/stex/stex.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/stylus/stylus.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/swift/swift.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/tcl/tcl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/textile/textile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/tiddlywiki/tiddlywiki.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/tiddlywiki/tiddlywiki.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/tiki/tiki.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/tiki/tiki.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/toml/toml.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/tornado/tornado.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/troff/troff.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/ttcn-cfg/ttcn-cfg.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/ttcn/ttcn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/turtle/turtle.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/twig/twig.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/vb/vb.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/vbscript/vbscript.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/velocity/velocity.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/verilog/verilog.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/vhdl/vhdl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/xml/xml.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/xquery/xquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/yaml/yaml.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/mode/z80/z80.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/theme/3024-day.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/theme/3024-night.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/theme/ambiance-mobile.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/theme/ambiance.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/theme/base16-dark.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/theme/base16-light.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/theme/blackboard.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/theme/cobalt.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/theme/colorforth.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/theme/dracula.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/theme/eclipse.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/theme/elegant.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/theme/erlang-dark.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/theme/icecoder.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/theme/lesser-dark.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/theme/liquibyte.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/theme/material.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/theme/mbo.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/theme/mdn-like.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/theme/midnight.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/theme/monokai.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/theme/neat.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/theme/neo.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/theme/night.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/theme/paraiso-dark.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/theme/paraiso-light.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/theme/pastel-on-dark.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/theme/rubyblue.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/theme/seti.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/theme/solarized.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/theme/the-matrix.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/theme/tomorrow-night-bright.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/theme/tomorrow-night-eighties.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/theme/ttcn.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/theme/twilight.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/theme/vibrant-ink.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/theme/xq-dark.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/theme/xq-light.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/theme/yeti.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/codemirror/theme/zenburn.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/cropper/cropper.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/cropper/cropper.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/cropper/cropper.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/cropper/cropper.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/d3/d3.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/d3/d3.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/datepair-js/datepair.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/datepair-js/datepair.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/datepair-js/jquery.datepair.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/datepair-js/jquery.datepair.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/draggabilly/draggabilly.pkgd.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/draggabilly/draggabilly.pkgd.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/editable-table/editable-table.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/editable-table/editable-table.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/editable-table/mindmup-editabletable.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/editable-table/numeric-input-example.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/filament-tablesaw/images/columntoggle-minimap.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/filament-tablesaw/images/mode-switch.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/filament-tablesaw/images/sortable.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/filament-tablesaw/images/stack.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/filament-tablesaw/images/swipe-minimap.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/filament-tablesaw/tablesaw.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/filament-tablesaw/tablesaw.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/filament-tablesaw/tablesaw.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/flot/flot.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/flot/flot.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/flot/jquery.colorhelpers.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/flot/jquery.flot.canvas.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/flot/jquery.flot.categories.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/flot/jquery.flot.crosshair.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/flot/jquery.flot.errorbars.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/flot/jquery.flot.fillbetween.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/flot/jquery.flot.image.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/flot/jquery.flot.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/flot/jquery.flot.navigate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/flot/jquery.flot.pie.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/flot/jquery.flot.resize.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/flot/jquery.flot.selection.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/flot/jquery.flot.stack.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/flot/jquery.flot.symbol.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/flot/jquery.flot.threshold.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/flot/jquery.flot.time.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/footable/footable.all.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/footable/footable.core.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/footable/footable.core.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/footable/footable.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/fullcalendar/fullcalendar.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/fullcalendar/fullcalendar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/fullcalendar/fullcalendar.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/fullcalendar/fullcalendar.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/fullcalendar/fullcalendar.print.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/fullcalendar/fullcalendar.print.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/fullcalendar/gcal.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/fullcalendar/lang-all.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/fullcalendar/lang/ar-ma.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/fullcalendar/lang/ar-sa.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/fullcalendar/lang/ar-tn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/fullcalendar/lang/ar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/fullcalendar/lang/bg.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/fullcalendar/lang/ca.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/fullcalendar/lang/cs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/fullcalendar/lang/da.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/fullcalendar/lang/de-at.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/fullcalendar/lang/de.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/fullcalendar/lang/el.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/fullcalendar/lang/en-au.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/fullcalendar/lang/en-ca.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/fullcalendar/lang/en-gb.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/fullcalendar/lang/es.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/fullcalendar/lang/fa.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/fullcalendar/lang/fi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/fullcalendar/lang/fr-ca.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/fullcalendar/lang/fr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/fullcalendar/lang/he.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/fullcalendar/lang/hi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/fullcalendar/lang/hr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/fullcalendar/lang/hu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/fullcalendar/lang/id.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/fullcalendar/lang/is.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/fullcalendar/lang/it.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/fullcalendar/lang/ja.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/fullcalendar/lang/ko.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/fullcalendar/lang/lt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/fullcalendar/lang/lv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/fullcalendar/lang/nb.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/fullcalendar/lang/nl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/fullcalendar/lang/pl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/fullcalendar/lang/pt-br.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/fullcalendar/lang/pt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/fullcalendar/lang/ro.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/fullcalendar/lang/ru.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/fullcalendar/lang/sk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/fullcalendar/lang/sl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/fullcalendar/lang/sr-cyrl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/fullcalendar/lang/sr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/fullcalendar/lang/sv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/fullcalendar/lang/th.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/fullcalendar/lang/tr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/fullcalendar/lang/uk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/fullcalendar/lang/vi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/fullcalendar/lang/zh-cn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/fullcalendar/lang/zh-tw.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/gauge-js/gauge.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/gauge-js/gauge.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/gauge-js/gauge.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/gauge-js/gauge.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/gmaps/gmaps.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/gridstack/gridstack-extra.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/gridstack/gridstack-extra.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/gridstack/gridstack.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/gridstack/gridstack.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/gridstack/gridstack.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/gridstack/gridstack.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/gridstack/gridstack.min.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/highlight.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/highlight.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/highlight.pack.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/styles/agate.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/styles/androidstudio.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/styles/arta.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/styles/ascetic.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/styles/atelier-cave.dark.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/styles/atelier-cave.light.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/styles/atelier-dune.dark.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/styles/atelier-dune.light.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/styles/atelier-estuary.dark.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/styles/atelier-estuary.light.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/styles/atelier-forest.dark.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/styles/atelier-forest.light.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/styles/atelier-heath.dark.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/styles/atelier-heath.light.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/styles/atelier-lakeside.dark.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/styles/atelier-lakeside.light.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/styles/atelier-plateau.dark.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/styles/atelier-plateau.light.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/styles/atelier-savanna.dark.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/styles/atelier-savanna.light.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/styles/atelier-seaside.dark.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/styles/atelier-seaside.light.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/styles/atelier-sulphurpool.dark.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/styles/atelier-sulphurpool.light.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/styles/brown_paper.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/styles/brown_papersq.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/styles/codepen-embed.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/styles/color-brewer.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/styles/dark.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/styles/darkula.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/styles/default.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/styles/docco.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/styles/far.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/styles/foundation.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/styles/github-gist.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/styles/github.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/styles/googlecode.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/styles/hybrid.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/styles/idea.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/styles/ir_black.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/styles/kimbie.dark.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/styles/kimbie.light.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/styles/magula.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/styles/mono-blue.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/styles/monokai.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/styles/monokai_sublime.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/styles/obsidian.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/styles/paraiso.dark.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/styles/paraiso.light.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/styles/pojoaque.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/styles/pojoaque.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/styles/railscasts.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/styles/rainbow.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/styles/school_book.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/styles/school_book.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/styles/solarized_dark.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/styles/solarized_light.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/styles/sunburst.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/styles/tomorrow-night-blue.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/styles/tomorrow-night-bright.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/styles/tomorrow-night-eighties.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/styles/tomorrow-night.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/styles/tomorrow.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/styles/vs.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/styles/xcode.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/highlight/styles/zenburn.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/holderjs/holder.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/holderjs/holder.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/hoverintent/jquery.hoverIntent.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/html5shiv/html5shiv-printshiv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/html5shiv/html5shiv-printshiv.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/html5shiv/html5shiv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/html5shiv/html5shiv.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/html5sortable/html.sortable.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/html5sortable/html.sortable.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/html5sortable/html.sortable.min.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/html5sortable/sortable.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/html5sortable/sortable.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/icheck/icheck.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/icheck/icheck.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/icheck/icheck.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/icheck/images/aero.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/icheck/images/aero@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/icheck/images/blue.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/icheck/images/blue@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/icheck/images/flat.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/icheck/images/flat@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/icheck/images/green.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/icheck/images/green@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/icheck/images/grey.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/icheck/images/grey@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/icheck/images/orange.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/icheck/images/orange@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/icheck/images/pink.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/icheck/images/pink@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/icheck/images/purple.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/icheck/images/purple@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/icheck/images/red.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/icheck/images/red@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/icheck/images/yellow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/icheck/images/yellow@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/jquery-appear/jquery.appear.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/jquery-floatthead/jquery.floatThead-slim.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/jquery-floatthead/jquery.floatThead-slim.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/jquery-floatthead/jquery.floatThead.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/jquery-floatthead/jquery.floatThead.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/jquery-floatthead/jquery.floatThead.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/jquery-floatthead/jquery.floatThead.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/jquery-knob/jquery.knob.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/jquery-knob/jquery.knob.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/jquery-labelauty/images/input-checked.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/jquery-labelauty/images/input-unchecked.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/jquery-labelauty/jquery-labelauty.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/jquery-labelauty/jquery-labelauty.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/jquery-labelauty/jquery-labelauty.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/jquery-placeholder/jquery.placeholder.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/jquery-placeholder/jquery.placeholder.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/jquery-placeholder/jquery.placeholder.min.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/jquery-selective/jquery-selective.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/jquery-selective/jquery-selective.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/jquery-selective/jquery-selective.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/jquery-selective/jquery-selective.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/jquery-strength/jquery-strength.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/jquery-strength/jquery-strength.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/jquery-strength/jquery-strength.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/jquery-strength/jquery-strength.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/jquery-ui/jquery-ui.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/jquery-ui/jquery-ui.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/jquery-wizard/jquery-wizard.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/jquery-wizard/jquery-wizard.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/jquery-wizard/jquery-wizard.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/jquery-wizard/jquery-wizard.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/jt-timepicker/jquery-timepicker.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/jt-timepicker/jquery-timepicker.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/jt-timepicker/jquery.timepicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/jt-timepicker/jquery.timepicker.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/jvectormap/jquery-jvectormap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/jvectormap/jquery-jvectormap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/jvectormap/jquery-jvectormap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/jvectormap/maps/jquery-jvectormap-au-mill-en.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/jvectormap/maps/jquery-jvectormap-ca-lcc-en.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/jvectormap/maps/jquery-jvectormap-de-mill-en.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/jvectormap/maps/jquery-jvectormap-europe-mill-en.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/jvectormap/maps/jquery-jvectormap-fr-mill-en.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/jvectormap/maps/jquery-jvectormap-uk-mill-en.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/jvectormap/maps/jquery-jvectormap-us-merc-en.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/jvectormap/maps/jquery-jvectormap-us-ny-newyork-mill-en.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/jvectormap/maps/jquery-jvectormap-world-mill-en.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/jvectormap/maps/jquery-jvectormap-za-mill-en.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ladda-bootstrap/ladda.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ladda-bootstrap/ladda.jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ladda-bootstrap/ladda.jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ladda-bootstrap/ladda.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ladda-bootstrap/ladda.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ladda-bootstrap/ladda.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ladda-bootstrap/prism.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ladda-bootstrap/spin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/ladda-bootstrap/spin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/lodash/lodash.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/lodash/lodash.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/magnific-popup/jquery.magnific-popup.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/magnific-popup/jquery.magnific-popup.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/magnific-popup/magnific-popup.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/magnific-popup/magnific-popup.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/marked/marked.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/marked/marked.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/masonry/masonry.pkgd.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/masonry/masonry.pkgd.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/matchheight/jquery.matchHeight-min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/matchheight/jquery.matchHeight.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/media-match/media.match.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/media-match/media.match.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/moment/locales.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/moment/locales.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/moment/moment-with-locales.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/moment/moment-with-locales.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/moment/moment.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/moment/moment.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/morris-js/morris.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/morris-js/morris.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/morris-js/morris.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/morris-js/morris.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/multi-select/jquery.multi-select.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/multi-select/multi-select.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/multi-select/multi-select.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/nestable/jquery.nestable.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/nestable/nestable.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/nestable/nestable.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/nprogress/nprogress.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/nprogress/nprogress.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/nprogress/nprogress.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/oclazyload/ocLazyLoad.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/oclazyload/ocLazyLoad.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/oclazyload/ocLazyLoad.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/oclazyload/ocLazyLoad.min.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/owl-carousel/owl.carousel.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/owl-carousel/owl.carousel.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/owl-carousel/owl.carousel.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/owl-carousel/owl.carousel.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/packery/packery.pkgd.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/packery/packery.pkgd.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/peity/jquery.peity.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/peity/jquery.peity.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/plyr/plyr.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/plyr/plyr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/plyr/plyr.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/plyr/sprite.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/raphael/raphael-min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/raphael/raphael.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/raty/jquery.raty.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/respond/respond.matchmedia.addListener.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/respond/respond.matchmedia.addListener.src.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/respond/respond.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/respond/respond.src.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/rickshaw/rickshaw.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/rickshaw/rickshaw.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/rickshaw/rickshaw.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/rickshaw/rickshaw.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/skycons/skycons.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/slick-carousel/fonts/slick.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/slick-carousel/fonts/slick.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/slick-carousel/fonts/slick.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/slick-carousel/fonts/slick.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/slick-carousel/images/ajax-loader.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/slick-carousel/slick.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/slick-carousel/slick.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/slick-carousel/slick.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/slick-carousel/slick.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/sparkline/jquery.sparkline.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/sparkline/jquery.sparkline.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/sparkline/sparkline.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/sparkline/sparkline.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/summernote/summernote.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/summernote/summernote.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/summernote/summernote.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/summernote/summernote.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/tasklist/tasklist.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/tasklist/tasklist.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/timecircles/TimeCircles.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/to-markdown/to-markdown.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/typeahead-js/bloodhound.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/typeahead-js/bloodhound.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/typeahead-js/typeahead.bundle.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/typeahead-js/typeahead.bundle.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/typeahead-js/typeahead.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/typeahead-js/typeahead.jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/typeahead-js/typeahead.jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/typeahead-js/typeahead.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/x-editable/address.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/x-editable/bootstrap-editable.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/x-editable/bootstrap-editable.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/x-editable/images/clear.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/x-editable/images/loading.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/x-editable/x-editable.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vendor/x-editable/x-editable.min.css" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Siswa/Http/Controllers/AttendanceController.php" afterPath="$PROJECT_DIR$/modules/Siswa/Http/Controllers/AttendanceController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Siswa/Http/Controllers/ClassroomController.php" afterPath="$PROJECT_DIR$/modules/Siswa/Http/Controllers/ClassroomController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Siswa/Http/Controllers/HostelController.php" afterPath="$PROJECT_DIR$/modules/Siswa/Http/Controllers/HostelController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Siswa/Http/Controllers/ScoreController.php" afterPath="$PROJECT_DIR$/modules/Siswa/Http/Controllers/ScoreController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Siswa/Http/Controllers/SubjectController.php" afterPath="$PROJECT_DIR$/modules/Siswa/Http/Controllers/SubjectController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Siswa/Entities/Teacher.php" afterPath="$PROJECT_DIR$/modules/Siswa/Entities/Teacher.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/Siswa/Resources/views/partials/teachers/detail.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Siswa/Http/Controllers/SiswaController.php" afterPath="$PROJECT_DIR$/modules/Siswa/Http/Controllers/SiswaController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Siswa/Http/Controllers/TeacherController.php" afterPath="$PROJECT_DIR$/modules/Siswa/Http/Controllers/TeacherController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/ToolController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/ToolController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/app.php" afterPath="$PROJECT_DIR$/config/app.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Siswa/Resources/views/partials/siswa/detail.blade.php" afterPath="$PROJECT_DIR$/modules/Siswa/Resources/views/partials/siswa/detail.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Siswa/Resources/views/partials/score/index.blade.php" afterPath="$PROJECT_DIR$/modules/Siswa/Resources/views/partials/score/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Siswa/Resources/views/layouts/navbar.blade.php" afterPath="$PROJECT_DIR$/modules/Siswa/Resources/views/layouts/navbar.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Hrd/Resources/views/partials/stakeholder/index.blade.php" afterPath="$PROJECT_DIR$/modules/Hrd/Resources/views/partials/stakeholder/index.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Siswa/Resources/views/partials/teachers/index.blade.php" afterPath="$PROJECT_DIR$/modules/Siswa/Resources/views/partials/teachers/index.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="almultazam.2.2.iws" />
@@ -1121,91 +34,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ScoreController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/Siswa/Http/Controllers/ScoreController.php">
+      <file leaf-file-name="detail.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/Siswa/Resources/views/partials/siswa/detail.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-16.0">
-              <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+              <caret line="162" column="73" selection-start-line="162" selection-start-column="73" selection-end-line="162" selection-end-column="73" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Contract.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/Siswa/Entities/Contract.php">
+      <file leaf-file-name="SiswaController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/modules/Siswa/Http/Controllers/SiswaController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.6666667">
-              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/Siswa/Resources/views/partials/score/index.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.852459">
-              <caret line="25" column="56" selection-start-line="25" selection-start-column="56" selection-end-line="25" selection-end-column="56" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SubjectController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/Siswa/Http/Controllers/SubjectController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.3333335">
-              <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TeacherController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/Siswa/Http/Controllers/TeacherController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.0">
-              <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Teacher.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/Siswa/Entities/Teacher.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.740741">
-              <caret line="30" column="57" selection-start-line="30" selection-start-column="57" selection-end-line="30" selection-end-column="57" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Attendance.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/Siswa/Entities/Attendance.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.6666665">
-              <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AttendanceController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/Siswa/Http/Controllers/AttendanceController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.3333335">
-              <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HostelController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/modules/Siswa/Http/Controllers/HostelController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.24913494">
-              <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.42387542">
+              <caret line="84" column="51" selection-start-line="84" selection-start-column="51" selection-end-line="84" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -1219,11 +62,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/modules/Siswa/Resources/views/partials/attendance/index.blade.php" />
-        <option value="$PROJECT_DIR$/modules/Siswa/Resources/views/partials/classrooms/index.blade.php" />
-        <option value="$PROJECT_DIR$/modules/Siswa/Resources/views/partials/config/index.blade.php" />
-        <option value="$PROJECT_DIR$/modules/Siswa/Resources/views/partials/ekskul/index.blade.php" />
-        <option value="$PROJECT_DIR$/modules/Siswa/Resources/views/partials/hostel/index.blade.php" />
         <option value="$PROJECT_DIR$/modules/Siswa/Resources/views/partials/language/index.blade.php" />
         <option value="$PROJECT_DIR$/modules/Siswa/Resources/views/partials/language/score.blade.php" />
         <option value="$PROJECT_DIR$/modules/Siswa/Resources/views/partials/reading/index.blade.php" />
@@ -1243,7 +81,6 @@
         <option value="$PROJECT_DIR$/modules/Hrd/Resources/views/partials/report/index.blade.php" />
         <option value="$PROJECT_DIR$/modules/Hrd/Resources/views/partials/stakeholder/edit.blade.php" />
         <option value="$PROJECT_DIR$/modules/Hrd/Resources/views/partials/stakeholder/edit_bak.php" />
-        <option value="$PROJECT_DIR$/modules/Hrd/Resources/views/partials/stakeholder/index.blade.php" />
         <option value="$PROJECT_DIR$/modules/Hrd/Database/Migrations/2015_10_12_055103_create_positions_table.php" />
         <option value="$PROJECT_DIR$/modules/Hrd/Database/Migrations/2015_10_12_055248_create_position_stakeholder_table.php" />
         <option value="$PROJECT_DIR$/modules/Hrd/Resources/views/layouts/sidebar.blade.php" />
@@ -1258,10 +95,6 @@
         <option value="$PROJECT_DIR$/modules/Hrd/Resources/views/partials/stakeholder/detail.blade.php" />
         <option value="$PROJECT_DIR$/modules/Hrd/Resources/views/partials/vacation/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/tool/index.blade.php" />
-        <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/config/app.php" />
-        <option value="$PROJECT_DIR$/modules/Siswa/Http/Controllers/TeacherController.php" />
-        <option value="$PROJECT_DIR$/modules/Siswa/Resources/views/partials/siswa/detail.blade.php" />
         <option value="$PROJECT_DIR$/modules/Siswa/Http/Controllers/ScoreController.php" />
         <option value="$PROJECT_DIR$/modules/Siswa/Resources/views/partials/score/index.blade.php" />
         <option value="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Wrapper/Subject.php" />
@@ -1270,6 +103,16 @@
         <option value="$PROJECT_DIR$/modules/Siswa/Entities/Attendance.php" />
         <option value="$PROJECT_DIR$/modules/Siswa/Http/Controllers/AttendanceController.php" />
         <option value="$PROJECT_DIR$/modules/Siswa/Http/Controllers/HostelController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/ToolController.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/config/app.php" />
+        <option value="$PROJECT_DIR$/modules/Hrd/Resources/views/partials/stakeholder/index.blade.php" />
+        <option value="$PROJECT_DIR$/modules/Siswa/Resources/views/partials/teachers/detail.blade.php" />
+        <option value="$PROJECT_DIR$/modules/Siswa/Http/routes.php" />
+        <option value="$PROJECT_DIR$/modules/Siswa/Resources/views/partials/teachers/index.blade.php" />
+        <option value="$PROJECT_DIR$/modules/Siswa/Http/Controllers/TeacherController.php" />
+        <option value="$PROJECT_DIR$/modules/Siswa/Resources/views/partials/siswa/detail.blade.php" />
+        <option value="$PROJECT_DIR$/modules/Siswa/Http/Controllers/SiswaController.php" />
       </list>
     </option>
   </component>
@@ -1438,6 +281,40 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="teachers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="almultazam.2.2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="almultazam.2.2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Siswa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="partials" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="score" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -1511,6 +388,28 @@
               <option name="myItemId" value="modules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Siswa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Http" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="almultazam.2.2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="almultazam.2.2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -1547,7 +446,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="hostel&#9;null&#9;null&#10;atte&#9;null&#9;null&#10;attend&#9;null&#9;null&#10;te&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Http/Controllers/TeacherController.php&#10;subjec&#9;null&#9;null&#10;score&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Http/Controllers/ScoreController.php&#10;siswa/de&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Resources/views/partials/siswa/detail.blade.php&#10;teacher&#9;null&#9;null&#10;teac&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Entities/Teacher.php&#10;stake&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Hrd/Http/Controllers/StakeholderController.php&#10;class&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Http/Controllers/ClassroomController.php&#10;scoreC&#9;null&#9;null&#10;toolCon&#9;null&#9;null&#10;vacation/inde&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Hrd/Resources/views/partials/vacation/index.blade.php&#10;position&#9;null&#9;null&#10;sta&#9;null&#9;null&#10;positi&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Hrd/Entities/PositionStakeholder.php&#10;positionStakeh&#9;null&#9;null&#10;stak&#9;null&#9;null&#10;stakeholder/crea&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Hrd/Resources/views/partials/stakeholder/create.blade.php&#10;config&#9;null&#9;null&#10;login&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/resources/views/auth/login.blade.php" />
+    <property name="SearchEverywhereHistoryKey" value="siswa&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Http/Controllers/SiswaController.php&#10;siswa/detail&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Resources/views/partials/siswa/detail.blade.php&#10;stakeholder/de&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Hrd/Resources/views/partials/stakeholder/detail.blade.php&#10;sta&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Hrd/Http/Controllers/StakeholderController.php&#10;teac&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Http/Controllers/TeacherController.php&#10;stakeholder/ind&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Hrd/Resources/views/partials/stakeholder/index.blade.php&#10;controller&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/vendor/pingpong/modules/Routing/Controller.php&#10;tool&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/app/Http/Controllers/ToolController.php&#10;hostel&#9;null&#9;null&#10;atte&#9;null&#9;null&#10;attend&#9;null&#9;null&#10;te&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Http/Controllers/TeacherController.php&#10;subjec&#9;null&#9;null&#10;score&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Http/Controllers/ScoreController.php&#10;siswa/de&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Resources/views/partials/siswa/detail.blade.php&#10;teacher&#9;null&#9;null&#10;stake&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Hrd/Http/Controllers/StakeholderController.php&#10;class&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Http/Controllers/ClassroomController.php&#10;scoreC&#9;null&#9;null&#10;toolCon&#9;null&#9;null&#10;vacation/inde&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Hrd/Resources/views/partials/vacation/index.blade.php&#10;position&#9;null&#9;null&#10;positi&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Hrd/Entities/PositionStakeholder.php&#10;positionStakeh&#9;null&#9;null&#10;stak&#9;null&#9;null&#10;stakeholder/crea&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Hrd/Resources/views/partials/stakeholder/create.blade.php&#10;config&#9;null&#9;null&#10;login&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/resources/views/auth/login.blade.php" />
     <property name="recentsLimit" value="5" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
@@ -1627,30 +526,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/modules/Siswa/Resources/views/partials/language/score.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.925926">
-          <caret line="53" column="91" selection-start-line="53" selection-start-column="91" selection-end-line="53" selection-end-column="91" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Siswa/Resources/views/partials/reading/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.925926">
-          <caret line="51" column="87" selection-start-line="51" selection-start-column="87" selection-end-line="51" selection-end-column="87" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Siswa/Resources/views/partials/recitation/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.5925925">
-          <caret line="136" column="111" selection-start-line="136" selection-start-column="111" selection-end-line="136" selection-end-column="111" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/Siswa/Resources/views/partials/siswa/edit.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3744076">
@@ -1711,26 +586,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.6666665">
           <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
-          <folding>
-            <element signature="e#49#77#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/pingpong/modules/Routing/Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.333333">
-          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-          <folding>
-            <element signature="e#44#93#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Siswa/Http/Controllers/SiswaController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.3170732">
-          <caret line="42" column="38" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="38" />
           <folding>
             <element signature="e#49#77#0#PHP" expanded="false" />
           </folding>
@@ -1843,14 +698,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Hrd/Resources/views/partials/stakeholder/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-23.407408">
-          <caret line="102" column="107" selection-start-line="102" selection-start-column="107" selection-end-line="102" selection-end-column="107" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/Hrd/Resources/views/partials/stakeholder/create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.852459">
@@ -1883,29 +730,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Hrd/Resources/views/partials/stakeholder/detail.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3658088">
-          <caret line="227" column="55" selection-start-line="227" selection-start-column="55" selection-end-line="227" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/Hrd/Resources/views/partials/vacation/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-12.666667">
           <caret line="82" column="68" selection-start-line="82" selection-start-column="68" selection-end-line="82" selection-end-column="68" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ToolController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.0">
-          <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
-          <folding>
-            <element signature="e#40#57#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1929,40 +758,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-12.0">
           <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Hrd/Http/Controllers/StakeholderController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47058824">
-          <caret line="135" column="20" selection-start-line="135" selection-start-column="20" selection-end-line="140" selection-end-column="20" />
-          <folding>
-            <element signature="e#47#87#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34256056">
-          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.71972317">
-          <caret line="200" column="53" selection-start-line="200" selection-start-column="53" selection-end-line="200" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Siswa/Resources/views/partials/siswa/detail.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46712804">
-          <caret line="42" column="32" selection-start-line="42" selection-start-column="36" selection-end-line="44" selection-end-column="40" />
           <folding />
         </state>
       </provider>
@@ -2007,14 +802,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Siswa/Http/Controllers/TeacherController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.0">
-          <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/Siswa/Entities/Teacher.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-15.740741">
@@ -2033,16 +820,126 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/Siswa/Http/Controllers/AttendanceController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.3333335">
-          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+        <state vertical-scroll-proportion="-4.0">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="16" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/Siswa/Http/Controllers/HostelController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24913494">
-          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+        <state vertical-scroll-proportion="-6.0">
+          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/pingpong/modules/Routing/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37370244">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ToolController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.0">
+          <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+          <folding>
+            <element signature="e#40#57#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.6666665">
+          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.065743946">
+          <caret line="182" column="25" selection-start-line="182" selection-start-column="25" selection-end-line="182" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Hrd/Resources/views/partials/stakeholder/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.592592">
+          <caret line="110" column="44" selection-start-line="110" selection-start-column="44" selection-end-line="112" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Hrd/Http/Controllers/StakeholderController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.555555">
+          <caret line="135" column="8" selection-start-line="135" selection-start-column="8" selection-end-line="145" selection-end-column="63" />
+          <folding>
+            <element signature="e#47#87#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Hrd/Resources/views/partials/stakeholder/detail.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-151.33333">
+          <caret line="227" column="55" selection-start-line="0" selection-start-column="0" selection-end-line="365" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Siswa/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.0">
+          <caret line="9" column="55" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Siswa/Resources/views/partials/teachers/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.333333">
+          <caret line="35" column="77" selection-start-line="35" selection-start-column="77" selection-end-line="35" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Siswa/Resources/views/partials/teachers/detail.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="15" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Siswa/Http/Controllers/TeacherController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.407408">
+          <caret line="58" column="26" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="26" />
+          <folding>
+            <element signature="e#49#77#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Siswa/Resources/views/partials/siswa/detail.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.0">
+          <caret line="162" column="73" selection-start-line="162" selection-start-column="73" selection-end-line="162" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Siswa/Http/Controllers/SiswaController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42387542">
+          <caret line="84" column="51" selection-start-line="84" selection-start-column="51" selection-end-line="84" selection-end-column="51" />
           <folding />
         </state>
       </provider>

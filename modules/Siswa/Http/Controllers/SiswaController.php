@@ -12,9 +12,9 @@ use Illuminate\Support\Facades\Session;
 use Modules\Siswa\Entities\StudentEkskul;
 
 class SiswaController extends Controller {
-	
-	public function index(Request $request)
-	{
+
+    public function index(Request $request)
+    {
         $student = new ClassroomStudent;
         $classroomId = $request->get('byClassroom', null);
         $students = $student->getClassroomStudent($classroomId);
@@ -23,8 +23,8 @@ class SiswaController extends Controller {
         $data['classrooms'] = (!$classrooms->isEmpty()) ? $classrooms : false;
         $data['title'] = 'Siswa';
         $data['students'] = (count($students) > 0) ? $students : false;
-		return view('siswa::partials.siswa.index', $data);
-	}
+        return view('siswa::partials.siswa.index', $data);
+    }
 
     public function create()
     {
@@ -181,5 +181,5 @@ class SiswaController extends Controller {
             return response()->json('false');
         }
     }
-	
+
 }

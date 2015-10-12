@@ -105,10 +105,10 @@
                                             <button href="{{ url('/hrd/stakeholder/'.$v->id) }}" class="btn btn-warning btn-sm deleteStakeholder tooltip-danger tooltip-rotate" data-toggle="tooltip" data-original-title="Delete Pegawai !" type="submit" id="deleteStakeholder">
                                                 <i class="icon wb-trash"></i>
                                             </button>
-                                            <a href="{{ url('/hrd/stakeholder/'.$v->id) }}" class="btn btn-info btn-sm tooltip-info tooltip-rotate" data-toggle="tooltip" data-original-title="Detail Pegawai" type="button">
+                                            <a href="{{ url('/hrd/stakeholder/'.$v->id.'/edit') }}" class="btn btn-info btn-sm tooltip-info tooltip-rotate" data-toggle="tooltip" data-original-title="Edit Pegawai" type="button">
                                                 <i class="icon wb-pencil"></i>
                                             </a>
-                                            <a href="{{ url('/hrd/stakeholder/'.$v->id.'/edit') }}" class="btn btn-success btn-sm tooltip-success tooltip-rotate" data-toggle="tooltip" data-original-title="Edit Pegawai " type="button">
+                                            <a href="{{ url('/hrd/stakeholder/'.$v->id) }}" class="btn btn-success btn-sm tooltip-success tooltip-rotate" data-toggle="tooltip" data-original-title="Detail Pegawai " type="button">
                                                 <i class="icon wb-arrow-right"></i>
                                             </a>
                                         </form>

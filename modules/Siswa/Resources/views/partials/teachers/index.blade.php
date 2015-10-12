@@ -22,6 +22,7 @@
                                 <th>TTL</th>
                                 <th>J. Kelamin</th>
                                 <th>Status</th>
+                                <th>Detail</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -31,6 +32,11 @@
                                     <td>{{ $v->tempat_lahir }}, {{ $v->tanggal_lahir }}</td>
                                     <td>{{ $v->jenis_kelamin }}</td>
                                     <td>{{ $v->status }}</td>
+                                    <td>
+                                        <a href="{{ url('/siswa/teacher/show/'.$v->id) }}" class="btn btn-success btn-sm tooltip-success tooltip-rotate" data-toggle="tooltip" data-original-title="Detail Pegawai " type="button">
+                                            <i class="icon wb-arrow-right"></i>
+                                        </a>
+                                    </td>
                                 </tr>
                             @endforeach
                             </tbody>

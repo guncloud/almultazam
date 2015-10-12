@@ -147,6 +147,7 @@ return [
 		'Pingpong\Modules\ModulesServiceProvider',
 		'Pingpong\Trusty\TrustyServiceProvider',
 		'Maatwebsite\Excel\ExcelServiceProvider',
+        'Barryvdh\DomPDF\ServiceProvider',
 	],
 
 	/*
@@ -199,6 +200,7 @@ return [
 		'Role'        => 'Pingpong\Trusty\Role',
 		'Permission'  => 'Pingpong\Trusty\Permission',
         'Excel' => 'Maatwebsite\Excel\Facades\Excel',
+        'PDF' => 'Barryvdh\DomPDF\Facade',
 	],
 
 ];

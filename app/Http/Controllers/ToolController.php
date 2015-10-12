@@ -25,6 +25,7 @@ class ToolController extends Controller
     public function getIndex()
     {
         $data['title'] = 'Tool';
+        $data['year'] = Config::where('slug', '=', 'tahun-ajar')->first()->value;
 
         return view('tool.index', $data);
     }
