@@ -1,0 +1,50 @@
+.autocomplete-suggestions { border: 1px solid #999; background: #FFF; overflow: auto; }
+.autocomplete-suggestion { padding: 2px 5px; white-space: nowrap; overflow: hidden; }
+.autocomplete-selected { background: #F0F0F0; }
+.autocomplete-suggestions strong { font-weight: normal; color: #3399FF; }
+.autocomplete-group { padding: 2px 5px; }
+.autocomplete-group strong { display: block; border-bottom: 1px solid #000; }
+
+.select2-container--default {
+    display: block;
+    z-index: 10000000;
+}
+
+.navbar-brand{
+    padding: 5px;
+}
+
+.navbar-brand-logo {
+    height: 64px;
+    margin-top: -5px;
+}
+
+.site-navbar .navbar-header {
+    color: #fff;
+     background-color: white;
+}
+
+.navbar-container{
+    background-color: #8E9513;
+}
+
+.navbar-default .navbar-toolbar>li>a {
+    color: white;
+}
+
+@media print {
+    .hideOnprint {
+        display: none;
+    }
+    .hideOnScreen {
+        display: block;
+    }
+}
+@media screen {
+    .hideOnprint {
+        display: block;
+    }
+    .hideOnScreen {
+        display: none;
+    }
+}

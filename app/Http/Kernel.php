@@ -27,6 +27,11 @@ class Kernel extends HttpKernel {
 		'auth' => 'App\Http\Middleware\Authenticate',
 		'auth.basic' => 'Illuminate\Auth\Middleware\AuthenticateWithBasicAuth',
 		'guest' => 'App\Http\Middleware\RedirectIfAuthenticated',
+		'hrd' => \App\Http\Middleware\ModuleHrd::class,
+		'siswa' => \App\Http\Middleware\ModuleSiswa::class,
+		'admin' => \App\Http\Middleware\RoleAdmin::class,
+		'pembina' => \App\Http\Middleware\RolePembina::class,
+		'alquran' => \App\Http\Middleware\RoleAlquran::class,
 	];
 
 }

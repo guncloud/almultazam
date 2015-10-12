@@ -10,7 +10,7 @@ use Pingpong\Trusty\Traits\TrustyTrait;
 
 class User extends Model implements AuthenticatableContract, CanResetPasswordContract {
 
-	use Authenticatable, CanResetPassword, UserTrait, RemindableTrait, TrustyTrait;;
+	use Authenticatable, CanResetPassword, TrustyTrait;
 
 	/**
 	 * The database table used by the model.

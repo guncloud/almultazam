@@ -1,0 +1,15 @@
+{
+    "name": "Siswa",
+    "alias": "siswa",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\Siswa\\Providers\\SiswaServiceProvider"
+    ],
+    "aliases":{},
+    "files": [
+        "start.php"
+    ]
+}
