@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="a9cab5c0-2c7b-4614-8a49-1da074c4af8d" name="almultazam" url="http://almultazam.info">
+        <fileTransfer host="almultazam.info" port="21" password="dfc1dfc2dfc5dfcfdfc9dfc1dfc9dfdfdfc2" username="guncloud@almultazam.info">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

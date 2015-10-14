@@ -14,7 +14,7 @@ class AddDiplomaToStakeholders extends Migration {
     {
         Schema::table('stakeholders', function(Blueprint $table)
         {
-            $table->string('universitas_diploma')->nullabel();
+            $table->string('universitas_diploma')->nullable();
             $table->string('fakultas_diploma')->nullable();
             $table->string('jurusan_diploma')->nullable();
             $table->string('program_pendidikan_diploma')->nullable();

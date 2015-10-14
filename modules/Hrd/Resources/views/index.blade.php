@@ -4,7 +4,7 @@
 
 	<div class="page animsition">
 		<div class="page-header">
-			<h4 class="page-title">{{ $title or 'Judul' }}</h4>
+			<h4 class="page-title">{{ $title or 'Kepegawaian' }}</h4>
 		</div>
 		<div class="page-content">
 			<div class="panel">

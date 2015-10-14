@@ -48,6 +48,19 @@ class StakeholderController extends Controller {
         $data['stakeholder'] = Stakeholder::find($id);
         $data['divisions'] = Division::all();
         $data['title'] = 'Update';
+        $positions = Position::all();
+
+        $position = DB::table('stakeholders')
+            ->select('positions.id','position')
+            ->join('position_stakeholder', 'position_stakeholder.stakeholder_id', '=', 'stakeholders.id')
+            ->join('positions', 'positions.id', '=', 'position_stakeholder.position_id')
+            ->where('stakeholders.id', '=', $id)
+            ->get();
+
+        $data['position'] = (count($position) > 0) ? $position : false;
+
+        $data['positions'] = (!$positions->isEmpty()) ? $positions : false;
+
         return view('hrd::partials.stakeholder.edit', $data);
     }
 
@@ -156,7 +169,7 @@ class StakeholderController extends Controller {
 
         if($request->hasFile('photo')){
             if(Input::file('photo')->getClientOriginalName() == $rec->photo){
-                $update = Stakeholder::where('id','=', $id)->update($request->except('_method', '_token', 'photo'));
+                $update = Stakeholder::where('id','=', $id)->update($request->except('_method', '_token', 'photo','position'));
 
                 if($update){
                     Session::flash('info', 'Data Update');
@@ -164,7 +177,7 @@ class StakeholderController extends Controller {
                     Session::flash('info', 'Error');
                 }
             }else{
-                $update = Stakeholder::where('id','=', $id)->update($request->except('_method', '_token', 'photo'));
+                $update = Stakeholder::where('id','=', $id)->update($request->except('_method', '_token', 'photo','position'));
 
                 $photos = $this->uploadPhoto();
                 $rec->photo = $photos;
@@ -175,13 +188,27 @@ class StakeholderController extends Controller {
                 }
             }
         }else{
-            $update = Stakeholder::where('id','=', $id)->update($request->except('_method', '_token', 'photo'));
+            $update = Stakeholder::where('id','=', $id)->update($request->except('_method', '_token', 'photo','position'));
 
             if($update){
                 Session::flash('info', 'Data Update');
             }else{
                 Session::flash('info', 'Error');
             }
+        }
+
+        $positions = $request->input('position');
+        foreach($positions as $pos){
+            $cek = PositionStakeholder ::where('stakeholder_id', '=', $id)
+                ->where('position_id', '=', $pos)
+                ->get();
+            if(count($cek) > 0){
+                PositionStakeholder::where('stakeholder_id', '=', $id)
+                    ->update(['position_id' => $pos]);
+            }else{
+                PositionStakeholder::create(['stakeholder_id' => $id,'position_id' => $pos]);
+            }
+
         }
 
         return redirect('/hrd/stakeholder/'.$id.'/edit');

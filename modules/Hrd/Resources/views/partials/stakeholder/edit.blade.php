@@ -3,6 +3,7 @@
 @section('css')
     <link rel="stylesheet" href="{{ asset('/vendor/formvalidation/formValidation.css') }}">
     <link rel="stylesheet" href="{{ asset('/vendor/toastr/toastr.css') }}">
+    <link rel="stylesheet" href="{{ asset('/vendor/select2/select2.css') }}">
 @stop
 
 @section('content')
@@ -121,8 +122,22 @@
                         </div>
                         <div class="form-group form-material floating row">
                             <div class="col-sm-4">
-                                <input type="text" class="form-control" name="jabatan" value="{{ $stakeholder->jabatan }}"/>
-                                <label class="floating-label">Jabatan</label>
+                                <label for="">Jabatan</label>
+                                <select name="position[]" class="form-control" multiple data-plugin="select2" id="position" placeholder="Jabatan">
+
+                                    @if($positions)
+                                        @if($position)
+                                            @foreach($position as $pos)
+                                                <option value="{{ $pos->id }}" selected>{{ $pos->position }}</option>
+                                            @endforeach
+                                        @endif
+                                        @foreach($positions as $pos)
+                                            <option value="{{ $pos->id }}">{{ $pos->position }}</option>
+                                        @endforeach
+                                    @else
+                                        <option value="">Tidak ada data jabatan</option>
+                                    @endif
+                                </select>
                             </div>
                             <div class="col-sm-4">
                                 <input type="text" class="form-control" name="mulai_kerja" id="mulai_kerja" data-plugin="formatter" value="{{ $stakeholder->mulai_kerja }}" data-pattern="[[9999]]-[[99]]-[[99]]"/>
@@ -415,11 +430,24 @@
     <script src="{{ asset('/vendor/formvalidation/formValidation.min.js') }}"></script>
     <script src="{{ asset('/vendor/formvalidation/framework/bootstrap.min.js') }}"></script>
     <script src="{{ asset('/vendor/formatter-js/jquery.formatter.js') }}"></script>
+    <script src="{{ asset('/vendor/select2/select2.min.js') }}"></script>
 
     <script src="{{ asset('/js/components/formatter-js.js') }}"></script>
 
     <script>
         $(function(){
+
+            $('#position').select2().select2("data",
+                    [{"id":"2127","text":"Henry Ford"},{"id":"2199","text":"Tom Phillips"}]
+            );
+
+            var notif = "{{ Session::has('info') or '' }}";
+
+            if(notif != ''){
+                toastr.success("{{ Session::get('info') }}", 'Info',{
+                    positionClass : 'toast-top-full-width',
+                });
+            };
 
             $('#form_new_stakeholder').formValidation({
                 framework: "bootstrap",

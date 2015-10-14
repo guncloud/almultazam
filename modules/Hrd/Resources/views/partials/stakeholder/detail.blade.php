@@ -226,9 +226,11 @@
                                                 <div class="media-body">
                                                     <h4 class="media-heading">Jabatan</h4>
                                                     <p>
-                                                        @foreach($positions as $pos)
-                                                            {{ $pos->position }}
-                                                        @endforeach
+                                                        @if($positions)
+                                                            @foreach($positions as $pos)
+                                                                {{ $pos->position }}
+                                                            @endforeach
+                                                        @endif
                                                     </p>
                                                 </div>
                                             </div>
