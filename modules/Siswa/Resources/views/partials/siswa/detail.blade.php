@@ -114,6 +114,9 @@
                                 <li role="presentation">
                                     <a data-toggle="tab" href="#pelanggaran" aria-controls="pelanggaran" role="tab">Pelanggaran</a>
                                 </li>
+                                <li role="presentation">
+                                    <a data-toggle="tab" href="#prestasi" aria-controls="prestasi" role="tab">Prestasi</a>
+                                </li>
                                 <li class="pull-right">
                                     <button type="button" class="btn btn-sm btn-icon btn-default btn-outline btn-round"
                                             data-toggle="tooltip" data-original-title="Menu" id="btnPopMenu" href="javascript:void(0)">
@@ -229,6 +232,25 @@
 
                                     </ul>
                                 </div>
+
+                                <div class="tab-pane" id="prestasi" role="tabpanel">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <ul>
+                                                @foreach($student->achievements as $v)
+
+                                                    <li>
+                                                        {{ $v->achievement }}
+                                                        <p>{{ $v->info }} poin, tanggal {{ $v->date }}</p>
+                                                    </li>
+
+                                                @endforeach
+                                            </ul>
+                                        </li>
+
+                                    </ul>
+                                </div>
+
                             </div>
                         </div>
                     </div>

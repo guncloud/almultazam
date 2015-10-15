@@ -34,6 +34,7 @@ class ScoreController extends Controller {
         $score = DB::table('scores')
             ->join('contracts', 'contracts.id', '=', 'scores.contract_id')
             ->where('scores.contract_id', '=', $request->get('contract'))
+            ->where('contracts.semester', '=', $request->get('semester'))
             ->whereIn('scores.student_id', $students_id)
             ->get();
 

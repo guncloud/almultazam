@@ -112,6 +112,8 @@ class SiswaController extends Controller {
     {
         $score = Student::find($uid)->scores;
 
+       // dd($score);
+
         if(!$score->isEmpty()){
             foreach($score as $scr)
             {

@@ -77,7 +77,7 @@ class UserController extends Controller
     public function show($id)
     {
         $data['title'] = 'Data Pengguna';
-        return view('user.detail', $data);
+        return view('auth.reset', $data);
     }
 
     /**
@@ -100,13 +100,14 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
+//        dd($request->all());
         if($request->get('old_password')){
             $user = User::findOrFail($id);
 
             if(Hash::check($request->get('old_password'), $user->password)){
                 $user->password = Hash::make($request->get('change_password'));
-                $user->name = $request->get('name');
-                $user->username = $request->get('username');
+//                $user->name = $request->get('name');
+//                $user->username = $request->get('username');
                 if($user->save()){
                     Session::flash('info', 'Data change');
                     return redirect('/user/'.$id);
@@ -118,7 +119,9 @@ class UserController extends Controller
                 Session::flash('info', 'Errror');
                 return redirect('/user/'.$id);
             };
-        };
+        }else{
+            return redirect('/user/'.$id);
+        }
     }
 
     /**
