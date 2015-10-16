@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c1d9262-9728-434c-b6c9-c29860564306" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Siswa/Http/Controllers/ConfigController.php" afterPath="$PROJECT_DIR$/modules/Siswa/Http/Controllers/ConfigController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Siswa/Entities/Contract.php" afterPath="$PROJECT_DIR$/modules/Siswa/Entities/Contract.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Siswa/Http/Controllers/EkskulController.php" afterPath="$PROJECT_DIR$/modules/Siswa/Http/Controllers/EkskulController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Siswa/Http/Controllers/LanguageController.php" afterPath="$PROJECT_DIR$/modules/Siswa/Http/Controllers/LanguageController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Siswa/Http/Controllers/ScoreController.php" afterPath="$PROJECT_DIR$/modules/Siswa/Http/Controllers/ScoreController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Siswa/Http/Controllers/SiswaController.php" afterPath="$PROJECT_DIR$/modules/Siswa/Http/Controllers/SiswaController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Siswa/Resources/views/partials/siswa/detail.blade.php" afterPath="$PROJECT_DIR$/modules/Siswa/Resources/views/partials/siswa/detail.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Siswa/Http/Controllers/StudentEkskulController.php" afterPath="$PROJECT_DIR$/modules/Siswa/Http/Controllers/StudentEkskulController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/blade.xml" afterPath="$PROJECT_DIR$/.idea/blade.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Siswa/Resources/views/partials/score/index.blade.php" afterPath="$PROJECT_DIR$/modules/Siswa/Resources/views/partials/score/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Hrd/Resources/views/layouts/navbar.blade.php" afterPath="$PROJECT_DIR$/modules/Hrd/Resources/views/layouts/navbar.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/auth/reset.blade.php" afterPath="$PROJECT_DIR$/resources/views/auth/reset.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Siswa/Resources/views/partials/language/score.blade.php" afterPath="$PROJECT_DIR$/modules/Siswa/Resources/views/partials/language/score.blade.php" />
     </list>
     <ignored path="almultazam.2.2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,11 +31,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="detail.blade.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/modules/Siswa/Resources/views/partials/siswa/detail.blade.php">
+      <file leaf-file-name="score.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/Siswa/Resources/views/partials/language/score.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.27874565">
-              <caret line="230" column="45" selection-start-line="230" selection-start-column="45" selection-end-line="230" selection-end-column="45" />
+            <state vertical-scroll-proportion="-1.3333334">
+              <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EkskulController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/modules/Siswa/Http/Controllers/EkskulController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.251497">
+              <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/Siswa/Http/routes.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-15.333333">
+              <caret line="26" column="53" selection-start-line="26" selection-start-column="53" selection-end-line="26" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StudentEkskulController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/Siswa/Http/Controllers/StudentEkskulController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.0">
+              <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LanguageController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/Siswa/Http/Controllers/LanguageController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.0">
+              <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -50,11 +89,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/modules/Siswa/Resources/views/partials/violation/index.blade.php" />
-        <option value="$PROJECT_DIR$/vendor/pingpong/modules/Routing/Controller.php" />
-        <option value="$PROJECT_DIR$/modules/Siswa/Resources/views/layouts/navbar.blade.php" />
-        <option value="$PROJECT_DIR$/modules/Siswa/Http/Controllers/ClassroomController.php" />
-        <option value="$PROJECT_DIR$/modules/Hrd/Resources/views/partials/division/index.blade.php" />
         <option value="$PROJECT_DIR$/modules/Hrd/Resources/views/partials/indicator/index.blade.php" />
         <option value="$PROJECT_DIR$/modules/Hrd/Resources/views/partials/report/index.blade.php" />
         <option value="$PROJECT_DIR$/modules/Hrd/Resources/views/partials/stakeholder/edit_bak.php" />
@@ -97,10 +131,15 @@
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/UserController.php" />
         <option value="$PROJECT_DIR$/resources/views/auth/reset.blade.php" />
-        <option value="$PROJECT_DIR$/modules/Siswa/Resources/views/partials/score/index.blade.php" />
         <option value="$PROJECT_DIR$/modules/Siswa/Http/Controllers/SiswaController.php" />
-        <option value="$PROJECT_DIR$/modules/Siswa/Http/Controllers/ScoreController.php" />
         <option value="$PROJECT_DIR$/modules/Siswa/Resources/views/partials/siswa/detail.blade.php" />
+        <option value="$PROJECT_DIR$/modules/Siswa/Entities/Contract.php" />
+        <option value="$PROJECT_DIR$/modules/Siswa/Http/Controllers/ScoreController.php" />
+        <option value="$PROJECT_DIR$/modules/Siswa/Resources/views/partials/score/index.blade.php" />
+        <option value="$PROJECT_DIR$/modules/Siswa/Resources/views/partials/language/score.blade.php" />
+        <option value="$PROJECT_DIR$/modules/Siswa/Http/Controllers/LanguageController.php" />
+        <option value="$PROJECT_DIR$/modules/Siswa/Http/Controllers/EkskulController.php" />
+        <option value="$PROJECT_DIR$/modules/Siswa/Http/Controllers/StudentEkskulController.php" />
       </list>
     </option>
   </component>
@@ -121,10 +160,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-4" />
-    <option name="y" value="27" />
-    <option name="width" value="1374" />
-    <option name="height" value="745" />
+    <option name="y" value="26" />
+    <option name="width" value="1366" />
+    <option name="height" value="742" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -150,7 +188,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -294,62 +331,6 @@
               <option name="myItemId" value="Resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="almultazam.2.2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="almultazam.2.2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Siswa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="partials" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="almultazam.2.2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="almultazam.2.2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Siswa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -384,148 +365,17 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Hrd" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="almultazam.2.2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="almultazam.2.2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Hrd" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="almultazam.2.2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="almultazam.2.2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Hrd" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="partials" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="almultazam.2.2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="almultazam.2.2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Hrd" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="almultazam.2.2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="almultazam.2.2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Hrd" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="almultazam.2.2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="almultazam.2.2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="almultazam.2.2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="almultazam.2.2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="siswa/deta&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Resources/views/partials/siswa/detail.blade.php&#10;score&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Http/Controllers/ScoreController.php&#10;siswa&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Http/Controllers/SiswaController.php&#10;score/in&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Resources/views/partials/score/index.blade.php&#10;config&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Http/Controllers/ConfigController.php&#10;login&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/resources/views/auth/login.blade.php&#10;config/ind&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Resources/views/partials/config/index.blade.php&#10;siswa/con&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Http/Controllers/ConfigController.php&#10;tool&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/app/Http/Controllers/ToolController.php&#10;userCon&#9;null&#9;null&#10;navbar&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Hrd/Resources/views/layouts/navbar.blade.php&#10;confiCon&#9;null&#9;null&#10;st&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Hrd/Http/Controllers/StakeholderController.php&#10;too&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/app/Http/Controllers/ToolController.php&#10;kernel&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/app/Http/Kernel.php&#10;stake&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Hrd/Http/Controllers/StakeholderController.php&#10;siswa/detail&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Resources/views/partials/siswa/detail.blade.php&#10;stakeholder/de&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Hrd/Resources/views/partials/stakeholder/detail.blade.php&#10;sta&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Hrd/Http/Controllers/StakeholderController.php&#10;teac&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Http/Controllers/TeacherController.php&#10;stakeholder/ind&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Hrd/Resources/views/partials/stakeholder/index.blade.php&#10;controller&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/vendor/pingpong/modules/Routing/Controller.php&#10;hostel&#9;null&#9;null&#10;atte&#9;null&#9;null&#10;attend&#9;null&#9;null&#10;te&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Http/Controllers/TeacherController.php&#10;subjec&#9;null&#9;null&#10;siswa/de&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Resources/views/partials/siswa/detail.blade.php&#10;teacher&#9;null&#9;null&#10;class&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Http/Controllers/ClassroomController.php&#10;scoreC&#9;null&#9;null&#10;toolCon&#9;null&#9;null&#10;vacation/inde&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Hrd/Resources/views/partials/vacation/index.blade.php&#10;position&#9;null&#9;null&#10;positi&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Hrd/Entities/PositionStakeholder.php&#10;positionStakeh&#9;null&#9;null&#10;stak&#9;null&#9;null&#10;stakeholder/crea&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Hrd/Resources/views/partials/stakeholder/create.blade.php" />
+    <property name="SearchEverywhereHistoryKey" value="studentek&#9;null&#9;null&#10;eks&#9;null&#9;null&#10;langu&#9;null&#9;null&#10;language/sc&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Resources/views/partials/language/score.blade.php&#10;score/ind&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Resources/views/partials/score/index.blade.php&#10;scoreC&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Http/Controllers/ScoreController.php&#10;siswa/deta&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Resources/views/partials/siswa/detail.blade.php&#10;score&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Http/Controllers/ScoreController.php&#10;siswa&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Http/Controllers/SiswaController.php&#10;score/in&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Resources/views/partials/score/index.blade.php&#10;config&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Http/Controllers/ConfigController.php&#10;login&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/resources/views/auth/login.blade.php&#10;config/ind&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Resources/views/partials/config/index.blade.php&#10;siswa/con&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Http/Controllers/ConfigController.php&#10;tool&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/app/Http/Controllers/ToolController.php&#10;userCon&#9;null&#9;null&#10;navbar&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Hrd/Resources/views/layouts/navbar.blade.php&#10;confiCon&#9;null&#9;null&#10;st&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Hrd/Http/Controllers/StakeholderController.php&#10;too&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/app/Http/Controllers/ToolController.php&#10;kernel&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/app/Http/Kernel.php&#10;stake&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Hrd/Http/Controllers/StakeholderController.php&#10;siswa/detail&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Resources/views/partials/siswa/detail.blade.php&#10;stakeholder/de&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Hrd/Resources/views/partials/stakeholder/detail.blade.php&#10;sta&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Hrd/Http/Controllers/StakeholderController.php&#10;teac&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Http/Controllers/TeacherController.php&#10;stakeholder/ind&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Hrd/Resources/views/partials/stakeholder/index.blade.php&#10;controller&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/vendor/pingpong/modules/Routing/Controller.php&#10;hostel&#9;null&#9;null&#10;atte&#9;null&#9;null&#10;attend&#9;null&#9;null&#10;te&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Http/Controllers/TeacherController.php&#10;subjec&#9;null&#9;null&#10;siswa/de&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Resources/views/partials/siswa/detail.blade.php&#10;teacher&#9;null&#9;null&#10;class&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Http/Controllers/ClassroomController.php&#10;toolCon&#9;null&#9;null&#10;vacation/inde&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Hrd/Resources/views/partials/vacation/index.blade.php&#10;position&#9;null&#9;null&#10;positi&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Hrd/Entities/PositionStakeholder.php&#10;positionStakeh&#9;null&#9;null&#10;stak&#9;null&#9;null&#10;stakeholder/crea&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Hrd/Resources/views/partials/stakeholder/create.blade.php" />
     <property name="recentsLimit" value="5" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
@@ -585,24 +435,24 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="27" width="1374" height="745" extended-state="6" />
+    <frame x="0" y="26" width="1366" height="742" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15517241" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1511976" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.0783309" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15512048" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.0783309" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18960468" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1511976" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -627,34 +477,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/modules/Hrd/Database/Migrations/2015_10_12_055103_create_positions_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.666667">
-          <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Hrd/Database/Migrations/2015_10_12_055248_create_position_stakeholder_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.65397924">
-          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Hrd/Resources/views/partials/indicator/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="14" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Hrd/Resources/views/layouts/sidebar.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5605536">
-          <caret line="33" column="86" selection-start-line="33" selection-start-column="86" selection-end-line="33" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/Hrd/Resources/views/partials/position/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.0">
@@ -708,13 +530,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-12.0">
           <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Siswa/Entities/Contract.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.6666667">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -813,7 +628,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.0">
           <caret line="16" column="59" selection-start-line="16" selection-start-column="59" selection-end-line="16" selection-end-column="59" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -821,7 +635,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="3.4074075">
           <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -829,7 +642,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.333333">
           <caret line="231" column="71" selection-start-line="231" selection-start-column="71" selection-end-line="231" selection-end-column="71" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -837,7 +649,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-13.962963">
           <caret line="131" column="55" selection-start-line="131" selection-start-column="55" selection-end-line="131" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -845,7 +656,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5605536">
           <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -853,7 +663,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.22546972">
           <caret line="6" column="60" selection-start-line="6" selection-start-column="60" selection-end-line="6" selection-end-column="60" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -861,7 +670,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.44809687">
           <caret line="191" column="0" selection-start-line="191" selection-start-column="0" selection-end-line="191" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -869,7 +677,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.1311476">
           <caret line="121" column="80" selection-start-line="121" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -877,7 +684,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -885,7 +691,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="4.814815">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -903,7 +708,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.666667">
           <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -911,7 +715,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.088815786">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -919,7 +722,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.35502958">
           <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -927,7 +729,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.22697368">
           <caret line="137" column="75" selection-start-line="137" selection-start-column="75" selection-end-line="137" selection-end-column="75" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -935,7 +736,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.0">
           <caret line="51" column="4" selection-start-line="51" selection-start-column="4" selection-end-line="59" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -943,7 +743,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.6666665">
           <caret line="84" column="16" selection-start-line="84" selection-start-column="16" selection-end-line="84" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -951,7 +750,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.5185184">
           <caret line="94" column="73" selection-start-line="94" selection-start-column="66" selection-end-line="94" selection-end-column="73" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -959,7 +757,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.851852">
           <caret line="70" column="7" selection-start-line="70" selection-start-column="7" selection-end-line="70" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -967,31 +764,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.35526314">
           <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Siswa/Resources/views/partials/score/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="17.333334">
-          <caret line="37" column="55" selection-start-line="37" selection-start-column="55" selection-end-line="37" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Siswa/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41447368">
-          <caret line="14" column="53" selection-start-line="14" selection-start-column="53" selection-end-line="14" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Siswa/Http/Controllers/ScoreController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17763157">
-          <caret line="25" column="82" selection-start-line="25" selection-start-column="82" selection-end-line="25" selection-end-column="82" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1005,8 +777,72 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/Siswa/Resources/views/partials/siswa/detail.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27874565">
+        <state vertical-scroll-proportion="0.53642386">
           <caret line="230" column="45" selection-start-line="230" selection-start-column="45" selection-end-line="230" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Siswa/Http/Controllers/ScoreController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.0">
+          <caret line="43" column="36" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Siswa/Entities/Contract.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.3333335">
+          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Siswa/Resources/views/partials/score/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21556886">
+          <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Siswa/Http/Controllers/LanguageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.0">
+          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Siswa/Resources/views/partials/language/score.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.3333334">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Siswa/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.333333">
+          <caret line="26" column="53" selection-start-line="26" selection-start-column="53" selection-end-line="26" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Siswa/Http/Controllers/StudentEkskulController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.0">
+          <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Siswa/Http/Controllers/EkskulController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.251497">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
           <folding />
         </state>
       </provider>

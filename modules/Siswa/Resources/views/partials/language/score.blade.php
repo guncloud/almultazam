@@ -14,9 +14,11 @@
                         <div class="form-group">
                             <select name="bahasa" id="bahasa" class="form-control" placeholder="Pilih Bahasa">
                                 <option >Pilih Bahasa</option>
-                                @foreach($languages as $lng)
-                                    <option value="{{ $lng->id }}">{{ $lng->language }}</option>
-                                @endforeach
+                                @if($languages)
+                                    @foreach($languages as $lng)
+                                        <option value="{{ $lng->id }}">{{ $lng->language }}</option>
+                                    @endforeach
+                                @endif
                             </select>
                         </div>
                         <div class="form-group">

@@ -19,7 +19,7 @@
                             <select name="contract" id="contract" class="form-control" placeholder="Pilih Kelas">
                                 <option >Pilih M. Pel</option>
                                 @foreach($contracts as $sbj)
-                                    <option {{ (@$_GET['contract'] == $sbj->id) ? 'selected' : '' }} value="{{ $sbj->id }}">{{ $sbj->code }} - {{ $sbj->subject }} ({{ $sbj->grade }})</option>
+                                    <option {{ (@$_GET['contract'] == $sbj->id) ? 'selected' : '' }} value="{{ $sbj->id }}">{{ $sbj->code }} - {{ $sbj->subject }} (T. {{ $sbj->grade }}) (S. {{ $sbj->semester }})</option>
                                 @endforeach
                             </select>
                         @else
@@ -37,13 +37,6 @@
                         @else
                             <p>Data kelas tidak ada</p>
                         @endif
-                    </div>
-                    <div class="form-group">
-                        <select name="semester" id="semester" class="form-control">
-                            <option>Semester</option>
-                            <option {{ (@$_GET['semester'] == 1) ? 'selected' : '' }} value="1">1</option>
-                            <option {{ (@$_GET['semester'] == 2) ? 'selected' : '' }} value="2">2</option>
-                        </select>
                     </div>
                     <div class="form-group">
                         <button class="btn btn-primary" type="submit">Submit</button>

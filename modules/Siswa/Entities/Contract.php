@@ -18,6 +18,7 @@ class Contract extends Model {
             ->join('stakeholders', 'stakeholders.id', '=', 'contracts.teacher_id')
             ->join('subjects', 'subjects.id', '=', 'contracts.subject_id')
             ->join('classrooms', 'classrooms.id', '=', 'contracts.classroom_id')
+//            ->groupBy('teacher_id')
             ->where('contracts.year','=', $year)
             ->get();
 
