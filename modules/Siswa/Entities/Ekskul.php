@@ -10,6 +10,7 @@ class Ekskul extends Model {
     public function getAll()
     {
         $rec = DB::table('ekskuls')
+            ->select('stakeholders.*', 'ekskuls.id as ekskul_id', 'ekskuls.code', 'ekskuls.ekskul')
             ->join('stakeholders','stakeholders.id','=','ekskuls.teacher_id')
             ->get();
 
@@ -19,6 +20,6 @@ class Ekskul extends Model {
     public function students()
     {
         return $this->hasMany('Modules\Siswa\Entities\Student', 'student_ekskul');
-
     }
+
 }

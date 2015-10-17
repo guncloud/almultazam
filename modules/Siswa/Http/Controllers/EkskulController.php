@@ -18,6 +18,8 @@ class EkskulController extends Controller {
         $ekskul = new Ekskul;
         $ekskul = $ekskul->getAll();
 
+//        dd($ekskul);
+
         $data['ekskuls'] = (count($ekskul)) ? $ekskul : false;
 		$data['title'] = 'Ekskul';
 		return view('siswa::partials.ekskul.index', $data);

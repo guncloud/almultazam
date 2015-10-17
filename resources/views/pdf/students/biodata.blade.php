@@ -1,14 +1,16 @@
-<!doctype html>
+
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
     <title>Laporan Siswa</title>
 
     <link href="{{ base_path('public/css/pure.min.css') }}" rel="stylesheet">
     <style>
         .body{
-            font-size: 12px;
+            font-size: 19px;
         }
+        td{border-bottom:1px solid #cbcbcb}
     </style>
 </head>
 <body>
@@ -47,7 +49,7 @@
             <td>{{ $student->handphone }}, {{ $student->telepon }}, {{ $student->email }}</td>
         </tr>
         <tr>
-            <td colspan="4">Ibu</td>
+            <td colspan="4" style="border-bottom:1px solid #cbcbcb; border-top:1px solid #cbcbcb">Ibu</td>
         </tr>
         <tr>
             <td>Nama Ibu</td>
@@ -71,7 +73,7 @@
             <td>{{ $student->kps_ibu }}</td>
         </tr>
         <tr>
-            <td colspan="4">Ayah</td>
+            <td colspan="4"  style="border-bottom:1px solid #cbcbcb; border-top:1px solid #cbcbcb">Ayah</td>
         </tr>
         <tr>
             <td>Ayah</td>
@@ -89,10 +91,10 @@
             <td>{{ $student->pekerjaan_ayah }}, {{ $student->penghasilan_ayah }} perbulan</td>
         </tr>
         <tr>
-            <td colspan="4">Wali</td>
+            <td colspan="4" style="border-bottom:1px solid #cbcbcb; border-top:1px solid #cbcbcb">Wali</td>
         </tr>
         <tr>
-            <td>Ayah</td>
+            <td>Wali</td>
             <td>{{ $student->wali }}</td>
 
             <td>Tahun Lahir</td>

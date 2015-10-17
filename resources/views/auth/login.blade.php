@@ -15,39 +15,25 @@
             font-family: 'Lato';
         }
 
-        .productbox {
-            background-color:#ffffff;
-            padding:10px;
-            margin-bottom:10px;
-            -webkit-box-shadow: 0 8px 6px -6px  #999;
-            -moz-box-shadow: 0 8px 6px -6px  #999;
-            box-shadow: 0 8px 6px -6px #999;
-        }
-
-        .producttitle {
-            font-weight:bold;
-            padding:5px 0 5px 0;
-        }
-
-        .productprice {
-            border-top:1px solid #dadada;
-            padding-top:5px;
-        }
-
-        .pricetext {
-            font-weight:bold;
-            font-size:1.4em;
-        }
-
         .footer{
             /*padding-top: 150px;*/
-            margin-top: 600px;
+            margin-top: 300px;
             padding-left: 20px;
             border-bottom: solid 1px lightgrey;
         }
     </style>
 </head>
 <body>
+
+
+<div class="jumbotron">
+    <div class="container">
+        <h1>Selamat Datang</h1>
+        <p>Sistem Akademik Al Multazam</p>
+
+    </div>
+</div>
+
 <div class="container">
     @if (count($errors) > 0)
         <div class="alert alert-danger">
@@ -58,32 +44,28 @@
             </ul>
         </div>
     @endif
-    <div class="col-md-6 col-md-offset-3 column productbox">
-        {{--<img src="http://placehold.it/460x250/e67e22/ffffff&text=HTML5" class="img-responsive">--}}
-        <div class="jumbotron">
-        	<div class="container">
-        		<h1>Welcome</h1>
-        		<p>Sistem Akademik Al Multazam</p>
 
-        	</div>
-        </div>
-        <div class="producttitle">
-            Login
-        </div>
-        <div class="productprice">
-            <form action="{{ url('/auth/login') }}" class="form-inline" method="POST">
-                <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                <div class="pull-right">
-                    <button class="btn btn-primary" type="submit">Masuk</button>
+    <div class="col-md-6 col-md-offset-3 column productbox">
+        <h4 style="text-align: center">Silahkan Login</h4>
+        <form action="{{ url('/auth/login') }}" method="post" class="form-horizontal">
+            <input type="hidden" name="_token" value="{{ csrf_token() }}">
+            <div class="form-group">
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon3">Username</span>
+                    <input type="text" name="username" class="form-control" id="basic-url" aria-describedby="basic-addon3">
                 </div>
-                <div class="pricetext">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Username" name="username">
-                        <input type="password" class="form-control" placeholder="Password" name="password">
-                    </div>
+            </div>
+            <div class="form-group">
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon3">Password</span>
+                    <input type="password" name="password" class="form-control" id="basic-url" aria-describedby="basic-addon3">
                 </div>
-            </form>
-        </div>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-block btn-primary" type="submit">Masuk</button>
+            </div>
+        </form>
+
     </div>
 
     <div class="footer">

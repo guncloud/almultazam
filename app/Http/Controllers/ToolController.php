@@ -93,6 +93,8 @@ class ToolController extends Controller
         if($q == 'biodata')
         {
             $title = 'Data Biodata';
+
+            $page = 'biodata';
         }
         elseif($q == 'akademik')
         {

@@ -79,7 +79,7 @@
                                             <p>{{ $ach->info }} <small><i>{{ $ach->date }}</i></small> </p>
                                         @endforeach
                                     </td>
-                                    <td>{{ $eks->date }}</td>
+
                                 </tr>
                             @endforeach
                             </tbody>

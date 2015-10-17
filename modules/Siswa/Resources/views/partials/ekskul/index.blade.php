@@ -103,19 +103,19 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach($ekskuls as $eks)
+                                @foreach($ekskuls as $i => $eks)
                                     <tr>
                                         <td>{{ $eks->code }}</td>
                                         <td>{{ $eks->ekskul }}</td>
                                         <td>{{ $eks->nama }}</td>
                                         <td>
-                                            <form class="deleteForm" action="{{ url('/siswa/ekskul/'.$eks->id) }}" method="post">
+                                            <form class="deleteForm" action="{{ url('/siswa/ekskul/'.$eks->ekskul_id) }}" method="post">
                                                 <input type="hidden" name="_token" value="{{ csrf_token() }}" >
                                                 <input type="hidden" name="_method" value="DELETE">
-                                                <button href="{{ url('/siswa/ekskul/'.$eks->id) }}" class="btn btn-warning btn-sm deleteEkskul" type="submit" id="deleteEkskul">
+                                                <button href="{{ url('/siswa/ekskul/'.$eks->ekskul_id) }}" class="btn btn-warning btn-sm deleteEkskul" type="submit" id="deleteEkskul">
                                                     <i class="icon wb-trash"></i>
                                                 </button>
-                                                <a href="{{ url('/siswa/ekskul/'.$eks->id) }}" class="btn btn-info btn-sm updateEkskul" type="button">
+                                                <a href="{{ url('/siswa/ekskul/'.$eks->ekskul_id) }}" data-teacher="{{ $eks->nama }}" class="btn btn-info btn-sm updateEkskul" type="button">
                                                     <i class="icon wb-pencil"></i>Edit
                                                 </a>
                                             </form>
@@ -160,6 +160,7 @@
                 e.preventDefault();
 
                 var url = $(this).attr('href');
+                var tch = $(this).attr('data-teacher');
 
                 $('#formUpdateEkskul').attr('action', url);
                 $.ajax({
@@ -168,6 +169,7 @@
                     console.log(data);
                     $('#update_teacher_id').val(data.teacher_id);
                     $('#updateCode').val(data.code);
+                    $('#updateTeacher').val(tch);
                     $('#updateEkskul').val(data.ekskul);
                 });
                 $('#modalUpdateEkskul').modal('show');

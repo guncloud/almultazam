@@ -10,6 +10,15 @@
 <div class="container">
     <h3>{{ $title }}</h3>
 
+        @if($stakeholder->photo)
+            <img src="{{ base_path('public/photos/'.$stakeholder->photo) }}" alt="..." style="height: 140px">
+        @else
+            <img src="{{ base_path('public/photos/5.jpg') }}" alt="..." style="height: 140px">
+        @endif
+
+        <br>
+        <br>
+
         NRP : {{ $stakeholder->nrp }} <br>
         Nama Lengkap : {{ $stakeholder->nama }} <br>
 
@@ -43,15 +52,15 @@
                 <td>
                     @foreach($rpt->performances as $v)
                         @if(@$reportScores[$v->id]->score < 55)
-                            Kurang
+                            E (Kurang)
                         @elseif(@$reportScores[$v->id]->score < 70)
-                            Sedang
+                            D (Sedang)
                         @elseif(@$reportScores[$v->id]->score <= 80)
-                            Cukup
+                            C (Cukup)
                         @elseif(@$reportScores[$v->id]->score <= 90)
-                            Baik
+                            B (Baik)
                         @elseif(@$reportScores[$v->id]->score > 90)
-                            Sangat baik
+                            A (Sangat Baik)
                         @else
                             -
                         @endif
@@ -68,15 +77,15 @@
             <td>Kesimpulan</td>
             <td colspan="3">
                 @if(@$totalScore < 55)
-                    Kurang
+                    E (Kurang)
                 @elseif(@$totalScore < 70)
-                    Sedang
+                    D (Sedang)
                 @elseif(@$totalScore <= 80)
-                    Cukup
+                    C (Cukup)
                 @elseif(@$totalScore <= 90)
-                    Baik
+                    B (Baik)
                 @elseif(@$totalScore > 90)
-                    Sangat baik
+                    A (Sangat Baik)
                 @else
                     -
                 @endif
@@ -102,10 +111,10 @@
         </p>
         
         <div>
-            <a style="margin-left: 45px">
+            <a style="margin-left: 20px">
                 Kepala Divisi HRD ............. ,
             </a>
-            <a style="margin-left: 355px">
+            <a style="margin-left: 330px">
                 Kepala Bagian
             </a>
         </div>

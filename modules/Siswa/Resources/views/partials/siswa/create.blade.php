@@ -44,15 +44,12 @@
                                 <label class="floating-label">Tanggal Lahir</label>
                             </div>
                             <div class="col-sm-4">
-                                <select name="classroom" id="" class="form-control">
-                                    <option>&nbsp;</option>
-                                    @if($classrooms)
-                                        @foreach($classrooms as $cls)
-                                            <option value="{{ $cls->id }}">{{ $cls->classroom    }}</option>
-                                        @endforeach
-                                    @endif
+                                <select name="jenis_kelamin" id="" class="form-control">
+                                    <option value="null"></option>
+                                    <option value="laki-laki">Laki-laki</option>
+                                    <option value="perempuan">Perempuan</option>
                                 </select>
-                                <label class="floating-label">Kelas<span class="required">*</span></label>
+                                <label class="floating-label">Jenis Kelamin</label>
                             </div>
                         </div>
                         <div class="form-group form-material floating row">
@@ -81,6 +78,19 @@
                             <div class="col-sm-4">
                                 <input type="text" class="form-control" name="email" />
                                 <label class="floating-label">Email<span class="required">*</span></label>
+                            </div>
+                        </div>
+                        <div class="form-group form-material floating row">
+                            <div class="col-sm-4">
+                                <select name="classroom" id="" class="form-control">
+                                    <option>&nbsp;</option>
+                                    @if($classrooms)
+                                        @foreach($classrooms as $cls)
+                                            <option value="{{ $cls->id }}">{{ $cls->classroom    }}</option>
+                                        @endforeach
+                                    @endif
+                                </select>
+                                <label class="floating-label">Kelas<span class="required">*</span></label>
                             </div>
                         </div>
 
