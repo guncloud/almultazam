@@ -89,8 +89,8 @@
 	<script src="{{ asset('/js/sections/menubar.js') }}"></script>
 	<script src="{{ asset('/js/sections/sidebar.js') }}"></script>
 
-	<script src="{{ asset('/js/configs/config-colors.js') }}"></script>
-	<script src="{{ asset('/js/configs/config-tour.js') }}"></script>
+	{{--<script src="{{ asset('/js/configs/config-colors.js') }}"></script>--}}
+	{{--<script src="{{ asset('/js/configs/config-tour.js') }}"></script>--}}
 
 	<script src="{{ asset('/js/components/asscrollable.js') }}"></script>
 	<script src="{{ asset('/js/components/animsition.js') }}"></script>

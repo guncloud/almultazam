@@ -69,6 +69,22 @@
                         </ul>
                     </li>
 
+                    <li class="site-menu-item has-sub">
+                        <a href="javascript:void(0)" data-slug="page">
+                            <i class="site-menu-icon fa-question" aria-hidden="true"></i>
+                            <span class="site-menu-title">Help</span>
+                            <span class="site-menu-arrow"></span>
+                        </a>
+                        <ul class="site-menu-sub">
+                            <li class="site-menu-item">
+                                <a class="animsition-link" href="{{ url('/siswa/siswa') }}" data-slug="page-faq">
+                                    <i class="wb-menu-icon" aria-hidden="true"></i>
+                                    <span class="site-menu-title">Siswa</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
                 </ul>
             </div>
         </div>
