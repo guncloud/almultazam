@@ -26,7 +26,7 @@
 <body>
 
 
-<div class="jumbotron">
+<div class="jumbotron" style="background-color: #8E9513; color: white">
     <div class="container">
         <h1>Selamat Datang</h1>
         <p>Sistem Akademik Al Multazam</p>

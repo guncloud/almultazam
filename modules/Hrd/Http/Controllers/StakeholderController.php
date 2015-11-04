@@ -30,6 +30,9 @@ class StakeholderController extends Controller {
         $data['positions'] = (!$positions->isEmpty()) ? $positions : false;
         $data['stakeholders'] = (count($stakeholders) > 0) ? $stakeholders : false;
         $data['divisions'] = (!$divisions->isEmpty()) ? $divisions : false;
+
+//        dd($stakeholders->toArray());
+
         return view('hrd::partials.stakeholder.index', $data);
     }
 

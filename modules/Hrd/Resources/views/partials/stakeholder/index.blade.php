@@ -77,9 +77,10 @@
                 </div>
                 <div class="panel-body">
                     @if($stakeholders)
-                        <table class="table table-hover dataTable table-striped width-full" id="tableStakeholder">
+                        <table class="table table-hover dataTable table-striped table-bordered width-full" id="tableStakeholder">
                             <thead>
                             <tr>
+                                <th>No</th>
                                 <th>Name</th>
                                 <th>TTL</th>
                                 <th>J. Kelamin</th>
@@ -90,14 +91,21 @@
                             </tr>
                             </thead>
                             <tbody>
-                            @foreach($stakeholders as $v)
+                            @foreach($stakeholders as $i => $v)
                                 <tr>
+                                    <td>{{ $i+1 }}</td>
                                     <td>{{ $v->nama }}</td>
                                     <td>{{ $v->tempat_lahir }}, {{ $v->tanggal_lahir }}</td>
-                                    <td>{{ $v->jenis_kelamin }}</td>
-                                    <td>{{ $v->nik }}</td>
-                                    <td>{{ $v->jabatan }}</td>
-                                    <td>{{ $v->alamat }}</td>
+                                    <td>{{ ($v->jenis_kelamin == 'l') ? 'Laki - laki' : 'Perempuan' }}</td>
+                                    <td>{{ $v->nrp }}</td>
+                                    <td>
+                                        @if($v->positions)
+                                            @foreach($v->positions as $post)
+                                                {{ $post->position }},
+                                            @endforeach
+                                        @endif
+                                    </td>
+                                    <td>{{ $v->alamat_rumah }}</td>
                                     <td class="col-md-2">
                                         <form class="deleteForm" action="{{ url('/hrd/stakeholder/'.$v->id) }}" method="post">
                                             <input type="hidden" name="_token" value="{{ csrf_token() }}" >
@@ -121,7 +129,7 @@
                         No data
                     @endif
                 </div>
-            </div>
+            </div>/in
         </div>
     </div>
 
@@ -152,6 +160,51 @@
                         width: 500,
                         animation : 'pop'
                     };
+
+            $(document).ready(function() {
+
+                var tableContent = $('#popFormExcel').html(),
+                        tableSettings = {
+                            title: 'Import data siswa',
+                            content: tableContent,
+                            width: 500,
+                            animation : 'pop'
+                        };
+
+                $('#btnPopFormExcel').webuiPopover($.extend({}, defaults,
+                        tableSettings));
+
+                var tableContentKelas = $('#popFormKelas').html(),
+                        tableSettings = {
+                            title: 'Filter per kelas',
+                            content: tableContentKelas,
+                            width: 500,
+                            animation : 'pop'
+                        };
+
+                $('#btnPopFormKelas').webuiPopover($.extend({}, defaults,
+                        tableSettings));
+
+                var defaults = $.components.getDefaults("dataTable");
+
+                var options = $.extend(true, {}, defaults, {
+                    "aoColumnDefs": [{
+                        'bSortable': false,
+                        'aTargets': [-1]
+                    }],
+                    "iDisplayLength": 5,
+                    "aLengthMenu": [
+                        [5, 10, 25, 50, -1],
+                        [5, 10, 25, 50, "All"]
+                    ],
+                    "sDom": '<"dt-panelmenu clearfix"Tfr>t<"dt-panelfooter clearfix"ip>',
+                    "oTableTools": {
+                        "sSwfPath": "{{ asset('/vendor/datatables-tabletools/swf/copy_csv_xls_pdf.swf') }}"
+                    }
+                });
+
+                $('#tableStakeholder').dataTable(options);
+            });
 
             $('#btnPopFormExcel').webuiPopover($.extend({}, defaults,
                     tableSettings));

@@ -8,6 +8,7 @@ class Position extends Model {
 
     public function stakeholders()
     {
-        return $this->hasMany('/app/Stakeholder');
+        return $this->belongsToMany('/app/Stakeholder');
     }
+
 }

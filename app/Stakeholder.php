@@ -29,6 +29,6 @@ class Stakeholder extends Model
 
     public function positions()
     {
-        return $this->hasMany('Modules\Hrd\Entities\Position');
+        return $this->belongsToMany('Modules\Hrd\Entities\Position');
     }
 }

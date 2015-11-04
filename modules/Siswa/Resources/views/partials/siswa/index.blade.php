@@ -94,11 +94,12 @@
                 </div>
                 <div class="panel-body">
                     @if($students == false)
-                        No data, You can import or add new data sit
+                        No data, You can import or add new data
                     @else
                         <table class="table table-hover dataTable table-striped width-full" id="tableStakeholder">
                             <thead>
                             <tr>
+                                <th>No</th>
                                 <th>Name</th>
                                 <th>NIS</th>
                                 <th>NISN</th>
@@ -109,13 +110,14 @@
                             </tr>
                             </thead>
                             <tbody>
-                            @foreach($students as $v)
+                            @foreach($students as $i => $v)
                                 <tr>
+                                    <td>{{ $i+1 }}</td>
                                     <td>{{ $v->nama }}</td>
                                     <td>{{ $v->nis }}</td>
                                     <td>{{ $v->nisn }}</td>
                                     <td>{{ $v->nik }}</td>
-                                    <td>{{ $v->jenis_kelamin }}</td>
+                                    <td>{{ ($v->jenis_kelamin == 'l') ? 'Laki - laki' : 'Perempuan' }}</td>
                                     <td>{{ $v->telepon }} / {{ $v->handphone }}</td>
                                     <td>
                                         <form class="deleteForm" action="{{ url('/siswa/siswa/'.$v->student_id) }}" method="post">
