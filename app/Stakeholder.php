@@ -27,6 +27,11 @@ class Stakeholder extends Model
         return $this->hasMany('Modules\Hrd\Entities\Vacation');
     }
 
+    public function golongan()
+    {
+        return $this->belongsTo('Modules\Hrd\Entities\Golongan');
+    }
+
     public function positions()
     {
         return $this->belongsToMany('Modules\Hrd\Entities\Position');

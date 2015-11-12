@@ -250,7 +250,7 @@
                                                 <div class="media-body">
                                                     <h4 class="media-heading">Golongan</h4>
                                                     <p>
-                                                        {{ $stakeholder->golongan }}
+                                                        {{ $stakeholder->golongan->golongan }}
                                                     </p>
                                                 </div>
                                             </div>

@@ -1,6 +1,7 @@
 <?php namespace Modules\Hrd\Http\Controllers;
 
 use Illuminate\Support\Facades\Response;
+use Modules\Hrd\Entities\Golongan;
 use Modules\Hrd\Entities\Position;
 use Modules\Hrd\Entities\PositionStakeholder;
 use Pingpong\Modules\Routing\Controller;
@@ -26,8 +27,10 @@ class StakeholderController extends Controller {
 
         $divisions = Division::all();
         $positions = Position::all();
+        $golongans = Golongan::all();
 
         $data['positions'] = (!$positions->isEmpty()) ? $positions : false;
+        $data['golongans'] = (!$golongans->isEmpty()) ? $golongans : false;
         $data['stakeholders'] = (count($stakeholders) > 0) ? $stakeholders : false;
         $data['divisions'] = (!$divisions->isEmpty()) ? $divisions : false;
 
@@ -41,8 +44,10 @@ class StakeholderController extends Controller {
         $data['title'] = 'Pegawai';
         $data['divisions'] = Division::all();
         $positions = Position::all();
+        $golongans = Golongan::all();
 
         $data['positions'] = (!$positions->isEmpty()) ? $positions : false;
+        $data['golongans'] = (!$golongans->isEmpty()) ? $golongans : false;
         return view('hrd::partials.stakeholder.create', $data);
     }
 
@@ -52,6 +57,7 @@ class StakeholderController extends Controller {
         $data['divisions'] = Division::all();
         $data['title'] = 'Update';
         $positions = Position::all();
+        $golongans = Golongan::all();
 
         $position = DB::table('stakeholders')
             ->select('positions.id','position')
@@ -61,7 +67,7 @@ class StakeholderController extends Controller {
             ->get();
 
         $data['position'] = (count($position) > 0) ? $position : false;
-
+        $data['golongans'] = (!$golongans->isEmpty()) ? $golongans : false;
         $data['positions'] = (!$positions->isEmpty()) ? $positions : false;
 
         return view('hrd::partials.stakeholder.edit', $data);

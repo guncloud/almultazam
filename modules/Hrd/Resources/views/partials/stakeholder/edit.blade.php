@@ -145,7 +145,14 @@
                                 <small class="help-block">Tahun-Bulan-Tanggal</small>
                             </div>
                             <div class="col-sm-4">
-                                <input type="text" class="form-control" name="golongan" value="{{ $stakeholder->golongan }}"/>
+                                <select class="form-control" name="golongan_id" id="">
+                                    <option>&nbsp;</option>
+                                    @if($golongans)
+                                        @foreach($golongans as $gol)
+                                            <option value="{{ $gol->id }}" {{ ($stakeholder->golongan_id == $gol->id) ? 'selected' : '' }} >{{ $gol->golongan }}</option>
+                                        @endforeach
+                                    @endif
+                                </select>
                                 <label class="floating-label">Golongan</label>
                             </div>
                         </div>
