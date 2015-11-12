@@ -101,7 +101,7 @@ class StakeholderController extends Controller {
                 Session::flash('info', 'Error inserting data');
             }
 
-            return redirect('/hrd/stakeholder/create');
+            return redirect('/hrd/stakeholder');
         }
     }
 
@@ -171,8 +171,7 @@ class StakeholderController extends Controller {
     public function update(Request $request ,$id)
     {
 
-        //cek photo
-        //dd($request->all());
+//        dd($request->input('position'));
 
         $rec = Stakeholder::find($id);
 
@@ -207,17 +206,21 @@ class StakeholderController extends Controller {
         }
 
         $positions = $request->input('position');
-        foreach($positions as $pos){
-            $cek = PositionStakeholder ::where('stakeholder_id', '=', $id)
-                ->where('position_id', '=', $pos)
-                ->get();
-            if(count($cek) > 0){
-                PositionStakeholder::where('stakeholder_id', '=', $id)
-                    ->update(['position_id' => $pos]);
-            }else{
-                PositionStakeholder::create(['stakeholder_id' => $id,'position_id' => $pos]);
-            }
+        if($positions){
+            foreach($positions as $pos){
+                $cek = PositionStakeholder ::where('stakeholder_id', '=', $id)
+                    ->where('position_id', '=', $pos)
+                    ->get();
 
+                if(count($cek) > 0){
+                    PositionStakeholder::where('stakeholder_id', '=', $id)
+                        ->delete();
+                }
+
+                PositionStakeholder::create(['stakeholder_id' => $id,'position_id' => $pos]);
+
+
+            }
         }
 
         return redirect('/hrd/stakeholder/'.$id.'/edit');

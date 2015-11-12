@@ -26,14 +26,13 @@
             </div>
         </div>
         <div class="page-content">
-            <div class="panel">
-                <div class="panel-heading">
-                    <h3 class="panel-title">{{ $sub_title or null }}</h3>
-                </div>
-                <div class="panel-body container-fluid">
-                    <form autocomplete="off" id="form_new_stakeholder" method="post" action="{{ url('/hrd/stakeholder') }}" enctype="multipart/form-data">
+            <form autocomplete="off" id="form_new_stakeholder" method="post" action="{{ url('/hrd/stakeholder') }}" enctype="multipart/form-data">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Umum</h3>
+                    </div>
+                    <div class="panel-body container-fluid">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}" >
-                        <h4>Umum</h4>
                         <div class="form-group form-material floating row">
                             <div class="col-sm-4">
                                 <input type="text" class="form-control" name="nama" required/>
@@ -104,11 +103,15 @@
                                 <label class="floating-label">Pekerjaan Suami/Istri</label>
                             </div>
                         </div>
-                        <br>
+                    </div>
+                </div>
 
                         {{--Kepegawaian--}}
-                        <h4>Kepegawaian</h4>
-                        <hr>
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Kepegawaian</h3>
+                    </div>
+                    <div class="panel-body container-fluid">
                         <div class="form-group form-material floating row">
                             <div class="col-sm-3">
                                 <select name="division_id" id="" class="form-control">
@@ -172,91 +175,127 @@
                                 <label class="floating-label">Golongan</label>
                             </div>
                         </div>
-                        <br>
+                    </div>
+                </div>
 
                         {{--Akademik--}}
-                        <h4>Pendidikan</h4>
-                        <hr>
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Pendidikan</h3>
+                    </div>
+                    <div class="panel-body container-fluid">
                         <div class="form-group form-material floating row">
                             <div class="col-sm-3">
                                 <input type="text" class="form-control" name="tk" />
                                 <label class="floating-label">TK</label>
                             </div>
                             <div class="col-sm-3">
+                                <input type="text" class="form-control" name="tahun_lulus_tk" />
+                                <label class="floating-label">Tahun Lulus</label>
+                            </div>
+                            <div class="col-sm-3">
                                 <input type="text" class="form-control" name="sd" />
                                 <label class="floating-label">SD</label>
+                            </div>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" name="tahun_lulus_sd" />
+                                <label class="floating-label">Tahun Lulus</label>
                             </div>
                             <div class="col-sm-3">
                                 <input type="text" class="form-control" name="smp" />
                                 <label class="floating-label">SMP</label>
                             </div>
                             <div class="col-sm-3">
+                                <input type="text" class="form-control" name="tahun_lulus_smp" />
+                                <label class="floating-label">Tahun Lulus</label>
+                            </div>
+                            <div class="col-sm-3">
                                 <input type="text" class="form-control" name="sma" />
                                 <label class="floating-label">SMA</label>
                             </div>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" name="tahun_lulus_sma" />
+                                <label class="floating-label">Tahun Lulus</label>
+                            </div>
                         </div>
 
                         <div class="form-group form-material floating row">
-                            <div class="col-sm-3">
+                            <div class="col-sm-4">
                                 <input type="text" class="form-control" name="universitas_diploma" />
                                 <label class="floating-label">Diploma</label>
                             </div>
-                            <div class="col-sm-3">
+                            <div class="col-sm-2">
                                 <input type="text" class="form-control" name="fakultas_diploma" />
                                 <label class="floating-label">Fakultas</label>
                             </div>
-                            <div class="col-sm-3">
+                            <div class="col-sm-2">
                                 <input type="text" class="form-control" name="jurusan_diploma" />
                                 <label class="floating-label">Jurusan</label>
                             </div>
-                            <div class="col-sm-3">
+                            <div class="col-sm-2">
                                 <input type="text" class="form-control" name="program_pendidikan_diploma" />
                                 <label class="floating-label">Program Studi</label>
                             </div>
+                            <div class="col-sm-2">
+                                <input type="text" class="form-control" name="tahun_lulus_diploma" />
+                                <label class="floating-label">Tahun Lulus</label>
+                            </div>
                         </div>
 
                         <div class="form-group form-material floating row">
-                            <div class="col-sm-3">
+                            <div class="col-sm-4">
                                 <input type="text" class="form-control" name="universitas_s1" />
                                 <label class="floating-label">Universitas S1</label>
                             </div>
-                            <div class="col-sm-3">
+                            <div class="col-sm-2">
                                 <input type="text" class="form-control" name="fakultas_s1" />
                                 <label class="floating-label">Fakultas S1</label>
                             </div>
-                            <div class="col-sm-3">
+                            <div class="col-sm-2">
                                 <input type="text" class="form-control" name="jurusan_s1" />
                                 <label class="floating-label">Jurusan S1</label>
                             </div>
-                            <div class="col-sm-3">
+                            <div class="col-sm-2">
                                 <input type="text" class="form-control" name="program_pendidikan_s1" />
                                 <label class="floating-label">Program Studi S1</label>
                             </div>
+                            <div class="col-sm-2">
+                                <input type="text" class="form-control" name="tahun_lulus_s1" />
+                                <label class="floating-label">Tahun Lulus</label>
+                            </div>
                         </div>
                         <div class="form-group form-material floating row">
-                            <div class="col-sm-3">
+                            <div class="col-sm-4">
                                 <input type="text" class="form-control" name="universitas_s2" />
                                 <label class="floating-label">Universitas S2</label>
                             </div>
-                            <div class="col-sm-3">
+                            <div class="col-sm-2">
                                 <input type="text" class="form-control" name="fakultas_s2" />
                                 <label class="floating-label">Fakultas S2</label>
                             </div>
-                            <div class="col-sm-3">
+                            <div class="col-sm-2">
                                 <input type="text" class="form-control" name="jurusan_s2" />
                                 <label class="floating-label">Jurusan S2</label>
                             </div>
-                            <div class="col-sm-3">
+                            <div class="col-sm-2">
                                 <input type="text" class="form-control" name="program_pendidikan_s2" />
                                 <label class="floating-label">Program Studi S2</label>
                             </div>
+                            <div class="col-sm-2">
+                                <input type="text" class="form-control" name="tahun_lulus_s2" />
+                                <label class="floating-label">Tahun Lulus</label>
+                            </div>
                         </div>
-                        <br>
+                    </div>
+                </div>
                         {{--/Akademik--}}
 
                         {{--Lembaga--}}
-                        <h4>Pendidikan Non Formal</h4>
-                        <hr>
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Pendidikan Non-Formal</h3>
+                    </div>
+                    <div class="panel-body container-fluid">
                         <div class="form-group form-material floating row">
                             <div class="col-sm-3">
                                 <input type="text" class="form-control" name="nama_lembaga_1" />
@@ -287,12 +326,16 @@
                                 <label class="floating-label">Jenis Pendidikan</label>
                             </div>
                         </div>
-                        <br>
+                    </div>
+                </div>
                         {{--/Lembaga--}}
 
                         {{--Pengalaman Kerja--}}
-                        <h4>Pengalaman Kerja</h4>
-                        <hr>
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Pengalaman Kerja</h3>
+                    </div>
+                    <div class="panel-body container-fluid">
                         <div class="form-group form-material floating row">
                             <div class="col-md-2">
                                 <input type="text" class="form-control" name="lembaga_pengalaman_kerja_1" />
@@ -337,12 +380,15 @@
                                 <label class="floating-label">Akhir Kerja</label>
                             </div>
                         </div>
-                        <br>
+                    </div>
+                </div>
                         {{--/Pengalaman Kerja--}}
 
-                        {{--Organisasi--}}
-                        <h4>Pengalaman Organisasi</h4>
-                        <hr>
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Pengalaman Organisasi</h3>
+                    </div>
+                    <div class="panel-body container-fluid">
                         <div class="form-group form-material floating row">
                             <div class="col-sm-6">
                                 <input type="text" class="form-control" name="lembaga_organisasi_1" />
@@ -373,12 +419,15 @@
                                 <label class="floating-label">Jabatan</label>
                             </div>
                         </div>
-                        <br>
-                        {{--/Organisasi--}}
+                    </div>
+                </div>
 
                         {{--Keahlian--}}
-                        <h4>Keahlian</h4>
-                        <hr>
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Keahlian</h3>
+                    </div>
+                    <div class="panel-body container-fluid">
                         <div class="form-group form-material floating row">
                             <div class="col-sm-4">
                                 <input type="text" class="form-control" name="keahlian_1" />
@@ -393,12 +442,13 @@
                                 <label class="floating-label">Keahlian 3</label>
                             </div>
                         </div>
-                        <br>
-                        {{--/Keahlian--}}
-
-                        {{--Anak--}}
-                        <h4>Anak</h4>
-                        <hr>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Anak</h3>
+                    </div>
+                    <div class="panel-body container-fluid">
                         <div class="form-group form-material floating row">
                             <div class="col-sm-3">
                                 <input type="text" class="form-control" name="child_1" />
@@ -440,9 +490,9 @@
                         <button class="btn btn-floating btn-fixed" type="submit" id="submit_new_stakeholder">
                             <i class="icon wb-check" aria-hidden="true"></i>
                         </button>
-                    </form>
+                    </div>
                 </div>
-            </div>
+            </form>
         </div>
     </div>
 

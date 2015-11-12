@@ -448,14 +448,6 @@
                     [{"id":"2127","text":"Henry Ford"},{"id":"2199","text":"Tom Phillips"}]
             );
 
-            var notif = "{{ Session::has('info') or '' }}";
-
-            if(notif != ''){
-                toastr.success("{{ Session::get('info') }}", 'Info',{
-                    positionClass : 'toast-top-full-width',
-                });
-            };
-
             $('#form_new_stakeholder').formValidation({
                 framework: "bootstrap",
                 button: {
