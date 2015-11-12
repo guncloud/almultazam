@@ -20,6 +20,8 @@ class RecitationController extends Controller {
 	{
 		$classroom = Classroom::all();
 
+        $recitations = false;
+
         if($request->all()){
             $year = Config::where('slug', '=', 'tahun-ajar')->first()->value;
 
@@ -45,7 +47,7 @@ class RecitationController extends Controller {
             $recitations = false;
         }
 
-        $data['recitations'] = $recitations;
+        $data['recitations'] = ($recitations) ? $recitations : false;
         $data['students'] = $students;
 		$data['classrooms'] = (!$classroom->isEmpty()) ? $classroom : false;
 		$data['title'] = 'Hafalan';

@@ -14,7 +14,7 @@ class Classroom extends Model {
                         'stakeholders.nama as guru', 'classrooms.*')
                     ->join('stakeholders', 'stakeholders.id', '=', 'classrooms.teacher_id')
                     ->join('divisions', 'divisions.id', '=', 'stakeholders.division_id')
-                    ->where('divisions.slug', '=', 'smpit')
+                    ->where('divisions.slug', '=', 'smpit-al-multazam')
                     ->get();
 
         return $rec;

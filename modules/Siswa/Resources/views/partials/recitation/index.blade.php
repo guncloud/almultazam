@@ -26,7 +26,7 @@
                             <input type="hidden" name="student_id" id="student_id">
                             <input type="hidden" name="semester" value="{{ $_GET['semester'] or '' }}">
                             <input type="hidden" name="classroom" id="kelas" value="{{ $_GET['kelas'] or null }}">
-                            <input type="hidden" name="date" value="{{ $_GET['date'] or null }}">
+                            <input type="hidden" name="date" value="{{ $_GET['date'] or null }}" >
                             <div class="form-group">
                                 <input type="text" name="juz" placeholder="Juz" class="form-control">
                             </div>
@@ -55,21 +55,21 @@
                 <form action="{{ url('/siswa/recitation') }}" method="get" class="form-inline">
                     @if($classrooms)
                         <div class="form-group">
-                            <input type="text" class="form-control" id="date" name="date" value="{{ $_GET['date'] or '' }}">
+                            <input placeholder="Tanggal" type="text" class="form-control" id="date" name="date" value="{{ $_GET['date'] or '' }}">
                         </div>
                         <div class="form-group">
                             <select name="kelas" id="kelas" class="form-control" placeholder="Pilih Kelas">
                                 <option >Pilih Kelas</option>
                                 @foreach($classrooms as $cls)
-                                    <option value="{{ $cls->id }}">{{ $cls->classroom }}</option>
+                                    <option value="{{ $cls->id }}" {{ ($cls->id == @$_GET['kelas'] ? 'selected' : '') }}>{{ $cls->classroom }}</option>
                                 @endforeach
                             </select>
                         </div>
                         <div class="form-group">
                             <select name="semester" id="semester" class="form-control">
                                 <option>Pilih Semester</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
+                                <option value="1" {{ (1 == @$_GET['semester']) ? 'selected' : '' }}>1</option>
+                                <option value="2" {{ (2 == @$_GET['semester']) ? 'selected' : '' }}>2</option>
                             </select>
                         </div>
                         <div class="form-group">

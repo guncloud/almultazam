@@ -23,15 +23,15 @@
                             <select name="kelas" id="kelas" class="form-control" placeholder="Pilih Kelas">
                                 <option >Pilih Kelas</option>
                                 @foreach($classrooms as $cls)
-                                    <option value="{{ $cls->id }}">{{ $cls->classroom }}</option>
+                                    <option value="{{ $cls->id }}" {{ ($cls->id == @$_GET['kelas']) ? 'selected' : '' }}>{{ $cls->classroom }}</option>
                                 @endforeach
                             </select>
                         </div>
                         <div class="form-group">
                             <select name="semester" id="semester" class="form-control">
                                 <option>Pilih Semester</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
+                                <option value="1" {{ (1 == @$_GET['semester']) ? 'selected' : '' }}>1</option>
+                                <option value="2" {{ (2 == @$_GET['semester']) ? 'selected' : '' }}>2</option>
                             </select>
                         </div>
                         <div class="form-group">
