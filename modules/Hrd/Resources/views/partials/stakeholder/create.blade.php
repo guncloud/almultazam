@@ -162,7 +162,7 @@
                             </div>
                             <div class="col-sm-4">
                                 <input type="text" class="form-control" name="golongan" />
-                                <label class="floating-label">Golongan<span class="required">*</span></label>
+                                <label class="floating-label">Golongan</label>
                             </div>
                         </div>
                         <br>

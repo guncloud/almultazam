@@ -95,6 +95,9 @@
 	<script src="{{ asset('/js/components/bootstrap-datepicker.js') }}"></script>
     <script src="{{ asset('/js/jquery.autocomplete.js') }}"></script>
 
+    <script src="{{ asset('/vendor/toastr/toastr.js') }}"></script>
+    <script src="{{ asset('/js/components/toastr.js') }}"></script>
+
 
 	<script>
 		(function(document, window, $) {
@@ -109,6 +112,14 @@
 
     <script>
         $(function(){
+			var notif = "{{ Session::has('info') or '' }}";
+
+			if(notif != ''){
+				toastr.success("{{ Session::get('info') }}", 'Info',{
+					positionClass : 'toast-top-full-width',
+				});
+			};
+
             $('#searchStakeholder').autocomplete({
                 serviceUrl: "{{ url('/hrd/stakeholder/search') }}",
                 onSelect: function (suggestion) {

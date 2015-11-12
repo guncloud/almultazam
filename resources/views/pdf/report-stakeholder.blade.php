@@ -8,7 +8,9 @@
 </head>
 <body>
 <div class="container">
-    <h3>{{ $title }}</h3>
+    <h3 style="text-align: center">RAPORT PEGAWAI
+        YAYASAN PENDIDIKAN ISLAM
+        AL-MULTAZAM HUSNUL KHOTIMAH</h3>
 
         @if($stakeholder->photo)
             <img src="{{ base_path('public/photos/'.$stakeholder->photo) }}" alt="..." style="height: 140px">
@@ -114,8 +116,8 @@
             <a style="margin-left: 20px">
                 Kepala Divisi HRD ............. ,
             </a>
-            <a style="margin-left: 330px">
-                Kepala Bagian
+            <a style="margin-left: 300px">
+                Kepala Disivsi/Bagian
             </a>
         </div>
         <br>

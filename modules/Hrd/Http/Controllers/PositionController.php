@@ -29,5 +29,39 @@ class PositionController extends Controller {
 
         return redirect('/hrd/position');
     }
+
+    public function show($id)
+    {
+        $position = Position::find($id);
+        $title = 'Edit Jabatan';
+
+        return view('hrd::partials.position.show', compact('position', 'title'));
+    }
+
+    public function update($id, Request $request)
+    {
+        $data = Position::find($id);
+        $data->position = $request->input('position');
+        $data->slug = str_slug($request->input('position'), '-');
+        if($data->save()){
+            Session::flash('info', 'Data inserted');
+        }else{
+            Session::flash('info', 'Error');
+        }
+
+        return redirect('/hrd/position/');
+    }
+
+    public function destroy($id)
+    {
+        $rec = Position::destroy($id);
+        if($rec){
+            Session::flash('info', 'Data deleted');
+        }else{
+            Session::flash('info', 'Error');
+        }
+
+        return redirect('/hrd/position');
+    }
 	
 }

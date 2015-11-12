@@ -9,7 +9,7 @@ class DivisionController extends Controller {
 	
 	public function index()
 	{
-		$data['title'] = 'Divisi';
+		$data['title'] = 'Divisi/Bagian';
         $divisions = Division::all();
 
         $data['divisions'] = (!$divisions->isEmpty()) ? $divisions : false;
@@ -51,6 +51,7 @@ class DivisionController extends Controller {
 
     public function destroy(Request $request, $id)
     {
+
         $rec = Division::destroy($id);
         if($rec){
             Session::flash('info', 'Data deleted');

@@ -27,13 +27,19 @@
                             <li class="site-menu-item">
                                 <a class="animsition-link" href="{{ url('/hrd/division') }}" data-slug="page-register">
                                     <i class="site-menu-icon " aria-hidden="true"></i>
-                                    <span class="site-menu-title">Data Divisi</span>
+                                    <span class="site-menu-title">Data Divisi/Bagian</span>
                                 </a>
                             </li>
                             <li class="site-menu-item">
                                 <a class="animsition-link" href="{{ url('/hrd/position') }}" data-slug="page-register">
                                     <i class="site-menu-icon " aria-hidden="true"></i>
                                     <span class="site-menu-title">Data Jabatan</span>
+                                </a>
+                            </li>
+                            <li class="site-menu-item">
+                                <a class="animsition-link" href="{{ url('/hrd/golongan') }}" data-slug="page-register">
+                                    <i class="site-menu-icon " aria-hidden="true"></i>
+                                    <span class="site-menu-title">Data Golongan</span>
                                 </a>
                             </li>
                         </ul>
