@@ -86,7 +86,7 @@
                                 <th>J. Kelamin</th>
                                 <th>NIK</th>
                                 <th>Jabatan</th>
-                                <th>Alamat</th>
+                                <th>Handphone</th>
                                 <th class="col-md-3">Option</th>
                             </tr>
                             </thead>
@@ -105,7 +105,7 @@
                                             @endforeach
                                         @endif
                                     </td>
-                                    <td>{{ $v->alamat_rumah }}</td>
+                                    <td>{{ $v->kontak }}</td>
                                     <td class="col-md-2">
                                         <form class="deleteForm" action="{{ url('/hrd/stakeholder/'.$v->id) }}" method="post">
                                             <input type="hidden" name="_token" value="{{ csrf_token() }}" >
@@ -129,7 +129,7 @@
                         No data
                     @endif
                 </div>
-            </div>/in
+            </div>
         </div>
     </div>
 

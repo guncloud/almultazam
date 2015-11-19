@@ -33,7 +33,7 @@ class SiswaController extends Controller {
 
         $data['classrooms'] = (!$classrooms->isEmpty()) ? $classrooms : false;
 
-        return view('siswa::partials.siswa.create', $data);
+        return view('siswa::partials.siswa.index', $data);
     }
 
     public function edit($uid)

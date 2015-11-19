@@ -46,6 +46,13 @@
                     </li>
 
                     <li class="site-menu-item ">
+                        <a href="{{ url('/hrd/config') }}" data-slug="dashboard">
+                            <i class="site-menu-icon wb-settings" aria-hidden="true"></i>
+                            <span class="site-menu-title">Setting</span>
+                        </a>
+                    </li>
+
+                    <li class="site-menu-item ">
                         <a href="{{ url('/hrd/indicator') }}" data-slug="dashboard">
                             <i class="site-menu-icon wb-clipboard" aria-hidden="true"></i>
                             <span class="site-menu-title">Indicator Penilaian</span>

@@ -16,5 +16,6 @@ Route::group(['prefix' => 'hrd', 'namespace' => 'Modules\Hrd\Http\Controllers', 
 	Route::resource('/vacation' ,'VacationController');
 	Route::resource('/position' ,'PositionController');
 	Route::resource('/golongan' ,'GolonganController');
+	Route::resource('/config' ,'ConfigController');
 
 });

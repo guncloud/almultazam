@@ -127,7 +127,7 @@
 
         <div>
             <a style="border-bottom: 1px solid black">
-                H. Dul Ahmad Bachtiar, Lc, M.Pd.I
+                {{ $kepala_divisi->value or 'Kepala divisi belum di set' }}
             </a>
             <a style="border-bottom: 1px solid black; margin-left: 285px">
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

@@ -68,6 +68,7 @@ class ToolController extends Controller
             $totalScore = 0;
         }
 
+        $data['kepala_divisi'] = Config::where('slug', '=', 'kepala-divisi')->first();
         $data['reportScores'] = $reportScores;
         $data['totalScore'] = $totalScore;
         $data['report'] = $report;
