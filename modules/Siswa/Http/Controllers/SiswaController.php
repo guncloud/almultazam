@@ -33,7 +33,7 @@ class SiswaController extends Controller {
 
         $data['classrooms'] = (!$classrooms->isEmpty()) ? $classrooms : false;
 
-        return view('siswa::partials.siswa.index', $data);
+        return view('siswa::partials.siswa.create', $data);
     }
 
     public function edit($uid)
@@ -69,7 +69,7 @@ class SiswaController extends Controller {
             Session::flash('info', 'Error');
         }
 
-        return redirect('/siswa/siswa/'.$uid.'/edit');
+        return redirect('/siswa/siswa/');
     }
 
     public function show($userId)
@@ -149,7 +149,7 @@ class SiswaController extends Controller {
             }else{
                 Session::flash('info', 'Error');
             }
-            return redirect('siswa/siswa/create');
+            return redirect('siswa/siswa');
         }
     }
 

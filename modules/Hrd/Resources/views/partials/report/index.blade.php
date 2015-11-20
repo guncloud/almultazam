@@ -54,10 +54,10 @@
                                 NRP : {{ $stakeholder->nrp }} <br>
                             </div>
                             <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                                Bagian : {{ $stakeholder->division->division }} <br >
+                                Bagian : {{ @$stakeholder->division->division }} <br >
                             </div>
                             <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                                Jabatan : {{ $stakeholder->jabatan }}
+                                Jabatan : {{ @$stakeholder->jabatan }}
                             </div>
                         </div>
                         <hr>
@@ -123,13 +123,6 @@
 
     <script>
         $(function(){
-            var notif = "{{ Session::has('info') or '' }}";
-            console.log(notif);
-            if(notif != ''){
-                toastr.success("{{ Session::get('info') }}", 'Info',{
-                    positionClass : 'toast-top-full-width',
-                });
-            }
 
             $('#stakeholder').autocomplete({
                 serviceUrl: "{{ url('/hrd/stakeholder/search') }}",

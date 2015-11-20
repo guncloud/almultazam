@@ -24,7 +24,7 @@
         NRP : {{ $stakeholder->nrp }} <br>
         Nama Lengkap : {{ $stakeholder->nama }} <br>
 
-        Bagian : {{ $stakeholder->division->division }} <br >
+        Bagian : {{ @$stakeholder->division->division }} <br >
         Jabatan : {{ $stakeholder->jabatan }} <br>
     <br>
 
@@ -98,29 +98,23 @@
 
     <div>
         <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+
         <p style="text-align: right">
             Kuningan, <?php echo date('d-m-y') ?> 
         </p>
         
         <p>
-            Mengatahui :
+            Mengetahui :
         </p>
         
         <div>
             <a style="margin-left: 20px">
-                Kepala Divisi HRD ............. ,
+                Kepala Divisi HRD ,
             </a>
-            <a style="margin-left: 300px">
+            <a style="margin-left: 350px">
                 Kepala Disivsi/Bagian
             </a>
         </div>
-        <br>
         <br>
         <br>
         <br>

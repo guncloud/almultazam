@@ -50,9 +50,9 @@
                         <div class="form-group form-material floating row">
 
                             <div class="col-sm-4">
-                                <input type="text" class="form-control" id="tanggal_lahir" name="tanggal_lahir" data-plugin="formatter" data-pattern="[[9999]]-[[99]]-[[99]]" required/>
+                                <input type="text" class="form-control" id="tanggal_lahir" name="tanggal_lahir" data-plugin="formatter" data-pattern="[[99]]-[[99]]-[[9999]]" required/>
                                 <label class="floating-label">Tanggal Lahir<span class="required">*</span></label>
-                                <small class="help-block">Tahun-Bulan-Tanggal</small>
+                                <small class="help-block">Tanggal-Bulan-Tahun</small>
                             </div>
 
                             <div class="col-sm-4">
@@ -91,6 +91,7 @@
                                     <option></option>
                                     <option value="belum">Belum Menikah</option>
                                     <option value="menikah">Menikah</option>
+                                    <option value="cerai">Cerai Hidup/Mati</option>
                                 </select>
                                 <label class="floating-label">Status Marital<span class="required">*</span></label>
                             </div>

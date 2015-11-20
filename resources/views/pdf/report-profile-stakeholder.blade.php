@@ -85,7 +85,7 @@
                 <td>Mulai Kerja</td>
                 <td>{{ $stakeholder->mulai_kerja }}</td>
                 <td>Golongan</td>
-                <td>{{ $stakeholder->golongan }}</td>
+                <td>{{ @$stakeholder->golongan->golongan }}</td>
             </tr>
         </tbody>
     </table>

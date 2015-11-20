@@ -76,16 +76,21 @@ class StakeholderController extends Controller {
     public function store(Request $request)
     {
 
+        $post =$request->except('position');
+        $post['tanggal_lahir'] = date('Y-m-d', strtotime( $post['tanggal_lahir']));
+
         if($request->all()){
-            $create = Stakeholder::create($request->except('position'));
+            $create = Stakeholder::create($post);
             if($create){
                 //Insert into position / jabatan
                 $positions = $request->input('position');
-                foreach($positions as $pos){
-                    PositionStakeholder ::create([
-                        'stakeholder_id' => $create->id,
-                        'position_id' => $pos
-                    ]);
+                if($positions){
+                    foreach($positions as $pos){
+                        PositionStakeholder ::create([
+                            'stakeholder_id' => $create->id,
+                            'position_id' => $pos
+                        ]);
+                    }
                 }
 
                 $isPhoto = $request->file('photo');
@@ -218,11 +223,9 @@ class StakeholderController extends Controller {
                 }
 
                 PositionStakeholder::create(['stakeholder_id' => $id,'position_id' => $pos]);
-
-
             }
         }
 
-        return redirect('/hrd/stakeholder/'.$id.'/edit');
+        return redirect('/hrd/stakeholder/');
     }
 }

@@ -250,7 +250,7 @@
                                                 <div class="media-body">
                                                     <h4 class="media-heading">Golongan</h4>
                                                     <p>
-                                                        {{ $stakeholder->golongan->golongan }}
+                                                        {{ @$stakeholder->golongan->golongan }}
                                                     </p>
                                                 </div>
                                             </div>
@@ -266,9 +266,9 @@
                                                 <div class="media-body">
                                                     <h4 class="media-heading">Pendidikan Non Formal</h4>
                                                     <ul class="list-unstyled">
-                                                        <li>{{ $stakeholder->nama_lembaga_1 }} {{ $stakeholder->pendidikan_lembaga_1 }}</li>
-                                                        <li>{{ $stakeholder->nama_lembaga_2 }} {{ $stakeholder->pendidikan_lembaga_2 }}</li>
-                                                        <li>{{ $stakeholder->nama_lembaga_3 }} {{ $stakeholder->pendidikan_lembaga_3 }}</li>
+                                                        <li>{{ @$stakeholder->nama_lembaga_1 }} {{ @$stakeholder->jenis_pedidikan_1 }}</li>
+                                                        <li>{{ @$stakeholder->nama_lembaga_2 }} {{ @$stakeholder->jenis_pedidikan_2 }}</li>
+                                                        <li>{{ @$stakeholder->nama_lembaga_3 }} {{ @$stakeholder->jenis_pedidikan_3 }}</li>
                                                     </ul>
                                                 </div>
                                             </div>
