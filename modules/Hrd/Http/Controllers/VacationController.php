@@ -11,9 +11,9 @@ class VacationController extends Controller {
 	{
         $vacations = false;
 
-        if($request->get('date')){
+        if($request->all()){
             $vact = new Vacation;
-            $vacation = $vact->getVacation($request->get('date'));
+            $vacation = $vact->getVacation($request->all());
             $vacations = (count($vacation) > 0) ? $vacation : false;
         }else{
             $vact = new Vacation;

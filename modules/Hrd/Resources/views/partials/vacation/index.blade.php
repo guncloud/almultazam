@@ -16,6 +16,27 @@
             <div class="page-header-actions">
                 <form action="{{ url('/hrd/vacation') }}" method="get" class="form-inline" autocomplete="off">
                     <div class="form-group">
+                        <input type="text" class="form-control" id="cutier" placeholder="Nama Pegawai">
+                        <input type="hidden" id="pegawai" name="pegawai">
+                    </div>
+                    <div class="form-group">
+                        <select name="bulan" id="bulan" class="form-control">
+                            <option value=null>Pilih Bulan</option>
+                            <option value="01">Januari</option>
+                            <option value="02">Februari</option>
+                            <option value="03">Maret</option>
+                            <option value="04">April</option>
+                            <option value="05">Mei</option>
+                            <option value="06">Juni</option>
+                            <option value="07">Juli</option>
+                            <option value="08">Agustus</option>
+                            <option value="09">September</option>
+                            <option value="10">Oktober</option>
+                            <option value="11">November</option>
+                            <option value="12">Desember</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
                         <input type="text" class="form-control" id="date" name="date" placeholder="Tanggal">
                     </div>
                     <div class="form-group">
@@ -132,18 +153,20 @@
 
     <script>
         $(function(){
-            var notif = "{{ Session::has('info') or '' }}";
-            if(notif != ''){
-                toastr.success("{{ Session::get('info') }}", 'Info',{
-                    positionClass : 'toast-top-full-width',
-                });
-            };
 
             $('#stakeholder').autocomplete({
                 serviceUrl: "{{ url('/hrd/stakeholder/search') }}",
                 onSelect: function (suggestion) {
                     {{--window.location.href = "{{ url('/siswa') }}/"+suggestion.data;--}}
                     $('#stakeholder_id').val(suggestion.data);
+                }
+            });
+
+            $('#cutier').autocomplete({
+                serviceUrl: "{{ url('/hrd/stakeholder/search') }}",
+                onSelect: function (suggestion) {
+                    {{--window.location.href = "{{ url('/siswa') }}/"+suggestion.data;--}}
+                    $('#pegawai').val(suggestion.data);
                 }
             });
 

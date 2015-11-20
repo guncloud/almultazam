@@ -12,14 +12,27 @@ class Vacation extends Model {
         return $this->belongsTo('App\Stakeholder');
     }
 
-    public function getVacation($date)
+    public function getVacation($req)
     {
-        $rec = DB::table('vacations')
+        $year = date('Y');
+
+        $query = DB::table('vacations')
             ->select('vacations.id', 'vacations.start', 'vacations.end', 'vacations.info', 'stakeholders.nama as pegawai')
-            ->where('start', '<=', $date)
-            ->where('end', '>=', $date)
-            ->join('stakeholders', 'stakeholders.id', '=', 'vacations.stakeholder_id')
-            ->get();
+            ->join('stakeholders', 'stakeholders.id', '=', 'vacations.stakeholder_id');
+
+        if($req['bulan'] && $req['bulan'] != 'null'){
+            $query->where('start', 'LIKE', $year.'-'.$req['bulan'].'-%');
+        }
+
+        if($req['date']){
+            $query->where('start', '<=', $req['date'])->where('end', '>=', $req['date']);
+        }
+
+        if($req['pegawai']){
+            $query->where('stakeholders.id', '=', $req['pegawai']);
+        }
+
+        $rec = $query->get();
 
         return $rec;
     }
