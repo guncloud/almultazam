@@ -2,10 +2,76 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c1d9262-9728-434c-b6c9-c29860564306" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/Renfrew.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/storage/fonts/Renfrew.ttf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Hrd/Entities/Vacation.php" afterPath="$PROJECT_DIR$/modules/Hrd/Entities/Vacation.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Hrd/Http/Controllers/VacationController.php" afterPath="$PROJECT_DIR$/modules/Hrd/Http/Controllers/VacationController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Hrd/Resources/views/partials/vacation/index.blade.php" afterPath="$PROJECT_DIR$/modules/Hrd/Resources/views/partials/vacation/index.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Hrd/Resources/views/partials/stakeholder/create.blade.php" afterPath="$PROJECT_DIR$/modules/Hrd/Resources/views/partials/stakeholder/create.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Hrd/Resources/views/partials/stakeholder/detail.blade.php" afterPath="$PROJECT_DIR$/modules/Hrd/Resources/views/partials/stakeholder/detail.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Hrd/Resources/views/partials/stakeholder/edit.blade.php" afterPath="$PROJECT_DIR$/modules/Hrd/Resources/views/partials/stakeholder/edit.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/app.css" afterPath="$PROJECT_DIR$/public/css/app.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/apps/calendar.css" afterPath="$PROJECT_DIR$/public/css/apps/calendar.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/apps/calendar.min.css" afterPath="$PROJECT_DIR$/public/css/apps/calendar.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/apps/contacts.css" afterPath="$PROJECT_DIR$/public/css/apps/contacts.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/apps/contacts.min.css" afterPath="$PROJECT_DIR$/public/css/apps/contacts.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/apps/documents.css" afterPath="$PROJECT_DIR$/public/css/apps/documents.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/apps/documents.min.css" afterPath="$PROJECT_DIR$/public/css/apps/documents.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/apps/forum.css" afterPath="$PROJECT_DIR$/public/css/apps/forum.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/apps/forum.min.css" afterPath="$PROJECT_DIR$/public/css/apps/forum.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/apps/mailbox.css" afterPath="$PROJECT_DIR$/public/css/apps/mailbox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/apps/mailbox.min.css" afterPath="$PROJECT_DIR$/public/css/apps/mailbox.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/apps/media.css" afterPath="$PROJECT_DIR$/public/css/apps/media.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/apps/media.min.css" afterPath="$PROJECT_DIR$/public/css/apps/media.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/apps/projects.css" afterPath="$PROJECT_DIR$/public/css/apps/projects.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/apps/projects.min.css" afterPath="$PROJECT_DIR$/public/css/apps/projects.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/bootstrap-extend.css" afterPath="$PROJECT_DIR$/public/css/bootstrap-extend.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/bootstrap-extend.min.css" afterPath="$PROJECT_DIR$/public/css/bootstrap-extend.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/bootstrap.css" afterPath="$PROJECT_DIR$/public/css/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/public/css/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/custom.css" afterPath="$PROJECT_DIR$/public/css/custom.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/dashboard/v1.css" afterPath="$PROJECT_DIR$/public/css/dashboard/v1.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/dashboard/v1.min.css" afterPath="$PROJECT_DIR$/public/css/dashboard/v1.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/dashboard/v2.css" afterPath="$PROJECT_DIR$/public/css/dashboard/v2.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/dashboard/v2.min.css" afterPath="$PROJECT_DIR$/public/css/dashboard/v2.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/pages/code-editor.css" afterPath="$PROJECT_DIR$/public/css/pages/code-editor.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/pages/code-editor.min.css" afterPath="$PROJECT_DIR$/public/css/pages/code-editor.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/pages/email.css" afterPath="$PROJECT_DIR$/public/css/pages/email.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/pages/email.min.css" afterPath="$PROJECT_DIR$/public/css/pages/email.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/pages/errors.css" afterPath="$PROJECT_DIR$/public/css/pages/errors.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/pages/errors.min.css" afterPath="$PROJECT_DIR$/public/css/pages/errors.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/pages/faq.css" afterPath="$PROJECT_DIR$/public/css/pages/faq.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/pages/faq.min.css" afterPath="$PROJECT_DIR$/public/css/pages/faq.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/pages/forgot-password.css" afterPath="$PROJECT_DIR$/public/css/pages/forgot-password.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/pages/forgot-password.min.css" afterPath="$PROJECT_DIR$/public/css/pages/forgot-password.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/pages/gallery.css" afterPath="$PROJECT_DIR$/public/css/pages/gallery.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/pages/gallery.min.css" afterPath="$PROJECT_DIR$/public/css/pages/gallery.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/pages/invoice.css" afterPath="$PROJECT_DIR$/public/css/pages/invoice.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/pages/invoice.min.css" afterPath="$PROJECT_DIR$/public/css/pages/invoice.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/pages/lockscreen.css" afterPath="$PROJECT_DIR$/public/css/pages/lockscreen.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/pages/lockscreen.min.css" afterPath="$PROJECT_DIR$/public/css/pages/lockscreen.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/pages/login.css" afterPath="$PROJECT_DIR$/public/css/pages/login.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/pages/login.min.css" afterPath="$PROJECT_DIR$/public/css/pages/login.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/pages/maintenance.css" afterPath="$PROJECT_DIR$/public/css/pages/maintenance.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/pages/maintenance.min.css" afterPath="$PROJECT_DIR$/public/css/pages/maintenance.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/pages/map.css" afterPath="$PROJECT_DIR$/public/css/pages/map.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/pages/map.min.css" afterPath="$PROJECT_DIR$/public/css/pages/map.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/pages/profile.css" afterPath="$PROJECT_DIR$/public/css/pages/profile.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/pages/profile.min.css" afterPath="$PROJECT_DIR$/public/css/pages/profile.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/pages/register.css" afterPath="$PROJECT_DIR$/public/css/pages/register.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/pages/register.min.css" afterPath="$PROJECT_DIR$/public/css/pages/register.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/pages/search-result.css" afterPath="$PROJECT_DIR$/public/css/pages/search-result.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/pages/search-result.min.css" afterPath="$PROJECT_DIR$/public/css/pages/search-result.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/pages/user.css" afterPath="$PROJECT_DIR$/public/css/pages/user.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/pages/user.min.css" afterPath="$PROJECT_DIR$/public/css/pages/user.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/pure.min.css" afterPath="$PROJECT_DIR$/public/css/pure.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/site.css" afterPath="$PROJECT_DIR$/public/css/site.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/site.min.css" afterPath="$PROJECT_DIR$/public/css/site.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/widgets/chart.css" afterPath="$PROJECT_DIR$/public/css/widgets/chart.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/widgets/chart.min.css" afterPath="$PROJECT_DIR$/public/css/widgets/chart.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/widgets/data.css" afterPath="$PROJECT_DIR$/public/css/widgets/data.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/widgets/data.min.css" afterPath="$PROJECT_DIR$/public/css/widgets/data.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/widgets/social.css" afterPath="$PROJECT_DIR$/public/css/widgets/social.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/widgets/social.min.css" afterPath="$PROJECT_DIR$/public/css/widgets/social.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/pdf/cover.blade.php" afterPath="$PROJECT_DIR$/resources/views/pdf/cover.blade.php" />
     </list>
     <ignored path="almultazam.2.2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,7 +92,7 @@
     <favorites_list name="almultazam.2.2" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -34,8 +100,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/modules/Siswa/Http/Controllers/EkskulController.php" />
-        <option value="$PROJECT_DIR$/modules/Siswa/Resources/views/partials/ekskul/index.blade.php" />
         <option value="$PROJECT_DIR$/modules/Siswa/Resources/views/partials/achievement/index.blade.php" />
         <option value="$PROJECT_DIR$/modules/Siswa/Http/Controllers/ConfigController.php" />
         <option value="$PROJECT_DIR$/vendor/pingpong/modules/Routing/Controller.php" />
@@ -64,7 +128,6 @@
         <option value="$PROJECT_DIR$/modules/Hrd/Http/Controllers/DivisionController.php" />
         <option value="$PROJECT_DIR$/modules/Hrd/Entities/Golongan.php" />
         <option value="$PROJECT_DIR$/app/Stakeholder.php" />
-        <option value="$PROJECT_DIR$/modules/Hrd/Resources/views/partials/stakeholder/edit.blade.php" />
         <option value="$PROJECT_DIR$/modules/Hrd/Database/Migrations/2015_11_12_155322_add_tahun_lulus_to_stakeholders.php" />
         <option value="$PROJECT_DIR$/modules/Hrd/Resources/views/partials/stakeholder/index.blade.php" />
         <option value="$PROJECT_DIR$/modules/Hrd/Resources/views/layouts/sidebar.blade.php" />
@@ -72,7 +135,6 @@
         <option value="$PROJECT_DIR$/modules/Hrd/Http/Controllers/ConfigController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ToolController.php" />
         <option value="$PROJECT_DIR$/modules/Hrd/Resources/views/partials/config/index.blade.php" />
-        <option value="$PROJECT_DIR$/modules/Hrd/Resources/views/partials/stakeholder/detail.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/pdf/report-profile-stakeholder.blade.php" />
         <option value="$PROJECT_DIR$/modules/Hrd/Resources/views/partials/report/index.blade.php" />
         <option value="$PROJECT_DIR$/modules/Siswa/Resources/views/partials/siswa/create.blade.php" />
@@ -80,11 +142,15 @@
         <option value="$PROJECT_DIR$/resources/views/pdf/report-stakeholder.blade.php" />
         <option value="$PROJECT_DIR$/modules/Siswa/Entities/Classroom.php" />
         <option value="$PROJECT_DIR$/modules/Siswa/Entities/Teacher.php" />
-        <option value="$PROJECT_DIR$/modules/Hrd/Resources/views/partials/stakeholder/create.blade.php" />
         <option value="$PROJECT_DIR$/modules/Hrd/Http/Controllers/StakeholderController.php" />
         <option value="$PROJECT_DIR$/modules/Hrd/Http/Controllers/VacationController.php" />
         <option value="$PROJECT_DIR$/modules/Hrd/Resources/views/partials/vacation/index.blade.php" />
         <option value="$PROJECT_DIR$/modules/Hrd/Entities/Vacation.php" />
+        <option value="$PROJECT_DIR$/resources/views/pdf/cover.blade.php" />
+        <option value="$PROJECT_DIR$/public/css/pure.min.css" />
+        <option value="$PROJECT_DIR$/modules/Hrd/Resources/views/partials/stakeholder/create.blade.php" />
+        <option value="$PROJECT_DIR$/modules/Hrd/Resources/views/partials/stakeholder/edit.blade.php" />
+        <option value="$PROJECT_DIR$/modules/Hrd/Resources/views/partials/stakeholder/detail.blade.php" />
       </list>
     </option>
   </component>
@@ -148,20 +214,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="almultazam.2.2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="almultazam.2.2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="almultazam.2.2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="storage" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -254,6 +306,40 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="vacation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="almultazam.2.2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="almultazam.2.2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Hrd" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="partials" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stakeholder" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -418,7 +504,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="5c52c40459e6e29ad0c102b8ee6207e5&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/storage/framework/views/5c52c40459e6e29ad0c102b8ee6207e5&#10;stake&#9;null&#9;null&#10;4856f524ca57a1c79ca85b192c7f647b&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/storage/framework/views/4856f524ca57a1c79ca85b192c7f647b&#10;sisw&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Http/Controllers/SiswaController.php&#10;sideb&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Hrd/Resources/views/layouts/sidebar.blade.php&#10;sidebar&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Hrd/Resources/views/layouts/sidebar.blade.php&#10;stak&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/app/Stakeholder.php&#10;divisi&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Hrd/Http/Controllers/DivisionController.php&#10;side&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Hrd/Resources/views/layouts/sidebar.blade.php&#10;extens&#9;null&#9;null&#10;master&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Hrd/Resources/views/layouts/master.blade.php&#10;classroomC&#9;null&#9;null&#10;teacher/in&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Resources/views/partials/teachers/index.blade.php&#10;teac&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Http/Controllers/TeacherController.php&#10;reci&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Http/Controllers/RecitationController.php&#10;recitation/in&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Resources/views/partials/recitation/index.blade.php&#10;readin&#9;null&#9;null&#10;login&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/resources/views/auth/login.blade.php&#10;siswa/index&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Resources/views/index.blade.php&#10;stakeholder/in&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Hrd/Resources/views/partials/stakeholder/index.blade.php&#10;posi&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Hrd/Entities/Position.php&#10;user&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/app/User.php&#10;sta&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/app/Stakeholder.php&#10;config&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Http/Controllers/ConfigController.php&#10;siswa&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Http/Controllers/SiswaController.php&#10;basecontroller&#9;null&#9;null&#10;navbar&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Resources/views/layouts/navbar.blade.php&#10;cache&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/config/cache.php&#10;siswa/ac&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Entities/Achievement.php&#10;eksk&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Http/Controllers/EkskulController.php&#10;ekskul/in&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Resources/views/partials/ekskul/index.blade.php&#10;pure.&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/public/css/pure.min.css&#10;siswa/det&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Resources/views/partials/siswa/detail.blade.php&#10;tool&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/app/Http/Controllers/ToolController.php&#10;siswa/cre&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Resources/views/partials/siswa/create.blade.php&#10;stakeholder/cre&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Hrd/Resources/views/partials/stakeholder/create.blade.php&#10;stakeholder/detail&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Hrd/Resources/views/partials/stakeholder/detail.blade.php&#10;studentek&#9;null&#9;null&#10;eks&#9;null&#9;null&#10;langu&#9;null&#9;null&#10;language/sc&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Resources/views/partials/language/score.blade.php&#10;score/ind&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Resources/views/partials/score/index.blade.php&#10;scoreC&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Http/Controllers/ScoreController.php&#10;siswa/deta&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Resources/views/partials/siswa/detail.blade.php&#10;score&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Http/Controllers/ScoreController.php&#10;score/in&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Resources/views/partials/score/index.blade.php&#10;config/ind&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Resources/views/partials/config/index.blade.php&#10;siswa/con&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Http/Controllers/ConfigController.php&#10;userCon&#9;null&#9;null&#10;confiCon&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="tool&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/app/Http/Controllers/ToolController.php&#10;5c52c40459e6e29ad0c102b8ee6207e5&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/storage/framework/views/5c52c40459e6e29ad0c102b8ee6207e5&#10;stake&#9;null&#9;null&#10;4856f524ca57a1c79ca85b192c7f647b&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/storage/framework/views/4856f524ca57a1c79ca85b192c7f647b&#10;sisw&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Http/Controllers/SiswaController.php&#10;sideb&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Hrd/Resources/views/layouts/sidebar.blade.php&#10;sidebar&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Hrd/Resources/views/layouts/sidebar.blade.php&#10;stak&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/app/Stakeholder.php&#10;divisi&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Hrd/Http/Controllers/DivisionController.php&#10;side&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Hrd/Resources/views/layouts/sidebar.blade.php&#10;extens&#9;null&#9;null&#10;master&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Hrd/Resources/views/layouts/master.blade.php&#10;classroomC&#9;null&#9;null&#10;teacher/in&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Resources/views/partials/teachers/index.blade.php&#10;teac&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Http/Controllers/TeacherController.php&#10;reci&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Http/Controllers/RecitationController.php&#10;recitation/in&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Resources/views/partials/recitation/index.blade.php&#10;readin&#9;null&#9;null&#10;login&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/resources/views/auth/login.blade.php&#10;siswa/index&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Resources/views/index.blade.php&#10;stakeholder/in&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Hrd/Resources/views/partials/stakeholder/index.blade.php&#10;posi&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Hrd/Entities/Position.php&#10;user&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/app/User.php&#10;sta&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/app/Stakeholder.php&#10;config&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Http/Controllers/ConfigController.php&#10;siswa&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Http/Controllers/SiswaController.php&#10;basecontroller&#9;null&#9;null&#10;navbar&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Resources/views/layouts/navbar.blade.php&#10;cache&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/config/cache.php&#10;siswa/ac&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Entities/Achievement.php&#10;eksk&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Http/Controllers/EkskulController.php&#10;ekskul/in&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Resources/views/partials/ekskul/index.blade.php&#10;pure.&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/public/css/pure.min.css&#10;siswa/det&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Resources/views/partials/siswa/detail.blade.php&#10;siswa/cre&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Resources/views/partials/siswa/create.blade.php&#10;stakeholder/cre&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Hrd/Resources/views/partials/stakeholder/create.blade.php&#10;stakeholder/detail&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Hrd/Resources/views/partials/stakeholder/detail.blade.php&#10;studentek&#9;null&#9;null&#10;eks&#9;null&#9;null&#10;langu&#9;null&#9;null&#10;language/sc&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Resources/views/partials/language/score.blade.php&#10;score/ind&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Resources/views/partials/score/index.blade.php&#10;scoreC&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Http/Controllers/ScoreController.php&#10;siswa/deta&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Resources/views/partials/siswa/detail.blade.php&#10;score&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Http/Controllers/ScoreController.php&#10;score/in&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Resources/views/partials/score/index.blade.php&#10;config/ind&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Resources/views/partials/config/index.blade.php&#10;siswa/con&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Siswa/Http/Controllers/ConfigController.php&#10;userCon&#9;null&#9;null&#10;confiCon&#9;null&#9;null" />
     <property name="recentsLimit" value="5" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
@@ -427,8 +513,17 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/palace/crafting/guncloud_laravel" />
+    <property name="last_opened_file_path" value="$USER_HOME$/palace/crafting/guncloud.erp" />
     <property name="js-jscs-nodeInterpreter" value="/usr/bin/node" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/storage/fonts" />
+      <recent name="$PROJECT_DIR$/public/fonts" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/css" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="AppEnginePhpConfigurationType" factoryName="App Engine for PHP">
@@ -488,13 +583,11 @@
     <editor active="false" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.035871156" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.029282577" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20058565" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.10391566" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2123494" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -504,8 +597,10 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2123494" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.10391566" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -526,55 +621,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/modules/Siswa/Http/Controllers/RecitationController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.0">
-          <caret line="33" column="59" selection-start-line="33" selection-start-column="59" selection-end-line="33" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/http-foundation/Symfony/Component/HttpFoundation/Request.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34775373">
-          <caret line="745" column="20" selection-start-line="745" selection-start-column="20" selection-end-line="745" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Siswa/Http/Controllers/TeacherController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47587353">
-          <caret line="30" column="43" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Siswa/Resources/views/partials/teachers/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Siswa/Resources/views/partials/subjects/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.8352747">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Siswa/Resources/views/partials/classrooms/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.6666665">
-          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Siswa/Http/Controllers/ClassroomController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.0">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="14" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/Siswa/Entities/Violation.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -673,13 +719,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Hrd/Resources/views/partials/stakeholder/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6584507">
-          <caret line="455" column="18" selection-start-line="455" selection-start-column="18" selection-end-line="455" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/Hrd/Database/Migrations/2015_09_07_005858_add_diploma_to_stakeholders.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -736,13 +775,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ToolController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20263591">
-          <caret line="65" column="14" selection-start-line="65" selection-start-column="14" selection-end-line="65" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/Hrd/Resources/views/partials/config/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7364086">
@@ -775,7 +807,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.06589786">
           <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -783,15 +814,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.862069">
           <caret line="117" column="0" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Hrd/Resources/views/partials/stakeholder/detail.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.03294893">
-          <caret line="218" column="92" selection-start-line="218" selection-start-column="84" selection-end-line="218" selection-end-column="92" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -799,7 +821,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.03294893">
           <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -807,7 +828,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="95" column="63" selection-start-line="95" selection-start-column="63" selection-end-line="95" selection-end-column="63" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -815,7 +835,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.4482758">
           <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -823,7 +842,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.275862">
           <caret line="79" column="46" selection-start-line="79" selection-start-column="46" selection-end-line="79" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -831,7 +849,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.28066915">
           <caret line="107" column="12" selection-start-line="107" selection-start-column="12" selection-end-line="107" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -839,7 +856,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5601318">
           <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -847,7 +863,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6260297">
           <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -855,23 +870,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.26029655">
           <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Hrd/Http/Controllers/StakeholderController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.137931">
-          <caret line="92" column="21" selection-start-line="92" selection-start-column="21" selection-end-line="92" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Hrd/Resources/views/partials/stakeholder/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3970346">
-          <caret line="90" column="53" selection-start-line="90" selection-start-column="53" selection-end-line="90" selection-end-column="53" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -879,7 +877,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.275862">
           <caret line="156" column="44" selection-start-line="156" selection-start-column="44" selection-end-line="156" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -887,7 +884,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.0689654">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -895,7 +891,90 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.19769357">
           <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/site.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/pure.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34542313">
+          <caret line="10" column="60" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pdf/cover.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.724138">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/fonts/font-awesome/font-awesome.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ToolController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6919275">
+          <caret line="36" column="43" selection-start-line="36" selection-start-column="43" selection-end-line="36" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Hrd/Http/Controllers/StakeholderController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.206897">
+          <caret line="100" column="0" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Hrd/Resources/views/partials/stakeholder/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.137931">
+          <caret line="12" column="63" selection-start-line="12" selection-start-column="63" selection-end-line="12" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Hrd/Resources/views/partials/stakeholder/detail.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42833608">
+          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Hrd/Resources/views/partials/stakeholder/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.366782">
+          <caret line="452" column="50" selection-start-line="452" selection-start-column="50" selection-end-line="452" selection-end-column="50" />
         </state>
       </provider>
     </entry>

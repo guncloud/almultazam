@@ -456,16 +456,38 @@
                                 <label class="floating-label">Anak 1</label>
                             </div>
                             <div class="col-sm-3">
+                                <input type="text" class="form-control" name="lahir_child_1" data-plugin="formatter" data-pattern="[[99]]-[[99]]-[[9999]]"/>
+                                <label class="floating-label">Lahir Anak 1</label>
+                                <small class="help-block">Tanggal-Bulan-Tahun</small>
+                            </div>
+                            <div class="col-sm-3">
                                 <input type="text" class="form-control" name="child_2" />
                                 <label class="floating-label">Anak 2</label>
                             </div>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" name="lahir_child_2" data-plugin="formatter" data-pattern="[[99]]-[[99]]-[[9999]]" />
+                                <label class="floating-label">Lahir Anak 2</label>
+                                <small class="help-block">Tanggal-Bulan-Tahun</small>
+                            </div>
+                        </div>
+                        <div class="form-group form-material floating row">
                             <div class="col-sm-3">
                                 <input type="text" class="form-control" name="child_3" />
                                 <label class="floating-label">Anak 3</label>
                             </div>
                             <div class="col-sm-3">
+                                <input type="text" class="form-control" name="lahir_child_3" data-plugin="formatter" data-pattern="[[99]]-[[99]]-[[9999]]" />
+                                <label class="floating-label">Lahir Anak 3</label>
+                                <small class="help-block">Tanggal-Bulan-Tahun</small>
+                            </div>
+                            <div class="col-sm-3">
                                 <input type="text" class="form-control" name="child_4" />
                                 <label class="floating-label">Anak 4</label>
+                            </div>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" name="lahir_child_4" data-plugin="formatter" data-pattern="[[99]]-[[99]]-[[9999]]" />
+                                <label class="floating-label">Lahir Anak 4</label>
+                                <small class="help-block">Tanggal-Bulan-Tahun</small>
                             </div>
                         </div>
                         <div class="form-group form-material floating row">
@@ -474,16 +496,37 @@
                                 <label class="floating-label">Anak 5</label>
                             </div>
                             <div class="col-sm-3">
+                                <input type="text" class="form-control" name="lahir_child_5" data-plugin="formatter" data-pattern="[[99]]-[[99]]-[[9999]]" />
+                                <label class="floating-label">Lahir Anak 5</label>
+                                <small class="help-block">Tanggal-Bulan-Tahun</small>
+                            </div>
+                            <div class="col-sm-3">
                                 <input type="text" class="form-control" name="child_6" />
                                 <label class="floating-label">Anak 6</label>
+                            </div><div class="col-sm-3">
+                                <input type="text" class="form-control" name="lahir_child_6" data-plugin="formatter" data-pattern="[[99]]-[[99]]-[[9999]]" />
+                                <label class="floating-label">Lahir Anak 6</label>
+                                <small class="help-block">Tanggal-Bulan-Tahun</small>
                             </div>
+                        </div>
+                        <div class="form-group form-material floating row">
                             <div class="col-sm-3">
                                 <input type="text" class="form-control" name="child_7" />
                                 <label class="floating-label">Anak 7</label>
                             </div>
                             <div class="col-sm-3">
+                                <input type="text" class="form-control" name="lahir_child_7" data-plugin="formatter" data-pattern="[[99]]-[[99]]-[[9999]]" />
+                                <label class="floating-label">Lahir Anak 7</label>
+                                <small class="help-block">Tanggal-Bulan-Tahun</small>
+                            </div>
+                            <div class="col-sm-3">
                                 <input type="text" class="form-control" name="child_8" />
                                 <label class="floating-label">Anak 8</label>
+                            </div>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" name="lahir_child_8" data-plugin="formatter" data-pattern="[[99]]-[[99]]-[[9999]]" />
+                                <label class="floating-label">Lahir Anak 8</label>
+                                <small class="help-block">Tanggal-Bulan-Tahun</small>
                             </div>
                         </div>
                         {{--/Anak--}}

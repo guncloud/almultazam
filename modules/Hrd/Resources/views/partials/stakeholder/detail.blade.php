@@ -7,6 +7,29 @@
     @endsection
 
     @section('content')
+
+    <script>
+        function getAge(lahir)
+        {
+            var d = lahir.slice(0, 10).split('-');
+            var dateString = d[1] +'-'+ d[0] +'-'+ d[2];
+
+            var today = new Date();
+            var birthDate = new Date(dateString);
+            var age = today.getFullYear() - birthDate.getFullYear();
+
+            var m = today.getMonth() - birthDate.getMonth();
+            if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate()))
+            {
+                age--;
+            }
+            if(age){
+                document.write(', Umur : '+age);
+            }
+
+            return true;
+        }
+    </script>
             <!-- Page -->
     <div class="page animsition page-profile">
 
@@ -313,14 +336,14 @@
                                                 <div class="media-body">
                                                     <h4 class="media-heading">Anak</h4>
                                                     <ul class="list-unstyled">
-                                                        <li>{{ $stakeholder->child_1 }} </li>
-                                                        <li>{{ $stakeholder->child_2 }} </li>
-                                                        <li>{{ $stakeholder->child_3 }} </li>
-                                                        <li>{{ $stakeholder->child_4 }} </li>
-                                                        <li>{{ $stakeholder->child_5 }} </li>
-                                                        <li>{{ $stakeholder->child_6 }} </li>
-                                                        <li>{{ $stakeholder->child_7 }} </li>
-                                                        <li>{{ $stakeholder->child_8 }} </li>
+                                                        <li>{{ $stakeholder->child_1 }} <script>getAge("{{ $stakeholder->lahir_child_1 }}")</script></li>
+                                                        <li>{{ $stakeholder->child_2 }} <script>getAge("{{ $stakeholder->lahir_child_2 }}")</script> </li>
+                                                        <li>{{ $stakeholder->child_3 }} <script>getAge("{{ $stakeholder->lahir_child_3 }}")</script> </li>
+                                                        <li>{{ $stakeholder->child_4 }} <script>getAge("{{ $stakeholder->lahir_child_4 }}")</script> </li>
+                                                        <li>{{ $stakeholder->child_5 }} <script>getAge("{{ $stakeholder->lahir_child_5 }}")</script> </li>
+                                                        <li>{{ $stakeholder->child_6 }} <script>getAge("{{ $stakeholder->lahir_child_6 }}")</script> </li>
+                                                        <li>{{ $stakeholder->child_7 }} <script>getAge("{{ $stakeholder->lahir_child_7 }}")</script> </li>
+                                                        <li>{{ $stakeholder->child_8 }} <script>getAge("{{ $stakeholder->lahir_child_8 }}")</script> </li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -362,6 +385,8 @@
                 $('#btnPopMenu').webuiPopover($.extend({}, defaults,
                         tableSettings));
             });
+
+
 
         })
     </script>

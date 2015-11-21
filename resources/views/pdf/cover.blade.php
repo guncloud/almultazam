@@ -5,13 +5,19 @@
     <title>Laporan Pegawai</title>
 
     <link href="{{ base_path('public/css/pure.min.css') }}" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'renfrew';
+            src : url('Renfrew.ttf') format('truetype');
+        },
+    </style>
 </head>
 <body>
 
 <div class="container">
 
     <center style="padding-top: 110px">
-        <h1>
+        <h1 style="font-family: renfrew">
             RAPORT PEGAWAI <br>
             YPI AL-MULTAZAM <br>
             HUSNUL KHOTIMAH <br>
