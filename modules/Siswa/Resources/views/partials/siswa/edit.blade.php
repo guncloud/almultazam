@@ -45,6 +45,14 @@
                                 <label class="floating-label">Tanggal Lahir</label>
                             </div>
                             <div class="col-sm-4">
+                                <select name="jenis_kelamin" id="" class="form-control">
+                                    <option value="null"></option>
+                                    <option value="l" {{ ($student->jenis_kelamin == 'l' ? 'selected' : '') }}>Laki-laki</option>
+                                    <option value="p" {{ ($student->jenis_kelamin == 'p' ? 'selected' : '') }}>Perempuan</option>
+                                </select>
+                                <label class="floating-label">Jenis Kelamin</label>
+                            </div>
+                            <div class="col-sm-4">
                                 <select name="classroom" id="" class="form-control">
                                     <option>&nbsp;</option>
                                     @if($classrooms)

@@ -18,6 +18,7 @@ use Modules\Siswa\Entities\Ekskul;
 use Modules\Siswa\Entities\Student;
 use Modules\Siswa\Http\Controllers\SiswaController;
 use Excel;
+use Illuminate\Support\Facades\DB;
 
 class ToolController extends Controller
 {
@@ -49,6 +50,12 @@ class ToolController extends Controller
        // dd($request->all());
         $year = Config::where('slug', '=', 'tahun-ajar')->first()->value;
         $stakeholder = Stakeholder::find($request->get('stakeholder'));
+        $position = DB::table('stakeholders')
+            ->select('position')
+            ->join('position_stakeholder', 'position_stakeholder.stakeholder_id', '=', 'stakeholders.id')
+            ->join('positions', 'positions.id', '=', 'position_stakeholder.position_id')
+            ->where('stakeholders.id', '=', $request->get('stakeholder'))
+            ->get();
 
         $report = Indicator::has('performances')->get();
 
@@ -74,6 +81,7 @@ class ToolController extends Controller
         $data['report'] = $report;
         $data['stakeholder'] = $stakeholder;
         $data['title'] = 'Rapor Pegawai';
+        $data['positions'] = (count($position) > 0) ? $position : false;
 
 //        return view('pdf.report-stakeholder', $data);
 

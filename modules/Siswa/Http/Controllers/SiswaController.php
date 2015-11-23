@@ -10,6 +10,7 @@ use Modules\Siswa\Entities\ClassroomStudent;
 use Modules\Siswa\Entities\Config;
 use Illuminate\Support\Facades\Session;
 use Modules\Siswa\Entities\StudentEkskul;
+use Illuminate\Support\Facades\Cache;
 
 class SiswaController extends Controller {
 
@@ -64,6 +65,7 @@ class SiswaController extends Controller {
             ]);
 
         if($update){
+            Cache::forget('student_'.$request->get('classroom'));
             Session::flash('info', 'Data Update');
         }else{
             Session::flash('info', 'Error');
@@ -146,6 +148,7 @@ class SiswaController extends Controller {
                 $student = Student::find($create->id);
                 $student->classrooms()->attach($request->input('classroom'), ['year' => $tahun_ajar]);
                 Session::flash('info', 'Data inserted');
+                Cache::forget('student_'.$request->input('classroom'));
             }else{
                 Session::flash('info', 'Error');
             }

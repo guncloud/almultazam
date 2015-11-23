@@ -8,9 +8,9 @@
 </head>
 <body>
 <div class="container">
-    <h3 style="text-align: center">RAPORT PEGAWAI
-        YAYASAN PENDIDIKAN ISLAM
-        AL-MULTAZAM HUSNUL KHOTIMAH</h3>
+    <h4 style="text-align: center">
+        RAPORT PEGAWAI <br>
+        YAYASAN PENDIDIKAN ISLAM AL-MULTAZAM HUSNUL KHOTIMAH</h4>
 
         @if($stakeholder->photo)
             <img src="{{ base_path('public/photos/'.$stakeholder->photo) }}" alt="..." style="height: 140px">
@@ -25,7 +25,14 @@
         Nama Lengkap : {{ $stakeholder->nama }} <br>
 
         Bagian : {{ @$stakeholder->division->division }} <br >
-        Jabatan : {{ $stakeholder->jabatan }} <br>
+        Jabatan :
+            @if($positions)
+                @foreach($positions as $pos)
+                    {{ $pos->position }}
+                @endforeach
+            @endif
+
+        <br>
     <br>
 
     <table class="pure-table pure-table-bordered">
@@ -112,7 +119,7 @@
                 Kepala Divisi HRD ,
             </a>
             <a style="margin-left: 350px">
-                Kepala Disivsi/Bagian
+                Kepala Divisi/Bagian
             </a>
         </div>
         <br>

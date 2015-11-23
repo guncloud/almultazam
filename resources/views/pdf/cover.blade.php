@@ -1,37 +1,43 @@
-<!doctype html>
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>Laporan Pegawai</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-15">
+    <link href="http://fonts.googleapis.com/css?family=Give+You+Glory&amp;v2" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        body {
+            font-family: sans-serif;
+        }
+        @font-face{
+            font-family: Renfrew;
+            src: url('Renfrew.ttf');
+        }
 
-    <link href="{{ base_path('public/css/pure.min.css') }}" rel="stylesheet">
-    <style>
-        @font-face {
-            font-family: 'renfrew';
-            src : url('Renfrew.ttf') format('truetype');
-        },
+        h2 {
+            color: #999;
+        }
+
+        p{
+            font-size: 30px;
+        }
     </style>
 </head>
-<body>
+<body marginwidth="0" marginheight="0">
 
-<div class="container">
+<div class="container" style="text-align: center">
+    <p>
+        RAPORT PEGAWAI <br>
+        YAYASAN PENDIDIKAN ISLAM
+    </p>
+    <p style="font-family: 'Renfrew', sans-serif;"> AL-MULTAZAM
+        HUSNUL KHOTIMAH
+    </p>
 
-    <center style="padding-top: 110px">
-        <h1 style="font-family: renfrew">
-            RAPORT PEGAWAI <br>
-            YPI AL-MULTAZAM <br>
-            HUSNUL KHOTIMAH <br>
-        </h1>
+    <img src="{{ base_path('public/img/logo-cover.png') }}" alt="" style="margin-top: 200px">
 
-        <img src="{{ base_path('public/img/logo-cover.png') }}" alt="" style="margin-top: 150px">
 
-        <h1 style="margin-top: 150px">
-            SEMESTER {{ ($semester == '1') ? 'GANJIL' : 'GENAP' }} <br>
-            TAHUN AKADEMIK {{ $year }} <br>
-        </h1>
-
-    </center>
+    <h1 style="margin-top: 250px">
+        SEMESTER {{ ($semester == '1') ? 'GANJIL' : 'GENAP' }} <br>
+        TAHUN AKADEMIK {{ $year }} <br>
+    </h1>
 </div>
 
-</body>
-</html>
+</body></html>

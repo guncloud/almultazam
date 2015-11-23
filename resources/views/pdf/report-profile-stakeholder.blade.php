@@ -5,6 +5,7 @@
     <title>Laporan Pegawai</title>
 
     <link href="{{ base_path('public/css/pure.min.css') }}" rel="stylesheet">
+
 </head>
 <body>
 
@@ -195,28 +196,142 @@
         </tr>
         <tbody>
         <tr>
-            <td>{{ $stakeholder->child_1 }}</td>
+            <td>{{ $stakeholder->child_1 }}
+                <?php
+                if($stakeholder->lahir_child_1){
+                    $birthDate = explode("-", $stakeholder->lahir_child_1);
+                    $birthDate = array_filter($birthDate);
+
+                    if($birthDate[2] > 0){
+                        $age = (date("md", date("U", mktime(0, 0, 0, $birthDate[1], $birthDate[0], $birthDate[2]))) > date("md")
+                                ? ((date("Y") - $birthDate[2]) - 1)
+                                : (date("Y") - $birthDate[2]));
+                        echo "Umur " .$age;
+                    }
+                }
+                ?>
+            </td>
         </tr>
         <tr>
-            <td>{{ $stakeholder->child_2 }}</td>
+            <td>{{ $stakeholder->child_2 }}
+                <?php
+                if($stakeholder->lahir_child_2){
+                    $birthDate = explode("-", $stakeholder->lahir_child_2);
+                    $birthDate = array_filter($birthDate);
+
+                    if($birthDate[2] > 0){
+                        $age = (date("md", date("U", mktime(0, 0, 0, $birthDate[1], $birthDate[0], $birthDate[2]))) > date("md")
+                                ? ((date("Y") - $birthDate[2]) - 1)
+                                : (date("Y") - $birthDate[2]));
+                        echo "Umur " .$age;
+                    }else{
+                        $age = '';
+                    }
+                }
+                ?>
+            </td>
         </tr>
         <tr>
-            <td>{{ $stakeholder->child_3 }}</td>
+            <td>{{ $stakeholder->child_3 }}
+                <?php
+                if($stakeholder->lahir_child_3){
+                    $birthDate = explode("-", $stakeholder->lahir_child_3);
+                    $birthDate = array_filter($birthDate);
+
+                    if($birthDate[2] > 0){
+                        $age = (date("md", date("U", mktime(0, 0, 0, $birthDate[1], $birthDate[0], $birthDate[2]))) > date("md")
+                                ? ((date("Y") - $birthDate[2]) - 1)
+                                : (date("Y") - $birthDate[2]));
+                        echo "Umur " .$age;
+                    }
+                }
+                ?>
+            </td>
         </tr>
         <tr>
-            <td>{{ $stakeholder->child_4 }}</td>
+            <td>{{ $stakeholder->child_4 }}
+                <?php
+                if($stakeholder->lahir_child_4){
+                    $birthDate = explode("-", $stakeholder->lahir_child_4);
+                    $birthDate = array_filter($birthDate);
+
+                    if($birthDate[2] > 0){
+                        $age = (date("md", date("U", mktime(0, 0, 0, $birthDate[1], $birthDate[0], $birthDate[2]))) > date("md")
+                                ? ((date("Y") - $birthDate[2]) - 1)
+                                : (date("Y") - $birthDate[2]));
+                        echo "Umur " .$age;
+                    }
+                }
+                ?>
+            </td>
         </tr>
         <tr>
-            <td>{{ $stakeholder->child_5 }}</td>
+            <td>{{ $stakeholder->child_5 }}
+                <?php
+                if($stakeholder->lahir_child_5){
+                    $birthDate = explode("-", $stakeholder->lahir_child_5);
+                    $birthDate = array_filter($birthDate);
+
+                    if($birthDate[2] > 0){
+                        $age = (date("md", date("U", mktime(0, 0, 0, $birthDate[1], $birthDate[0], $birthDate[2]))) > date("md")
+                                ? ((date("Y") - $birthDate[2]) - 1)
+                                : (date("Y") - $birthDate[2]));
+                        echo "Umur " .$age;
+                    }
+                }
+                ?>
+            </td>
         </tr>
         <tr>
-            <td>{{ $stakeholder->child_6 }}</td>
+            <td>{{ $stakeholder->child_6 }}
+                <?php
+                if($stakeholder->lahir_child_6){
+                    $birthDate = explode("-", $stakeholder->lahir_child_6);
+                    $birthDate = array_filter($birthDate);
+
+                    if($birthDate[2] > 0){
+                        $age = (date("md", date("U", mktime(0, 0, 0, $birthDate[1], $birthDate[0], $birthDate[2]))) > date("md")
+                                ? ((date("Y") - $birthDate[2]) - 1)
+                                : (date("Y") - $birthDate[2]));
+                        echo "Umur " .$age;
+                    }
+                }
+                ?>
+            </td>
         </tr>
         <tr>
-            <td>{{ $stakeholder->child_7 }}</td>
+            <td>{{ $stakeholder->child_7 }}
+                <?php
+                if($stakeholder->lahir_child_7){
+                    $birthDate = explode("-", $stakeholder->lahir_child_7);
+                    $birthDate = array_filter($birthDate);
+
+                    if($birthDate[2] > 0){
+                        $age = (date("md", date("U", mktime(0, 0, 0, $birthDate[1], $birthDate[0], $birthDate[2]))) > date("md")
+                                ? ((date("Y") - $birthDate[2]) - 1)
+                                : (date("Y") - $birthDate[2]));
+                        echo "Umur " .$age;
+                    }
+                }
+                ?>
+            </td>
         </tr>
         <tr>
-            <td>{{ $stakeholder->child_8 }}</td>
+            <td>{{ $stakeholder->child_8 }}
+                <?php
+                if($stakeholder->lahir_child_8){
+                    $birthDate = explode("-", $stakeholder->lahir_child_8);
+                    $birthDate = array_filter($birthDate);
+
+                    if($birthDate[2] > 0){
+                        $age = (date("md", date("U", mktime(0, 0, 0, $birthDate[1], $birthDate[0], $birthDate[2]))) > date("md")
+                                ? ((date("Y") - $birthDate[2]) - 1)
+                                : (date("Y") - $birthDate[2]));
+                        echo "Umur " .$age;
+                    }
+                }
+                ?>
+            </td>
         </tr>
         </tbody>
     </table>

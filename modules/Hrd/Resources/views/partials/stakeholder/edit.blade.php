@@ -77,6 +77,7 @@
                                     <option></option>
                                     <option value="belum" {{ ($stakeholder->status_marital == 'belum') ? 'selected' : '' }}>Belum Menikah</option>
                                     <option value="menikah" {{ ($stakeholder->status_marital == 'menikah') ? 'selected' : '' }}>Menikah</option>
+                                    <option value="cerai" {{ ($stakeholder->status_marital == 'cerai') ? 'selected' : '' }}>Cerai Hidup/Mati</option>
                                 </select>
                                 <label class="floating-label">Status Marital<span class="required">*</span></label>
                             </div>

@@ -46,8 +46,8 @@
                             <div class="col-sm-4">
                                 <select name="jenis_kelamin" id="" class="form-control">
                                     <option value="null"></option>
-                                    <option value="laki-laki">Laki-laki</option>
-                                    <option value="perempuan">Perempuan</option>
+                                    <option value="l">Laki-laki</option>
+                                    <option value="p">Perempuan</option>
                                 </select>
                                 <label class="floating-label">Jenis Kelamin</label>
                             </div>
