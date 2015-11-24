@@ -80,7 +80,7 @@
                         <table class="table table-hover dataTable table-striped table-bordered width-full" id="tableStakeholder">
                             <thead>
                             <tr>
-                                <th>No</th>
+                                <th class="no-sort">No</th>
                                 <th>Name</th>
                                 <th>TTL</th>
                                 <th>J. Kelamin</th>
@@ -93,7 +93,7 @@
                             <tbody>
                             @foreach($stakeholders as $i => $v)
                                 <tr>
-                                    <td>{{ $i+1 }}</td>
+                                    <td class="no-sort">{{ $i+1 }}</td>
                                     <td>{{ $v->nama }}</td>
                                     <td>{{ $v->tempat_lahir }}, {{ $v->tanggal_lahir }}</td>
                                     <td>{{ ($v->jenis_kelamin == 'l') ? 'Laki - laki' : 'Perempuan' }}</td>
@@ -155,59 +155,82 @@
 
             var tableContent = $('#popFormExcel').html(),
                     tableSettings = {
-                        title: 'Import data pegawai',
+                        title: 'Import data siswa',
                         content: tableContent,
                         width: 500,
                         animation : 'pop'
                     };
 
-            $(document).ready(function() {
-
-                var tableContent = $('#popFormExcel').html(),
-                        tableSettings = {
-                            title: 'Import data siswa',
-                            content: tableContent,
-                            width: 500,
-                            animation : 'pop'
-                        };
-
-                $('#btnPopFormExcel').webuiPopover($.extend({}, defaults,
-                        tableSettings));
-
-                var tableContentKelas = $('#popFormKelas').html(),
-                        tableSettings = {
-                            title: 'Filter per kelas',
-                            content: tableContentKelas,
-                            width: 500,
-                            animation : 'pop'
-                        };
-
-                $('#btnPopFormKelas').webuiPopover($.extend({}, defaults,
-                        tableSettings));
-
-                var defaults = $.components.getDefaults("dataTable");
-
-                var options = $.extend(true, {}, defaults, {
-                    "aoColumnDefs": [{
-                        'bSortable': false,
-                        'aTargets': [-1]
-                    }],
-                    "iDisplayLength": 5,
-                    "aLengthMenu": [
-                        [5, 10, 25, 50, -1],
-                        [5, 10, 25, 50, "All"]
-                    ],
-                    "sDom": '<"dt-panelmenu clearfix"Tfr>t<"dt-panelfooter clearfix"ip>',
-                    "oTableTools": {
-                        "sSwfPath": "{{ asset('/vendor/datatables-tabletools/swf/copy_csv_xls_pdf.swf') }}"
-                    }
-                });
-
-                $('#tableStakeholder').dataTable(options);
-            });
-
             $('#btnPopFormExcel').webuiPopover($.extend({}, defaults,
                     tableSettings));
+
+            var tableContentKelas = $('#popFormKelas').html(),
+                    tableSettings = {
+                        title: 'Filter per kelas',
+                        content: tableContentKelas,
+                        width: 500,
+                        animation : 'pop'
+                    };
+
+            $('#btnPopFormKelas').webuiPopover($.extend({}, defaults,
+                    tableSettings));
+
+            myTable = $('#tableStakeholder').dataTable({
+                "aoColumns" : [
+                    {
+                        bVisible : true,
+                        bSortable : false,
+                    },
+                    {
+                        bSortable : true,
+                        bVisible : true,
+
+                    },
+                    {
+                        bSortable : true,
+                        bVisible : true,
+
+                    },
+                    {
+                        bSortable : true,
+                        bVisible : true,
+
+                    },
+                    {
+                        bSortable : true,
+                        bVisible : true,
+
+                    },
+                    {
+                        bSortable : true,
+                        bVisible : true,
+
+                    },
+                    {
+                        bSortable : true,
+                        bVisible : true,
+
+                    },
+                    {
+                        bSortable : true,
+                        bVisible : true,
+
+                    }],
+                "order": [[ 1, 'asc' ]],
+//                "orderFixed": {
+//                    "pre": [ 0, 'asc' ]
+//                }
+                "sDom": '<"dt-panelmenu clearfix"Tfr>t<"dt-panelfooter clearfix"ip>',
+                "oTableTools": {
+                    "sSwfPath": "{{ asset('/vendor/datatables-tabletools/swf/copy_csv_xls_pdf.swf') }}"
+                }
+            });
+
+            myTable.api().on('order.dt', function () {
+                myTable.api().column(0, {order:'applied'}).nodes().each(function (cell, i) {
+                    cell.innerHTML = i+1;
+                });
+            }).draw();
 
             $('.deleteStakeholder').click(function(e) {
                 var url = $(this).attr("href");

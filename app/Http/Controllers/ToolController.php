@@ -392,7 +392,7 @@ class ToolController extends Controller
             }
         });
 
-        return redirect('/hrd');
+        return redirect('/hrd/stakeholder');
     }
 
 }

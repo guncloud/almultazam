@@ -83,7 +83,12 @@
                                 Bagian : {{ @$stakeholder->division->division }} <br >
                             </div>
                             <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                                Jabatan : {{ @$stakeholder->jabatan }}
+                                Jabatan :
+                                @if($stakeholder->positions)
+                                    @foreach($stakeholder->positions as $pos)
+                                        {{ $pos->position }},
+                                    @endforeach
+                                @endif
                             </div>
                         </div>
                         <hr>

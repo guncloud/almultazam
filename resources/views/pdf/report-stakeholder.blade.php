@@ -106,7 +106,7 @@
     <div>
         <br>
 
-        <p style="text-align: right">
+        <p style="text-align: right; margin-right: 30px">
             Kuningan, <?php echo date('d-m-y') ?> 
         </p>
         
