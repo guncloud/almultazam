@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Session;
+use Modules\Hrd\Entities\Performance;
 use Modules\Siswa\Entities\Classroom;
 use Modules\Siswa\Entities\Config;
 use App\Stakeholder;
@@ -162,7 +163,7 @@ class ToolController extends Controller
         $data['year'] = $year;
         $data['semester'] = $request->get('semester');
 
-       // return view('pdf.cover', $data);
+//        return view('pdf.cover', $data);
 
         $pdf = \App::make('dompdf.wrapper');
         $pdf->setOrientation('portrait')->loadView('pdf.cover', $data);
@@ -176,6 +177,11 @@ class ToolController extends Controller
 
     public function getDownloadFormatPegawai(){
         $path = base_path() . '/storage/downloads/format_data_pegawai.xlsx';
+        return response()->download($path);
+    }
+
+    public function getDownloadFormatReportPegawai(){
+        $path = base_path() . '/storage/downloads/format_report_pegawai.xlsx';
         return response()->download($path);
     }
 
@@ -344,6 +350,49 @@ class ToolController extends Controller
         Session::flash('info', 'Data imported');
 
         return redirect('/hrd/stakeholder');
+    }
+
+    public function postUploadRaportPegawai(Request $request)
+    {
+        $uploaded_name = $request->file('upload_pegawai')->getClientOriginalName();
+
+        $request->file('upload_pegawai')->move(base_path() . '/storage/uploads/', $uploaded_name);
+
+        Excel::load(base_path() . '/storage/uploads/'.$uploaded_name, function($reader) {
+            $results = $reader->get();
+
+            foreach ($results as $p => $v) {
+
+                foreach ($v as $k => $item) {
+                    $stk = Stakeholder::where('nrp', $item['nrp'])->first();
+                   foreach($item as $ind => $val){
+                       if($ind != 'nrp'){
+                           if($val > 0){
+                               $performance = explode('_', $ind);
+                               $performance = Performance::where('performance', 'LIKE', $performance[0].' '.$performance[1].'%')->first();
+                               $year = date('Y')+1;
+                               $year = date('Y').'/'.$year;
+
+                               $array = array(
+                                   'stakeholder_id' => $stk->id,
+                                   'performance_id' => $performance->id,
+                                   'semester' => '1',
+                                   'score' => $val,
+                                   'year' => $year
+                               );
+
+                               Report::create($array);
+
+                           }
+                       }
+                    }
+                }
+
+                Session::flash('info', 'Imported');
+            }
+        });
+
+        return redirect('/hrd');
     }
 
 }

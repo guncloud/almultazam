@@ -176,8 +176,6 @@ class StakeholderController extends Controller {
     public function update(Request $request ,$id)
     {
 
-//        dd($request->input('position'));
-
         $rec = Stakeholder::find($id);
 
         if($request->hasFile('photo')){

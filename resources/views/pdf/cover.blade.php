@@ -1,14 +1,28 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-15">
-    <link href="http://fonts.googleapis.com/css?family=Give+You+Glory&amp;v2" rel="stylesheet" type="text/css">
     <style type="text/css">
         body {
             font-family: sans-serif;
         }
+
+        .scontainer{
+            border: 1px solid darkgreen;
+        }
         @font-face{
             font-family: Renfrew;
             src: url('Renfrew.ttf');
+        }
+
+        .container {
+            background: rgb(232, 255, 201);
+            color: black;
+
+            border: 2px dashed #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 0 4px #ff0030, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+            text-shadow: -1px -1px #aa3030;
+            font-weight: normal;
         }
 
         h2 {
@@ -18,9 +32,11 @@
         p{
             font-size: 30px;
         }
+
+
     </style>
 </head>
-<body marginwidth="0" marginheight="0">
+<body marginwidth="0" marginheight="0" >
 
 <div class="container" style="text-align: center">
     <p>

@@ -2,11 +2,33 @@
 
 @section('css')
     <link rel="stylesheet" href="{{ asset('/vendor/toastr/toastr.css') }}">
+    <link rel="stylesheet" href="{{ asset('/vendor/webui-popover/webui-popover.css') }}">
 @stop
 
 @section('content')
 
     <div class="page animsition">
+        <div class="hidden" id="popFormExcel">
+            <form class="form-inline " enctype="multipart/form-data" method="post" action="{{ url('/tool/upload-raport-pegawai') }}">
+                <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon1">Import Excel</span>
+                        <input type="file" name="upload_pegawai"  class="form-control">
+                        <span class="input-group-btn">
+                            <button type="submit" class="btn btn-info">Import</button>
+                        </span>
+                    </div><!-- /input-group -->
+                    <br>
+                    <br>
+                    <a class="btn btn-xs btn-info btn-block" href="{{ url('/tool/download-format-report-pegawai') }}">
+                        <i class="icon wb-download" aria-hidden="true"></i>
+                        Download Format Excel
+                    </a>
+                </div>
+            </form>
+        </div>
+
         <div class="page-header">
             <h4 class="page-title">{{ $title or 'Judul' }}</h4>
             <div class="page-header-actions">
@@ -25,6 +47,10 @@
                     <div class="form-group">
                         <button class="btn btn-primary" type="submit">Submit</button>
                     </div>
+                    <button type="button" class="btn btn-sm btn-icon btn-default btn-outline btn-round"
+                            data-toggle="tooltip" data-original-title="Upload" id="btnPopFormExcel" href="javascript:void(0)">
+                        <i class="icon wb-upload" aria-hidden="true"></i>
+                    </button>
                 </form>
             </div>
         </div>
@@ -120,9 +146,23 @@
     <script src="{{ asset('/js/jquery.autocomplete.js') }}"></script>
     <script src="{{ asset('/vendor/toastr/toastr.js') }}"></script>
     <script src="{{ asset('/js/components/toastr.js') }}"></script>
+    <script src="{{ asset('/vendor/webui-popover/jquery.webui-popover.min.js') }}"></script>
+    <script src="{{ asset('/js/components/webui-popover.js') }}"></script>
 
     <script>
         $(function(){
+            var defaults = $.components.getDefaults("webuiPopover");
+
+            var tableContent = $('#popFormExcel').html(),
+                    tableSettings = {
+                        title: 'Import data siswa',
+                        content: tableContent,
+                        width: 500,
+                        animation : 'pop'
+                    };
+
+            $('#btnPopFormExcel').webuiPopover($.extend({}, defaults,
+                    tableSettings));
 
             $('#stakeholder').autocomplete({
                 serviceUrl: "{{ url('/hrd/stakeholder/search') }}",
