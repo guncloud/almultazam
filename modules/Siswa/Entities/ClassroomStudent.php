@@ -23,7 +23,7 @@ class ClassroomStudent extends Model {
                     ->join('students', 'students.id', '=', 'classroom_student.student_id')
                     ->join('classrooms', 'classrooms.id', '=', 'classroom_student.classroom_id')
                     ->where('year', '=', $year)
-                    ->where('deleted_at', '=', null)
+                    ->whereNull('deleted_at')
                     ->get();
             });
 
@@ -39,7 +39,7 @@ class ClassroomStudent extends Model {
                     ->join('classrooms', 'classrooms.id', '=', 'classroom_student.classroom_id')
                     ->where('year', '=', $year)
                     ->where('classrooms.id', '=', $this->classroomId)
-                    ->where('deleted_at', '=', null)
+                    ->whereNull('deleted_at')
                     ->get();
             });
 

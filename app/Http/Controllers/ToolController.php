@@ -20,7 +20,7 @@ use Modules\Siswa\Entities\Student;
 use Modules\Siswa\Http\Controllers\SiswaController;
 use Excel;
 use Illuminate\Support\Facades\DB;
-
+use Illuminate\Support\Facades\Cache;
 class ToolController extends Controller
 {
 
@@ -393,6 +393,12 @@ class ToolController extends Controller
         });
 
         return redirect('/hrd/stakeholder');
+    }
+
+    public function getRefresh()
+    {
+        Cache::flush();
+        return back();
     }
 
 }

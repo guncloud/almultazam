@@ -15,7 +15,7 @@ class Asrama extends Model {
             ->select('*')
             ->join('stakeholders', 'stakeholders.id', '=', 'asrama.teacher_id')
             ->join('divisions', 'divisions.id', '=', 'stakeholders.division_id')
-            ->where('divisions.slug', '=', 'smpit')
+            ->where('divisions.slug', '=', 'smpit-al-multazam')
             ->get();
 
         return $rec;
