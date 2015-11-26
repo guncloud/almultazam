@@ -5,12 +5,25 @@
     <title>Laporan Pegawai</title>
 
     <link href="{{ base_path('public/css/pure.min.css') }}" rel="stylesheet">
-
+    <style>
+        body{
+            font-size: 12px;
+        }
+    </style>
 </head>
 <body>
 
 <div class="container">
     <h3>{{ $title }}</h3>
+
+    @if($stakeholder->photo)
+        <img src="{{ base_path('public/photos/'.$stakeholder->photo) }}" alt="..." style="height: 140px">
+    @else
+        <img src="{{ base_path('public/photos/5.jpg') }}" alt="..." style="height: 140px">
+    @endif
+
+    <br>
+    <br>
 
     Nama Lengkap : {{ $stakeholder->nama }} <br>
     KTP : {{ $stakeholder->ktp }} <br>
@@ -27,14 +40,21 @@
             <tr>
                 <td>Jenis Kelamin</td>
                 <td>{{ ($stakeholder->jenis_kelamin == 'l') ? 'Laki - laki' : 'perempuan' }}</td>
-                <td>Alamat</td>
-                <td>{{ $stakeholder->alamat_sekarang }}</td>
+                <td>Nama Suami/Istri</td>
+                <td>{{ $stakeholder->nama_istri_suami }} </td>
+
             </tr>
             <tr>
                 <td>Kelahiran</td>
                 <td>{{ $stakeholder->tempat_lahir }}, {{ date('d-m-Y', strtotime($stakeholder->tanggal_lahir)) }}</td>
                 <td>Kontak</td>
                 <td>{{ $stakeholder->kontak }} </td>
+            </tr>
+            <tr>
+                <td>Alamat Rumah</td>
+                <td>{{ $stakeholder->alamat_rumah }}</td>
+                <td>Alamat Sekarang</td>
+                <td>{{ $stakeholder->alamat_sekarang }}</td>
             </tr>
         </tbody>
     </table>
@@ -49,21 +69,51 @@
         <tbody>
         <tr>
             <td>SD</td>
-            <td>{{ $stakeholder->sd }}</td>
+            <td>
+                {{ $stakeholder->sd }}
+                @if($stakeholder->tahun_lulus_sd)
+                    {{ '( '.$stakeholder->tahun_lulus_sd.' )' }}
+                @endif
+            </td>
             <td>SMP</td>
-            <td>{{ $stakeholder->smp }}</td>
+            <td>
+                {{ $stakeholder->smp }}
+                @if($stakeholder->tahun_lulus_smp)
+                    {{ '( '.$stakeholder->tahun_lulus_smp.' )' }}
+                @endif
+            </td>
         </tr>
         <tr>
             <td>SMA</td>
-            <td>{{ $stakeholder->sma }}</td>
+            <td>
+                {{ $stakeholder->sma }}
+                @if($stakeholder->tahun_lulus_sma)
+                    {{ '( '.$stakeholder->tahun_lulus_sma.' )' }}
+                @endif
+            </td>
             <td>Diploma</td>
-            <td>{{ $stakeholder->universitas_diploma }}</td>
+            <td>
+                {{ $stakeholder->universitas_diploma }}
+                @if($stakeholder->tahun_lulus_diploma)
+                    {{ '( '.$stakeholder->tahun_lulus_diploma.' )' }}
+                @endif
+            </td>
         </tr>
         <tr>
             <td>S1</td>
-            <td>{{ $stakeholder->universitas_s1 }}</td>
+            <td>
+                {{ $stakeholder->universitas_s1 }}
+                @if($stakeholder->tahun_lulus_s1)
+                    {{ '( '.$stakeholder->tahun_lulus_s1.' )' }}
+                @endif
+            </td>
             <td>S2</td>
-            <td>{{ $stakeholder->universitas_s2 }}</td>
+            <td>
+                {{ $stakeholder->universitas_s2 }}
+                @if($stakeholder->tahun_lulus_s2)
+                    {{ '( '.$stakeholder->tahun_lulus_s2.' )' }}
+                @endif
+            </td>
         </tr>
         </tbody>
     </table>
@@ -80,7 +130,13 @@
                 <td>Status Kepegawaian</td>
                 <td>{{ $stakeholder->status_kepegawaian }}</td>
                 <td>Jabatan</td>
-                <td>{{ $stakeholder->jabatan }}</td>
+                <td>
+                    @if($stakeholder->positions)
+                        @foreach($stakeholder->positions as $pos)
+                            {{ $pos->position }},
+                        @endforeach
+                    @endif
+                </td>
             </tr>
             <tr>
                 <td>Mulai Kerja</td>

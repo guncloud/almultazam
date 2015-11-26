@@ -214,7 +214,7 @@
                                         <li class="list-group-item">
                                             <div class="media media-lg">
                                                 <div class="media-body">
-                                                    <h4 class="media-heading">Divisi</h4>
+                                                    <h4 class="media-heading">Divisi/Bagian</h4>
                                                     <p>
                                                         {{ @$stakeholder->division->division }}
                                                     </p>

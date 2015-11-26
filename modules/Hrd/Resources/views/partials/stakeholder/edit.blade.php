@@ -54,7 +54,7 @@
                             <div class="col-sm-4">
                                 <input type="text" class="form-control" readonly="" />
                                 <input type="file" name="photo" value="{{ $stakeholder->photo }}" placeholder="{{ $stakeholder->photo }}"/>
-                                <label class="floating-label">Poto</label>
+                                <label class="floating-label">Foto</label>
                             </div>
                         </div>
                         <div class="form-group form-material floating row">
@@ -87,7 +87,7 @@
                             </div>
                             <div class="col-sm-4">
                                 <input type="text" class="form-control" name="pekerjaan_keluarga" value="{{ $stakeholder->pekerjaan_keluarga }}"/>
-                                <label class="floating-label">Pekerjaan Keluarga</label>
+                                <label class="floating-label">Pekerjaan Suami/Istri</label>
                             </div>
                         </div>
                         <br>
@@ -103,7 +103,7 @@
                                         <option value="{{ $div->id }}" {{ ($stakeholder->division_id == $div->id) ? 'selected' : '' }}>{{ $div->division }}</option>
                                     @endforeach
                                 </select>
-                                <label class="floating-label">Divisi<span class="required">*</span></label>
+                                <label class="floating-label">Divisi/Bagian<span class="required">*</span></label>
                             </div>
                             <div class="col-sm-3">
                                 <select name="status" id="status" class="form-control">

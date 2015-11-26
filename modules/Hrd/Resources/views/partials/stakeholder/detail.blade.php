@@ -4,7 +4,19 @@
     <link rel="stylesheet" href="{{ asset('/css/pages/profile.css') }}">
     <link rel="stylesheet" href="{{ asset('/vendor/webui-popover/webui-popover.css') }}">
     <link rel="stylesheet" href="{{ asset('/vendor/toolbar/toolbar.css') }}">
-    @endsection
+
+    <style>
+        .media-body{
+            font-size: 12px;
+        }
+        .media-body h4{
+            font-size: 12px;
+        }
+        .page-profile .list-group-item {
+            padding: 10px 5px;
+        }
+    </style>
+@endsection
 
     @section('content')
 
@@ -101,7 +113,7 @@
                                     <a data-toggle="tab" href="#profile" aria-controls="profile" role="tab">Profil</a>
                                 </li>
                                 <li role="presentation">
-                                    <a data-toggle="tab" href="#sekolah" aria-controls="sekolah" role="tab">Sekolah</a>
+                                    <a data-toggle="tab" href="#sekolah" aria-controls="sekolah" role="tab">Pendidikan</a>
                                 </li>
                                 <li role="presentation">
                                     <a data-toggle="tab" href="#status" aria-controls="status" role="tab">Status</a>
@@ -155,7 +167,7 @@
                                                 <div class="media-body">
                                                     <h4 class="media-heading">Nama Suami / Istri</h4>
                                                     <p>
-                                                        {{ $stakeholder->alamat_rumah }}
+                                                        {{ $stakeholder->nama_istri_suami }}
                                                     </p>
                                                 </div>
                                             </div>
@@ -163,7 +175,7 @@
                                         <li class="list-group-item">
                                             <div class="media media-lg">
                                                 <div class="media-body">
-                                                    <h4 class="media-heading">Pekerjaan Keluarga</h4>
+                                                    <h4 class="media-heading">Pekerjaan Suami/Istri</h4>
                                                     <p>
                                                         {{ $stakeholder->pekerjaan_keluarga }}
                                                     </p>
@@ -180,44 +192,66 @@
                                                 <h4 class="media-heading">TK</h4>
                                                 <p>
                                                     {{ $stakeholder->tk }}
+                                                    @if($stakeholder->tahun_lulus_tk)
+                                                        {{ '( '.$stakeholder->tahun_lulus_tk.' )' }}
+                                                    @endif
                                                 </p>
                                             </div>
                                             <div class="media">
                                                 <h4 class="media-heading">SD</h4>
                                                 <p>
                                                     {{ $stakeholder->sd }}
+                                                    @if($stakeholder->tahun_lulus_sd)
+                                                        {{ '( Lulus tahun '.$stakeholder->tahun_lulus_sd.' )' }}
+                                                    @endif
                                                 </p>
                                             </div>
                                             <div class="media">
                                                 <h4 class="media-heading">SMP</h4>
                                                 <p>
                                                     {{ $stakeholder->smp }}
+                                                    @if($stakeholder->tahun_lulus_smp)
+                                                        {{ '( Lulus tahun '.$stakeholder->tahun_lulus_smp.' )' }}
+                                                    @endif
                                                 </p>
                                             </div>
                                             <div class="media">
                                                 <h4 class="media-heading">SMA</h4>
                                                 <p>
                                                     {{ $stakeholder->sma }}
+                                                    @if($stakeholder->tahun_lulus_sma)
+                                                        {{ '( Lulus tahun '.$stakeholder->tahun_lulus_sma.' )' }}
+                                                    @endif
                                                 </p>
                                             </div>
                                             <div class="media">
                                                 <h4 class="media-heading">Diploma</h4>
                                                 <p>
                                                     {{ $stakeholder->universitas_diploma }}
+                                                    @if($stakeholder->tahun_lulus_diploma)
+                                                        {{ '( Lulus tahun '.$stakeholder->tahun_lulus_diploma.' )' }}
+                                                    @endif
                                                 </p>
                                             </div>
                                             <div class="media">
                                                 <h4 class="media-heading">S1</h4>
                                                 <p>
                                                     {{ $stakeholder->universitas_s1 }}
+                                                    @if($stakeholder->tahun_lulus_s1)
+                                                        {{ '( Lulus tahun '.$stakeholder->tahun_lulus_s1.' )' }}
+                                                    @endif
                                                 </p>
                                             </div>
                                             <div class="media">
                                                 <h4 class="media-heading">S2</h4>
                                                 <p>
                                                     {{ $stakeholder->universitas_s2 }}
+                                                    @if($stakeholder->tahun_lulus_s2)
+                                                        {{ '( Lulus tahun '.$stakeholder->tahun_lulus_s2.' )' }}
+                                                    @endif
                                                 </p>
                                             </div>
+
                                         </li>
                                     </ul>
                                 </div>
@@ -237,7 +271,7 @@
                                         <li class="list-group-item">
                                             <div class="media media-lg">
                                                 <div class="media-body">
-                                                    <h4 class="media-heading">Divisi</h4>
+                                                    <h4 class="media-heading">Divisi/Bagian</h4>
                                                     <p>
                                                         {{ @$stakeholder->division->division }}
                                                     </p>
@@ -376,7 +410,7 @@
 
                 var tableContent = $('#popMenu').html(),
                         tableSettings = {
-                            title: 'Import data siswa',
+                            title: 'Download data pdf',
                             content: tableContent,
                             width: 500,
                             animation: 'pop'

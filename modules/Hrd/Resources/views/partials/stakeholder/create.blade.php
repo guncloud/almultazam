@@ -15,14 +15,6 @@
                 <a type="button" href="{{ url('/hrd/stakeholder') }}" class="btn btn-sm btn-icon btn-default btn-outline btn-round" data-toggle="tooltip" data-original-title="Edit">
                     <i class="icon wb-arrow-left" aria-hidden="true"></i>
                 </a>
-                <button type="button" class="btn btn-sm btn-icon btn-default btn-outline btn-round"
-                        data-toggle="tooltip" data-original-title="Refresh">
-                    <i class="icon wb-refresh" aria-hidden="true"></i>
-                </button>
-                <button type="button" class="btn btn-sm btn-icon btn-default btn-outline btn-round"
-                        data-toggle="tooltip" data-original-title="Setting">
-                    <i class="icon wb-settings" aria-hidden="true"></i>
-                </button>
             </div>
         </div>
         <div class="page-content">
@@ -35,7 +27,7 @@
                         <input type="hidden" name="_token" value="{{ csrf_token() }}" >
                         <div class="form-group form-material floating row">
                             <div class="col-sm-4">
-                                <input type="text" class="form-control" name="nama" required/>
+                                <input type="text" id="nama_pegawai" class="form-control" name="nama" required/>
                                 <label class="floating-label">Nama<span class="required">*</span></label>
                             </div>
                             <div class="col-sm-4">
@@ -68,7 +60,7 @@
 
                                 <input type="text" class="form-control" readonly="" />
                                 <input type="file" name="photo" />
-                                <label class="floating-label">Poto</label>
+                                <label class="floating-label">Foto</label>
                             </div>
                         </div>
                         <div class="form-group form-material floating row">
@@ -121,7 +113,7 @@
                                         <option value="{{ $div->id }}">{{ $div->division }}</option>
                                     @endforeach
                                 </select>
-                                <label class="floating-label">Divisi<span class="required">*</span></label>
+                                <label class="floating-label">Divisi/Bagian<span class="required">*</span></label>
                             </div>
                             <div class="col-sm-3">
                                 <select name="status" id="status" class="form-control">
@@ -160,9 +152,9 @@
                                 </select>
                             </div>
                             <div class="col-sm-4">
-                                <input type="text" class="form-control" name="mulai_kerja" id="mulai_kerja" data-plugin="formatter" data-pattern="[[9999]]-[[99]]-[[99]]"/>
+                                <input type="text" class="form-control" name="mulai_kerja" id="mulai_kerja" data-plugin="formatter" data-pattern="[[99]]-[[99]]-[[9999]]"/>
                                 <label class="floating-label">Mulai Kerja<span class="required">*</span></label>
-                                <small class="help-block">Tahun-Bulan-Tanggal</small>
+                                <small class="help-block">Tanggal-Bulan-Tahun</small>
                             </div>
                             <div class="col-sm-4">
                                 <select class="form-control" name="golongan_id" id="">
@@ -554,6 +546,8 @@
 
     <script>
         $(function(){
+
+            $('#nama_pegawai').focus();
 
             $('#position').select2();
 

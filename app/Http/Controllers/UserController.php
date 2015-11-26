@@ -20,7 +20,9 @@ class UserController extends Controller
      */
     public function index()
     {
-        //
+        $title = 'Management Users';
+
+        return view('users/index', compact('title'));
     }
 
     /**

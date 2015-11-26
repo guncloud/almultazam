@@ -33,16 +33,20 @@ class ReportController extends Controller {
                 $reportScores = false;
             }
 
+            $showall = false;
+
         }else{
-            $stakeholder = false;
+            $stakeholder = Stakeholder::all();
             $report = false;
             $reportScores = false;
+            $showall = true;
         }
 
         //dd($reportScores);
 
         $data['reportScores'] = $reportScores;
         $data['report'] = $report;
+        $data['showall'] = $showall;
         $data['stakeholder'] = $stakeholder;
 		$data['title'] = 'Rapor Pegawai';
 		return view('hrd::partials.report.index', $data);

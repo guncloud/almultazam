@@ -5,12 +5,30 @@
     <title>Laporan Raport Pegawai</title>
 
     <link href="{{ base_path('public/css/pure.min.css') }}" rel="stylesheet">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-15">
+    <style type="text/css">
+        body {
+            font-family: sans-serif;
+        }
+
+        .scontainer{
+            border: 1px solid darkgreen;
+        }
+        @font-face{
+            font-family: Renfrew;
+            src: url('Renfrew.ttf');
+        }
+    </style>
 </head>
 <body>
 <div class="container">
-    <h4 style="text-align: center">
+    <p style="text-align: center">
         RAPORT PEGAWAI <br>
-        YAYASAN PENDIDIKAN ISLAM AL-MULTAZAM HUSNUL KHOTIMAH</h4>
+        YAYASAN PENDIDIKAN ISLAM
+    </p>
+    <p style="font-family: 'Renfrew', sans-serif; text-align: center">
+        AL-MULTAZAM HUSNUL KHOTIMAH
+    </p>
 
         @if($stakeholder->photo)
             <img src="{{ base_path('public/photos/'.$stakeholder->photo) }}" alt="..." style="height: 140px">

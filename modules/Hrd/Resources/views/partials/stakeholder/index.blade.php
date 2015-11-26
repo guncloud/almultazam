@@ -42,7 +42,7 @@
                     <div class="form-group">
 
                             <select name="division" id="division" class="form-control">
-                                <option selected disabled>Divisi</option>
+                                <option selected disabled>Divisi/Bagian</option>
                                 @foreach($divisions as $div)
                                     <option value="{{ $div->id }}">{{ $div->division }}</option>
                                 @endforeach
@@ -65,7 +65,7 @@
                 @else
                     <div class="alert alert-danger">
                     	<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                    	<strong>Perhatian </strong> Data <a href="{{ url('/hrd/division') }}">divisi</a> tidak ada
+                    	<strong>Perhatian </strong> Data <a href="{{ url('/hrd/division') }}">divisi/bagian</a> tidak ada
                     </div>
                 @endif
             </div>
@@ -87,6 +87,7 @@
                                 <th>NIK</th>
                                 <th>Jabatan</th>
                                 <th>Handphone</th>
+                                <th class="hide-column">Alamat</th>
                                 <th class="col-md-3">Option</th>
                             </tr>
                             </thead>
@@ -95,7 +96,7 @@
                                 <tr>
                                     <td class="no-sort">{{ $i+1 }}</td>
                                     <td>{{ $v->nama }}</td>
-                                    <td>{{ $v->tempat_lahir }}, {{ $v->tanggal_lahir }}</td>
+                                    <td>{{ $v->tempat_lahir }}, {{ date('d-m-Y', strtotime($v->tanggal_lahir)) }}</td>
                                     <td>{{ ($v->jenis_kelamin == 'l') ? 'Laki - laki' : 'Perempuan' }}</td>
                                     <td>{{ $v->nrp }}</td>
                                     <td>
@@ -106,6 +107,7 @@
                                         @endif
                                     </td>
                                     <td>{{ $v->kontak }}</td>
+                                    <td>{{ $v->alamat_sekarang }}</td>
                                     <td class="col-md-2">
                                         <form class="deleteForm" action="{{ url('/hrd/stakeholder/'.$v->id) }}" method="post">
                                             <input type="hidden" name="_token" value="{{ csrf_token() }}" >
@@ -121,6 +123,7 @@
                                             </a>
                                         </form>
                                     </td>
+
                                 </tr>
                             @endforeach
                             </tbody>
@@ -155,7 +158,7 @@
 
             var tableContent = $('#popFormExcel').html(),
                     tableSettings = {
-                        title: 'Import data siswa',
+                        title: 'Import data pegawai',
                         content: tableContent,
                         width: 500,
                         animation : 'pop'
@@ -176,51 +179,17 @@
                     tableSettings));
 
             myTable = $('#tableStakeholder').dataTable({
-                "aoColumns" : [
+                "columnDefs": [
                     {
-                        bVisible : true,
-                        bSortable : false,
+                        "targets": "hide-column",
+                        "visible": false,
                     },
-                    {
-                        bSortable : true,
-                        bVisible : true,
-
-                    },
-                    {
-                        bSortable : true,
-                        bVisible : true,
-
-                    },
-                    {
-                        bSortable : true,
-                        bVisible : true,
-
-                    },
-                    {
-                        bSortable : true,
-                        bVisible : true,
-
-                    },
-                    {
-                        bSortable : true,
-                        bVisible : true,
-
-                    },
-                    {
-                        bSortable : true,
-                        bVisible : true,
-
-                    },
-                    {
-                        bSortable : true,
-                        bVisible : true,
-
-                    }],
+                ],
                 "order": [[ 1, 'asc' ]],
 //                "orderFixed": {
 //                    "pre": [ 0, 'asc' ]
 //                }
-                "sDom": '<"dt-panelmenu clearfix"Tfr>t<"dt-panelfooter clearfix"ip>',
+                "sDom": '<"dt-panelmenu clearfix">Tfr - lt<"dt-panelfooter clearfix"ip>',
                 "oTableTools": {
                     "sSwfPath": "{{ asset('/vendor/datatables-tabletools/swf/copy_csv_xls_pdf.swf') }}"
                 }

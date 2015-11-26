@@ -29,6 +29,7 @@ class Kernel extends HttpKernel {
 		'guest' => 'App\Http\Middleware\RedirectIfAuthenticated',
 		'hrd' => '\App\Http\Middleware\ModuleHrd',
 		'siswa' => '\App\Http\Middleware\ModuleSiswa',
+		'root' => '\App\Http\Middleware\ModuleRoot',
 		'admin' => '\App\Http\Middleware\RoleAdmin',
 		'pembina' => '\App\Http\Middleware\RolePembina',
 		'alquran' => '\App\Http\Middleware\RoleAlquran',

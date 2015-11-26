@@ -65,7 +65,7 @@
                                 <option value="{{ $div->id }}" {{ ($stakeholder->division_id == $div->id) ? 'selected' : '' }}>{{ $div->division }}</option>
                                 @endforeach
                             </select>
-                            <label class="floating-label">Divisi<span class="required">*</span></label>
+                            <label class="floating-label">Divisi/Bagian<span class="required">*</span></label>
                         </div>
                         <div class="col-sm-6">
                             <input type="text" class="form-control" name="photo" />

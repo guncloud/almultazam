@@ -3,6 +3,13 @@
 @section('css')
     <link rel="stylesheet" href="{{ asset('/vendor/toastr/toastr.css') }}">
     <link rel="stylesheet" href="{{ asset('/vendor/webui-popover/webui-popover.css') }}">
+
+    <link rel="stylesheet" href="{{ asset('/vendor/datatables-bootstrap/dataTables.bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ asset('/vendor/datatables-fixedheader/dataTables.fixedHeader.css') }}">
+    <link rel="stylesheet" href="{{ asset('/vendor/datatables-responsive/dataTables.responsive.css') }}">
+    <link rel="stylesheet" href="{{ asset('/vendor/bootstrap-sweetalert/sweet-alert.css') }}">
+    <link rel="stylesheet" href="{{ asset('/vendor/webui-popover/webui-popover.css') }}">
+    <link rel="stylesheet" href="{{ asset('/vendor/toolbar/toolbar.css') }}">
 @stop
 
 @section('content')
@@ -55,6 +62,35 @@
             </div>
         </div>
         <div class="page-content">
+            @if($showall)
+                @if($stakeholder)
+                    <table class="table table-hover dataTable table-striped table-bordered width-full" id="tableStakeholder">
+                        <thead>
+                        <tr>
+                            <th class="no-sort">No</th>
+                            <th>Name</th>
+                            <th>Report</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        @foreach($stakeholder as $i => $v)
+                            <tr>
+                                <td class="no-sort">{{ $i+1 }}</td>
+                                <td>{{ $v->nama }}</td>
+                                <td>
+                                    <a href="{{ url('/hrd/report?semester=1&stakeholder_id='.$v->id) }}" class="btn btn-success btn-sm" type="button">
+                                        Semester 1
+                                    </a>
+                                    <a href="{{ url('/hrd/report?semester=2&stakeholder_id='.$v->id) }}" class="btn btn-success btn-sm" type="button">
+                                        Semester 2
+                                    </a>
+                                </td>
+                            </tr>
+                        @endforeach
+                        </tbody>
+                    </table>
+                @endif
+            @else
             <div class="panel">
                 <div class="panel-heading">
                     <h3 class="panel-title">{{ $stakeholder->nama or '' }}</h3>
@@ -141,6 +177,7 @@
                     @endif
                 </div>
             </div>
+            @endif
         </div>
     </div>
 
@@ -153,6 +190,20 @@
     <script src="{{ asset('/js/components/toastr.js') }}"></script>
     <script src="{{ asset('/vendor/webui-popover/jquery.webui-popover.min.js') }}"></script>
     <script src="{{ asset('/js/components/webui-popover.js') }}"></script>
+
+    <script src="{{ asset('/vendor/datatables/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('/vendor/datatables-fixedheader/dataTables.fixedHeader.js') }}"></script>
+    <script src="{{ asset('/vendor/datatables-bootstrap/dataTables.bootstrap.js') }}"></script>
+    <script src="{{ asset('/vendor/datatables-responsive/dataTables.responsive.js') }}"></script>
+    <script src="{{ asset('/vendor/datatables-tabletools/dataTables.tableTools.js') }}"></script>
+    <script src="{{ asset('/vendor/webui-popover/jquery.webui-popover.min.js') }}"></script>
+    <script src="{{ asset('/vendor/bootstrap-sweetalert/sweet-alert.js') }}"></script>
+    <script src="{{ asset('/js/components/datatables.js') }}"></script>
+    <script src="{{ asset('/js/components/webui-popover.js') }}"></script>
+    <script src="{{ asset('/js/components/toolbar.js') }}"></script>
+
+
+
 
     <script>
         $(function(){
@@ -176,6 +227,26 @@
                     $('#stakeholder_id').val(suggestion.data);
                 }
             });
+
+            myTable = $('#tableStakeholder').dataTable({
+                "columnDefs": [
+                    {
+                        "targets": "hide-column",
+                        "visible": false,
+                    },
+                ],
+                "order": [[ 1, 'asc' ]],
+                "sDom": '<"dt-panelmenu clearfix">fr - lt<"dt-panelfooter clearfix"ip>',
+                "oTableTools": {
+                    "sSwfPath": "{{ asset('/vendor/datatables-tabletools/swf/copy_csv_xls_pdf.swf') }}"
+                }
+            });
+
+            myTable.api().on('order.dt', function () {
+                myTable.api().column(0, {order:'applied'}).nodes().each(function (cell, i) {
+                    cell.innerHTML = i+1;
+                });
+            }).draw();
 
         })
     </script>

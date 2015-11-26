@@ -15,4 +15,5 @@ Route::resource('/user', 'UserController');
 Route::controllers([
     'auth' => 'Auth\AuthController',
     'tool' => 'ToolController',
+    'admin' => 'RootController'
 ]);

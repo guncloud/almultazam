@@ -18,7 +18,7 @@
                     <form action="{{ url('/hrd/config') }}" method="post">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
                         <div class="form-group">
-                            <label for="">Kepala Divisi</label>
+                            <label for="">Kepala Divisi/Bagian</label>
                             <input type="text" class="form-control" name="kepala_divisi" value="{{ $kepala_divisi->value or '' }}">
                         </div>
                         <div class="form-group">
