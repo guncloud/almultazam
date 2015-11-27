@@ -22,7 +22,7 @@ class RolePembina
             } else {
                 return redirect()->guest('auth/login');
             }
-        }elseif (!$request->user()->is('pembina', 'root')) {
+        }elseif (!$request->user()->is('pembina')) {
             return redirect('/siswa');
         }
 

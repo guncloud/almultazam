@@ -23,7 +23,7 @@ class ModuleRoot
 				return redirect()->guest('admin/login');
 			}
 		}elseif (!$request->user()->is('root')) {
-			return redirect('/siswa');
+			return redirect('/');
 		}
 
 		return $next($request);

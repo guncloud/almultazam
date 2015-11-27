@@ -2,7 +2,7 @@
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 
 class RootController extends Controller {
@@ -14,12 +14,16 @@ class RootController extends Controller {
 
 	public function getIndex()
 	{
-		echo "index";
+		$title = 'Admin Dashboard';
+
+		return view('root.dashboard.index', compact('title'));
 	}
 
 	public function getLogin()
 	{
-		echo "login";
+		$title = 'Login Admin';
+
+		return view('root.auth.login', compact('title'));
 	}
 
 }

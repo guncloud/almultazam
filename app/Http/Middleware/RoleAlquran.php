@@ -22,7 +22,7 @@ class RoleAlquran
             } else {
                 return redirect()->guest('auth/login');
             }
-        }elseif (!$request->user()->is('alquran', 'root')) {
+        }elseif (!$request->user()->is('alquran')) {
             return redirect('/siswa');
         }
 

@@ -22,8 +22,8 @@ class ModuleSiswa
             } else {    
                 return redirect()->guest('auth/login');
             }
-        }elseif ($request->user()->is('hrd')) {
-            return redirect('/hrd');
+        }elseif ($request->user()->is('hrd') || $request->user()->is('root')) {
+            return redirect('/');
         }
 
         return $next($request);

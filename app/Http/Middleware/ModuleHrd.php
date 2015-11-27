@@ -23,7 +23,7 @@ class ModuleHrd
                 return redirect()->guest('auth/login');
             }
         }elseif (!$request->user()->is('hrd')) {
-            return redirect('/siswa');
+            return redirect('/');
         }
 
         return $next($request);

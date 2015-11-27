@@ -22,7 +22,7 @@ class RoleAdmin
             } else {
                 return redirect()->guest('auth/login');
             }
-        }elseif (!$request->user()->is('admin') and !$request->user()->is('root')) {
+        }elseif (!$request->user()->is('admin')) {
             return redirect('/siswa');
         }
 

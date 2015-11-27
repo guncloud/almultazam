@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Session;
 use Pingpong\Trusty\Role;
 use App\User;
@@ -13,16 +14,24 @@ use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return Response
-     */
+
+    public function __construct()
+    {
+        $this->middleware('root');
+    }
+
     public function index()
     {
         $title = 'Management Users';
+        $user = User::has('roles')->get();
+        $role = Role::all();
 
-        return view('users/index', compact('title'));
+        $users = (!$user->isEmpty()) ? $user : false;
+        $roles = (!$role->isEmpty()) ? $role : false;
+
+//        dd($roles->toArray());
+
+        return view('root.user.index', compact('title', 'users', 'roles'));
     }
 
     /**
@@ -67,7 +76,7 @@ class UserController extends Controller
         }
 
         Session::flash('info', 'Data inserted');
-        return redirect('/siswa/config');
+        return redirect('/user');
     }
 
     /**
@@ -80,6 +89,7 @@ class UserController extends Controller
     {
         $data['title'] = 'Data Pengguna';
         return view('auth.reset', $data);
+
     }
 
     /**
@@ -90,7 +100,11 @@ class UserController extends Controller
      */
     public function edit($id)
     {
-        //
+        $title = 'Edit Data User';
+        $user = User::find($id);
+        $roles = Role::all();
+
+        return view('root.user.edit', compact('title', 'user', 'roles'));
     }
 
     /**
@@ -102,7 +116,24 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
-//        dd($request->all());
+        $user = User::where('id', $id)
+            ->update(array(
+                'username' => $request->get('username'),
+                'password' => Hash::make($request->get('password')
+            )));
+
+        if($user){
+            DB::table('role_user')
+                ->where('user_id', $id)
+                ->update(array('role_id' => $request->get('role')));
+        }
+
+        return redirect('user');
+    }
+
+    public function update_own(Request $request, $id)
+    {
+        //        dd($request->all());
         if($request->get('old_password')){
             $user = User::findOrFail($id);
 

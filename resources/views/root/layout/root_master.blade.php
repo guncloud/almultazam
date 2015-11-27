@@ -10,12 +10,11 @@
         <link rel="stylesheet" href="{{ asset('/css/bootstrap-extend.min.css') }}">
         <link rel="stylesheet" href="{{ asset('/css/site.min.css') }}">
 
+		<link rel="stylesheet" href="{{ asset('/fonts/font-awesome/font-awesome.css') }}">
 
 	</head>
 	<body>
-        @include('layout.navbar')
-        <div class="page-content">
-            @yield('content')
-        </div>
+        @include('root.layout.navbar')
+		@yield('content')
 	</body>
 </html>
