@@ -87,7 +87,6 @@
                                 <th>NIK</th>
                                 <th>Jabatan</th>
                                 <th>Handphone</th>
-                                <th class="hide-column">Alamat</th>
                                 <th class="col-md-3">Option</th>
                             </tr>
                             </thead>
@@ -107,7 +106,6 @@
                                         @endif
                                     </td>
                                     <td>{{ $v->kontak }}</td>
-                                    <td>{{ $v->alamat_sekarang }}</td>
                                     <td class="col-md-2">
                                         <form class="deleteForm" action="{{ url('/hrd/stakeholder/'.$v->id) }}" method="post">
                                             <input type="hidden" name="_token" value="{{ csrf_token() }}" >
@@ -179,21 +177,23 @@
                     tableSettings));
 
             myTable = $('#tableStakeholder').dataTable({
-                "columnDefs": [
-                    {
-                        "targets": "hide-column",
-                        "visible": false,
-                    },
-                ],
+//                "columnDefs": [
+//                    {
+//                        "targets": "hide-column",
+//                        "visible": false,
+//                    },
+//                ],
                 "order": [[ 1, 'asc' ]],
 //                "orderFixed": {
 //                    "pre": [ 0, 'asc' ]
 //                }
-                "sDom": '<"dt-panelmenu clearfix">Tfr - lt<"dt-panelfooter clearfix"ip>',
+                "sDom": '<"link_excell"><"dt-panelmenu clearfix ">frlt<"dt-panelfooter clearfix"ip>',
                 "oTableTools": {
                     "sSwfPath": "{{ asset('/vendor/datatables-tabletools/swf/copy_csv_xls_pdf.swf') }}"
                 }
             });
+
+            $( ".link_excell" ).html('<a href="{{ url('/tool/export-pegawai') }}">Download data excel</a>');
 
             myTable.api().on('order.dt', function () {
                 myTable.api().column(0, {order:'applied'}).nodes().each(function (cell, i) {

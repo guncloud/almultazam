@@ -36,7 +36,12 @@
                                     <tr>
                                         <td>{{ $user->username }}</td>
                                         <td>
-                                            <a href="{{ url('/user/'.$user->id.'/edit') }}">Edit</a>
+                                            <form action="{{ url('/user/'.$user->id) }}" method="post" id="formDelete">
+                                                <input type="hidden" name="_method" value="DELETE">
+                                                <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                                                <a class="btn btn-link" href="{{ url('/user/'.$user->id.'/edit') }}">Edit</a>
+                                                <button type="submit" class="btnDelete btn btn-link">Delete</button>
+                                            </form>
                                         </td>
                                     </tr>
                                 @endforeach
@@ -85,4 +90,22 @@
     </div>
 @stop
 
+@section('js')
+    <script>
+        $(function(){
+
+            $('.btnDelete').click(function(e){
+                e.preventDefault();
+
+                var r = confirm("Anda akan menghapus data, yakin ?!");
+                if (r == true) {
+                    $(this).closest('form').submit();
+                } else {
+                    return false;
+                }
+
+            })
+
+        })
+    </script>
 @stop

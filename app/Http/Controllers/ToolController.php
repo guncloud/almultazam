@@ -401,4 +401,21 @@ class ToolController extends Controller
         return back();
     }
 
+    public function getExportPegawai()
+    {
+
+        $stakeholders = Stakeholder::all();
+//
+//        echo "<pre>";
+//        print_r($stakeholders);
+//        exit;
+
+//        $users = User::select('id', 'name', 'email', 'created_at')->get();
+        Excel::create('data_pegawai', function($excel) use($stakeholders) {
+            $excel->sheet('Sheet 1', function($sheet) use($stakeholders) {
+                $sheet->fromArray($stakeholders);
+            });
+        })->export('xls');
+    }
+
 }

@@ -12,9 +12,17 @@
 
 		<link rel="stylesheet" href="{{ asset('/fonts/font-awesome/font-awesome.css') }}">
 
+		<link rel="stylesheet" href="{{ asset('/css/custom.css') }}">
+
 	</head>
 	<body>
         @include('root.layout.navbar')
 		@yield('content')
+
+		<script src="{{ asset('/vendor/jquery/jquery.js') }}"></script>
+		<script src="{{ asset('/vendor/bootstrap/bootstrap.js') }}"></script>
+
+		@yield('js')
+
 	</body>
 </html>
