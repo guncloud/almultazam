@@ -60,7 +60,7 @@
                         <br>
                         <form action="{{ url('/user/') }}" method="post">
                             <input type="hidden" name="_token" value="{{ csrf_token()}}">
-                            <input type="hidden" name="_method" value="PUT">
+                            {{--<input type="hidden" name="_method" value="PUT">--}}
                             <div class="form-group">
                                 <label for="username">Username</label>
                                 <input type="text" name="username" class="form-control" >

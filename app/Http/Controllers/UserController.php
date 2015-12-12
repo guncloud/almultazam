@@ -52,28 +52,37 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        // Storing roles
-        //dd($request->all());
-        if($request->get('role') == 'true'){
-            $data = [
-                'name' => $request->get('name'),
-                'slug' => str_slug($request->get('name')),
-                'description' => $request->get('desc')
-            ];
+        $user = User::create([
+            'name' => $request->get('username'),
+            'username' => $request->get('username'),
+            'email' => $request->get('name').'@user.com',
+            'password' => \Illuminate\Support\Facades\Hash::make($request->get('password')),
 
-            Role::create($data);
+        ]);
 
-        }elseif($request->get('user') == 'true'){
-            $user = User::create([
-                'name' => $request->get('name'),
-                'username' => $request->get('username'),
-                'email' => $request->get('name').'@user.com',
-                'password' => \Illuminate\Support\Facades\Hash::make($request->get('password')),
+        $user->roles()->attach($request->get('role'));
 
-            ]);
 
-            $user->roles()->attach($request->get('role'));
-        }
+//        if($request->get('role') == 'true'){
+//            $data = [
+//                'name' => $request->get('name'),
+//                'slug' => str_slug($request->get('name')),
+//                'description' => $request->get('desc')
+//            ];
+//
+//            Role::create($data);
+//
+//        }elseif($request->get('user') == 'true'){
+//            $user = User::create([
+//                'name' => $request->get('name'),
+//                'username' => $request->get('username'),
+//                'email' => $request->get('name').'@user.com',
+//                'password' => \Illuminate\Support\Facades\Hash::make($request->get('password')),
+//
+//            ]);
+//
+//            $user->roles()->attach($request->get('role'));
+//        }
 
         Session::flash('info', 'Data inserted');
         return redirect('/user');

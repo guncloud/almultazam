@@ -1,5 +1,3 @@
-{{--@inject('config', 'Modules\Siswa\Entities\Config')--}}
-
 <nav class="site-navbar navbar navbar-default navbar-fixed-top navbar-mega" role="navigation">
 
     <div class="navbar-header">

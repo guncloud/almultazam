@@ -84,7 +84,7 @@
                                 <th>Name</th>
                                 <th>TTL</th>
                                 <th>J. Kelamin</th>
-                                <th>NIK</th>
+                                <th>NRP</th>
                                 <th>Jabatan</th>
                                 <th>Handphone</th>
                                 <th class="col-md-3">Option</th>

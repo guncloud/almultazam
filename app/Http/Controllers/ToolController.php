@@ -9,6 +9,8 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Session;
 use Modules\Hrd\Entities\Performance;
+use Modules\Hrd\Entities\Position;
+use Modules\Hrd\Entities\PositionStakeholder;
 use Modules\Siswa\Entities\Classroom;
 use Modules\Siswa\Entities\Config;
 use App\Stakeholder;
@@ -21,6 +23,7 @@ use Modules\Siswa\Http\Controllers\SiswaController;
 use Excel;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Cache;
+use Modules\Hrd\Entities\Golongan;
 class ToolController extends Controller
 {
 
@@ -260,11 +263,28 @@ class ToolController extends Controller
             $tahun_ajar = Config::where('slug', '=', 'tahun-ajar')->first()->value;
             foreach($results as $res){
 
-                $division = Division::where('slug', '=', $res->division)->first();
+                $division = Division::where('slug', '=', str_slug($res->division , '-'))->first();
+
+                if($res->golongan == '-'){
+                    $golongan_id = null;
+                }else{
+                    $golongan = Golongan::where('slug', '=', str_slug($res->golongan , '-'))->first();
+
+                    $golongan_id = $golongan->id;
+                }
+
                 if(count($division) <= 0){
                     Session::flash('info', 'Error divisi');
                     return redirect('/hrd/stakeholder');
                 }
+
+//                if($res->jabatan != '-'){
+//                    $postition = Position::where('position', '=', $res->jabatan)->first();
+//                }
+//
+//                echo $postition->id;
+//
+//                exit;
 
                 $dump = [
                     'nama' => $res->nama,
@@ -279,7 +299,7 @@ class ToolController extends Controller
                     'status_kepegawaian' => $res->status_kepegawaian,
                     'jabatan' => $res->jabatan,
                     'mulai_kerja' => $res->mulai_kerja,
-                    'golongan' => $res->golongan,
+                    'golongan_id' => $golongan_id,
                     'status_marital' => $res->status_marital,
                     'nama_istri_suami' => $res->nama_istri_suami,
                     'alamat_rumah' => $res->alamat_rumah,
@@ -341,6 +361,16 @@ class ToolController extends Controller
                 ];
 
                 $new = Stakeholder::create($dump);
+
+                if($res->jabatan != '-'){
+                    $position = Position::where('position', '=', $res->jabatan)->first();
+
+                    PositionStakeholder::create(array(
+                        'stakeholder_id' => $new->id,
+                        'position_id' => $position->id
+                    ));
+                }
+
                 if(!$new){
                     Session::flash('info', 'Error importing');
                 }

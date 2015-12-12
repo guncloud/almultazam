@@ -40,19 +40,19 @@
                     </a>
                 </li>
 
-                <li class="hidden-float" style="margin-left: auto; margin-right: auto;:">
+                <li class="hidden-float" style="margin-left: auto; margin-right: auto;">
                     <a class="icon " href="{{ url('hrd/report') }}" role="button">
                         Rapor Penilaian
                     </a>
                 </li>
 
-                <li class="hidden-float" style="margin-left: auto; margin-right: auto;:">
+                <li class="hidden-float" style="margin-left: auto; margin-right: auto;">
                     <a class="icon " href="{{ url('hrd/vacation') }}" role="button">
                         Cuti
                     </a>
                 </li>
 
-                <li class="hidden-float" style="margin-left: auto; margin-right: auto;:">
+                <li class="hidden-float" style="margin-left: auto; margin-right: auto;">
                     <a class="icon " href="{{ url('/tool') }}" role="button">
                         Cover Penilaian
                     </a>
