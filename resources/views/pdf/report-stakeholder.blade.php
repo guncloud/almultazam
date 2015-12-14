@@ -53,7 +53,7 @@
         <br>
     <br>
 
-    <table class="pure-table pure-table-bordered">
+    <table class="pure-table pure-table-bordered" style="font-size: 13px">
         <thead>
         <tr>
             <th>Kriteria</th>
@@ -101,17 +101,21 @@
             <td colspan="3">{{ $totalScore }}</td>
         </tr>
         <tr>
+            <td>Rata - rata Skor</td>
+            <td colspan="3">{{ $totalScore/10 }}</td>
+        </tr>
+        <tr>
             <td>Kesimpulan</td>
             <td colspan="3">
-                @if(@$totalScore < 55)
+                @if(@$totalScore/10 < 55)
                     E (Kurang)
-                @elseif(@$totalScore < 70)
+                @elseif(@$totalScore/10 < 70)
                     D (Sedang)
-                @elseif(@$totalScore <= 80)
+                @elseif(@$totalScore/10 <= 80)
                     C (Cukup)
-                @elseif(@$totalScore <= 90)
+                @elseif(@$totalScore/10 <= 90)
                     B (Baik)
-                @elseif(@$totalScore > 90)
+                @elseif(@$totalScore/10 > 90)
                     A (Sangat Baik)
                 @else
                     -
