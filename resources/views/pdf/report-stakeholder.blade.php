@@ -129,7 +129,7 @@
         <br>
 
         <p style="text-align: right; margin-right: 30px">
-            Kuningan, <?php echo date('d-m-y') ?> 
+            Kuningan, <?php echo date('d').' '.$bulan.' '.date('Y') ?>
         </p>
         
         <p>
@@ -137,11 +137,11 @@
         </p>
         
         <div>
-            <a style="margin-left: 20px">
-                Kepala Divisi HRD ,
+            <a style="margin-left: 0px">
+                Kepala Divisi HRD,
             </a>
-            <a style="margin-left: 350px">
-                Kepala Divisi/Bagian
+            <a style="margin-left: 380px">
+                Kepala Divisi/Bagian,
             </a>
         </div>
         <br>

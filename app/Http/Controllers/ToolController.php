@@ -64,20 +64,31 @@ class ToolController extends Controller
         $report = Indicator::has('performances')->get();
 
         $reportScore = Report::where('stakeholder_id', '=', $request->get('stakeholder'))
+            ->join('performances', 'performances.id', '=', 'reports.performance_id')
             ->where('semester', '=', $request->get('semester'))
             ->where('year', '=', $year)
             ->get();
 
+//        echo "<pre>";
+//        print_r($reportScore);
+//        exit();
+
+
         if(count($reportScore) > 0){
             $totalScore = 0;
             foreach ($reportScore as $rpt) {
+//                echo "<pre>";
+//                print_r($rpt);
                 $reportScores[$rpt->performance_id] = $rpt;
                 $totalScore += $rpt->score;
+//                echo "<br />";
             }
         }else{
             $reportScores = false;
             $totalScore = 0;
         }
+
+//        exit();
 
         $data['kepala_divisi'] = Config::where('slug', '=', 'kepala-divisi')->first();
         $data['reportScores'] = $reportScores;
@@ -86,12 +97,56 @@ class ToolController extends Controller
         $data['stakeholder'] = $stakeholder;
         $data['title'] = 'Rapor Pegawai';
         $data['positions'] = (count($position) > 0) ? $position : false;
+        $data['bulan'] = $this->bulan(date('m'));
 
 //        return view('pdf.report-stakeholder', $data);
 
         $pdf = \App::make('dompdf.wrapper');
         $pdf->setOrientation('portrait')->loadView('pdf.report-stakeholder', $data);
         return $pdf->stream();
+    }
+
+    function bulan($bln)
+    {
+        switch ($bln)
+        {
+            case 1:
+                return "Januari";
+                break;
+            case 2:
+                return "Februari";
+                break;
+            case 3:
+                return "Maret";
+                break;
+            case 4:
+                return "April";
+                break;
+            case 5:
+                return "Mei";
+                break;
+            case 6:
+                return "Juni";
+                break;
+            case 7:
+                return "Juli";
+                break;
+            case 8:
+                return "Agustus";
+                break;
+            case 9:
+                return "September";
+                break;
+            case 10:
+                return "Oktober";
+                break;
+            case 11:
+                return "November";
+                break;
+            case 12:
+                return "Desember";
+                break;
+        }
     }
 
     public function getSavePdfDetailStudent(Request $request, $id)
@@ -270,7 +325,9 @@ class ToolController extends Controller
                 }else{
                     $golongan = Golongan::where('slug', '=', str_slug($res->golongan , '-'))->first();
 
-                    $golongan_id = $golongan->id;
+                    if($golongan){
+                        $golongan_id = $golongan->id;
+                    }
                 }
 
                 if(count($division) <= 0){
@@ -395,27 +452,38 @@ class ToolController extends Controller
 
                 foreach ($v as $k => $item) {
                     $stk = Stakeholder::where('nrp', $item['nrp'])->first();
-                   foreach($item as $ind => $val){
-                       if($ind != 'nrp'){
-                           if($val > 0){
-                               $performance = explode('_', $ind);
-                               $performance = Performance::where('performance', 'LIKE', $performance[0].' '.$performance[1].'%')->first();
-                               $year = date('Y')+1;
-                               $year = date('Y').'/'.$year;
+                   if($stk){
+                       foreach($item as $ind => $val){
+                           if($ind != 'nrp'){
+                               if($val > 0){
+                                   $performance = explode('_', $ind);
+                                   $performance = Performance::where('performance', 'LIKE', $performance[0].' '.$performance[1].'%')->first();
+                                   echo "<pre>";
+                                   print_r($stk);
+                                   print_r($performance);
 
-                               $array = array(
-                                   'stakeholder_id' => $stk->id,
-                                   'performance_id' => $performance->id,
-                                   'semester' => '1',
-                                   'score' => $val,
-                                   'year' => $year
-                               );
+                                   $year = date('Y')+1;
+                                   $year = date('Y').'/'.$year;
 
-                               Report::create($array);
+                                   $array = array(
+                                       'stakeholder_id' => $stk->id,
+                                       'performance_id' => $performance->id,
+                                       'semester' => '1',
+                                       'score' => $val,
+                                       'year' => $year
+                                   );
 
+//                                   Report::($array);
+
+                               }
                            }
                        }
-                    }
+                   }else{
+                       echo "NRP ".$item['nrp']." tidak ditemukan <br>";
+                       flush();
+                       ob_flush();
+                       usleep(150000);
+                   }
                 }
 
                 Session::flash('info', 'Imported');

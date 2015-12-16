@@ -55,7 +55,7 @@ class UserController extends Controller
         $user = User::create([
             'name' => $request->get('username'),
             'username' => $request->get('username'),
-            'email' => $request->get('name').'@user.com',
+            'email' => $request->get('username').'@user.com',
             'password' => \Illuminate\Support\Facades\Hash::make($request->get('password')),
 
         ]);
