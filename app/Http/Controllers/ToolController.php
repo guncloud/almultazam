@@ -69,11 +69,6 @@ class ToolController extends Controller
             ->where('year', '=', $year)
             ->get();
 
-//        echo "<pre>";
-//        print_r($reportScore);
-//        exit();
-
-
         if(count($reportScore) > 0){
             $totalScore = 0;
             foreach ($reportScore as $rpt) {
@@ -81,12 +76,17 @@ class ToolController extends Controller
 //                print_r($rpt);
                 $reportScores[$rpt->performance_id] = $rpt;
                 $totalScore += $rpt->score;
+//                echo $rpt->score;
 //                echo "<br />";
             }
         }else{
             $reportScores = false;
             $totalScore = 0;
         }
+//
+//        echo "<pre>";
+//        print_r($reportScore->toArray());
+//        exit();
 
 //        exit();
 
@@ -458,12 +458,8 @@ class ToolController extends Controller
                                if($val > 0){
                                    $performance = explode('_', $ind);
                                    $performance = Performance::where('performance', 'LIKE', $performance[0].' '.$performance[1].'%')->first();
-                                   echo "<pre>";
-                                   print_r($stk);
-                                   print_r($performance);
 
-                                   $year = date('Y')+1;
-                                   $year = date('Y').'/'.$year;
+                                   $year = Config::where('slug', '=', 'tahun-ajar')->first()->value;
 
                                    $array = array(
                                        'stakeholder_id' => $stk->id,
@@ -473,15 +469,42 @@ class ToolController extends Controller
                                        'year' => $year
                                    );
 
-//                                   Report::($array);
+                                   $exist = Report::where('stakeholder_id', '=', $stk->id)
+                                            ->where('performance_id', '=', $performance->id)
+                                            ->where('semester', '=', '1')
+                                            ->where('year', '=', $year)
+                                            ->first();
+
+                                   if($exist){
+                                       $update = Report::where('id', $exist->id)
+                                           ->update(array('score' => $val));
+
+//                                        echo "Update <br>";
+//                                        flush();
+//                                        ob_flush();
+                                        usleep(150000);
+                                   }else{
+                                       $insert = Report::create($array);
+                                       if($insert){
+//                                           echo "Insert <br>";
+//                                           flush();
+//                                           ob_flush();
+                                           usleep(150000);
+                                       }else{
+//                                           echo "error Insert <br>";
+//                                           flush();
+//                                           ob_flush();
+                                           usleep(150000);
+                                       }
+                                   }
 
                                }
                            }
                        }
                    }else{
-                       echo "NRP ".$item['nrp']." tidak ditemukan <br>";
-                       flush();
-                       ob_flush();
+//                       echo "NRP ".$item['nrp']." tidak ditemukan <br>";
+//                       flush();
+//                       ob_flush();
                        usleep(150000);
                    }
                 }
@@ -490,7 +513,7 @@ class ToolController extends Controller
             }
         });
 
-        return redirect('/hrd/stakeholder');
+        return redirect('/hrd/report');
     }
 
     public function getRefresh()
@@ -516,4 +539,41 @@ class ToolController extends Controller
         })->export('xls');
     }
 
+    public function getExportReportPegawai()
+    {
+        $data = DB::table('stakeholders')
+            ->select(
+                'stakeholders.nama',
+                'stakeholders.id',
+                'performances.performance',
+                'reports.score'
+            )
+            ->join('reports', 'reports.stakeholder_id', '=', 'stakeholders.id')
+            ->join('performances', 'performances.id', '=', 'reports.performance_id')
+            ->get();
+
+        $rec = array();
+
+        foreach ($data as $i => $v) {
+            $rec[$v->id]['nama'] = $v->nama;
+            $rec[$v->id][$v->performance] = $v->score;
+//            $rec[$v->id]['score'][] = $v->score;
+
+//            $rec[$i]['nama'] = $v->nama;
+//            $rec[$i]['performance'] = $v->performance;
+//            $rec[$i]['score'] = $v->score;
+        }
+
+//        echo "<prE>";
+//        print_r($rec);
+//        exit;
+
+        Excel::create('data_report_pegawai', function($excel) use($rec) {
+            $excel->sheet('Sheet 1', function($sheet) use($rec) {
+                $sheet->fromArray($rec);
+            });
+        })->export('xlsx');
+
+
+    }
 }

@@ -64,12 +64,14 @@
         <div class="page-content">
             @if($showall)
                 @if($stakeholder)
+                    <a href="{{ url('/tool/export-report-pegawai') }}">Download Excel</a>
                     <table class="table table-hover dataTable table-striped table-bordered width-full" id="tableStakeholder">
                         <thead>
                         <tr>
                             <th class="no-sort">No</th>
                             <th>Name</th>
                             <th>Report</th>
+                            <th>Print</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -84,6 +86,29 @@
                                     <a href="{{ url('/hrd/report?semester=2&stakeholder_id='.$v->id) }}" class="btn btn-success btn-sm" type="button">
                                         Semester 2
                                     </a>
+                                </td>
+                                <td>
+                                    <form action="{{ url('/tool/save-pdf-report-stakeholder') }}" method="post">
+                                        <input type="hidden" name="_token" value="{{ csrf_token() }}" >
+                                        <input type="hidden" name="semester" value="1">
+                                        <input type="hidden" name="stakeholder" value="{{ $v->id }}">
+                                        <div class="form-group">
+                                            <button class="btn btn-info btn-sm" type="submit">
+                                                <i class="icon wb-print"></i>
+                                                Print Semester 1</button>
+                                        </div>
+                                    </form>
+                                    <br>
+                                    <form action="{{ url('/tool/save-pdf-report-stakeholder') }}" method="post">
+                                        <input type="hidden" name="_token" value="{{ csrf_token() }}" >
+                                        <input type="hidden" name="semester" value="2">
+                                        <input type="hidden" name="stakeholder" value="{{ $v->id }}">
+                                        <div class="form-group">
+                                            <button class="btn btn-info btn-sm" type="submit">
+                                                <i class="icon wb-print"></i>
+                                                Print Semester 2</button>
+                                        </div>
+                                    </form>
                                 </td>
                             </tr>
                         @endforeach
