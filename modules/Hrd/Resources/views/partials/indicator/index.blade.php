@@ -1,4 +1,4 @@
-@extends('hrd::layouts.master')
+@extends('hrd::layouts_2.master')
 
 @section('css')
     <link rel="stylesheet" href="{{ asset('/vendor/toastr/toastr.css') }}">
@@ -8,18 +8,15 @@
 
 @section('content')
 
-    <div class="page animsition">
-        <div class="page-header">
-            <h4 class="page-title">{{ $title or 'Judul' }}</h4>
-        </div>
-        <div class="page-content">
+    <div class="box">
+        <div class="box-body">
             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
                 <div class="panel">
                     <div class="panel-heading">
                         <h3 class="panel-title">Kriteria</h3>
                         <div class="page-header-actions">
-                            <button type="button" data-target="#newIndicator" class="btn btn-sm btn-icon btn-default btn-outline btn-round" data-toggle="modal" data-original-title="Add">
-                                <i class="icon wb-pencil" aria-hidden="true"></i> Add
+                            <button type="button" data-target="#newIndicator" class="btn btn-sm" data-toggle="modal" data-original-title="Add">
+                                <i class="fa fa-pencil" aria-hidden="true"></i> Add
                             </button>
                         </div>
                     </div>
@@ -34,10 +31,10 @@
                                                 <input type="hidden" name="_token" value="{{ csrf_token() }}" >
                                                 <input type="hidden" name="_method" value="DELETE">
                                                 <button href="{{ url('/hrd/indicator/'.$ind->id) }}" class="btn btn-warning btn-sm deleteIndicator" type="submit" id="deleteIndicator">
-                                                    <i class="icon wb-trash"></i>
+                                                    <i class="fa fa-trash"></i>
                                                 </button>
                                                 {{--<a href="{{ url('/hrd/indicator/'.$ind->id) }}" class="btn btn-info btn-sm updateDivision" type="button">--}}
-                                                    {{--<i class="icon wb-pencil"></i>Edit--}}
+                                                    {{--<i class="fa fa-pencil"></i>Edit--}}
                                                 {{--</a>--}}
                                             </form>
                                         </td>
@@ -55,8 +52,8 @@
                     <div class="panel-heading">
                         <h3 class="panel-title">Indikator</h3>
                         <div class="page-header-actions">
-                            <button type="button" data-target="#newPerformance" class="btn btn-sm btn-icon btn-default btn-outline btn-round" data-toggle="modal" data-original-title="Add">
-                                <i class="icon wb-pencil" aria-hidden="true"></i> Add
+                            <button type="button" data-target="#newPerformance" class="btn btn-sm" data-toggle="modal" data-original-title="Add">
+                                <i class="fa fa-pencil" aria-hidden="true"></i> Add
                             </button>
                         </div>
                     </div>
@@ -74,11 +71,8 @@
                                                         <input type="hidden" name="_token" value="{{ csrf_token() }}" >
                                                         <input type="hidden" name="_method" value="DELETE">
                                                         <button href="{{ url('/hrd/performance/'.$p->id) }}" class="btn btn-warning btn-sm deletePerformance" type="submit" id="deleteIndicator">
-                                                            <i class="icon wb-trash"></i>
+                                                            <i class="fa fa-trash"></i>
                                                         </button>
-                                                        {{--<a href="{{ url('/hrd/performance/'.$p->id) }}" class="btn btn-info btn-sm updateDivision" type="button">--}}
-                                                            {{--<i class="icon wb-pencil"></i>Edit--}}
-                                                        {{--</a>--}}
                                                     </form>
                                                 </li>
                                             @endforeach

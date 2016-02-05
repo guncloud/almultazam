@@ -1,4 +1,4 @@
-@extends('hrd::layouts.master')
+@extends('hrd::layouts_2.master')
 
 @section('css')
     <link rel="stylesheet" href="{{ asset('/vendor/toastr/toastr.css') }}">
@@ -8,14 +8,10 @@
 
 @section('content')
 
-    <div class="page animsition">
-        <div class="page-header">
-            <h4 class="page-title">{{ $title or 'Judul' }}</h4>
-        </div>
-        <div class="page-content">
-            <div class="row">
-                <div class="col-md-4">
-                    <form action="{{ url('/hrd/position') }}" method="post" class="form-inline">
+    <div class="box">
+        <div class="box-header with-border">
+            <h4 class="box-title">
+                <form action="{{ url('/hrd/position') }}" method="post" class="form-inline">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
                         <div class="form-group">
                             <input type="text" class="form-control" name="position" placeholder="Nama Jabatan">
@@ -24,12 +20,12 @@
                             <button class="btn btn-primary" type="submit">Tambah</button>
                         </div>
                     </form>
-                    <br>
-                </div>
-            </div>
+            </h4>
+        </div>
+        <div class="box-body">
 
             @if($positions)
-                <table class="table table-bordered">
+                <table class="table table-striped">
                     <thead>
                         <tr>
                             <th>Jabatan</th>

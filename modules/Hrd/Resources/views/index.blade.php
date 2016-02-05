@@ -1,25 +1,23 @@
-@extends('hrd::layouts.master')
+@extends('hrd::layouts_2.master')
 
 @section('content')
 
-	<div class="page animsition">
-		<div class="page-header">
-			<h4 class="page-title">{{ $title or 'Kepegawaian' }}</h4>
-		</div>
-		<div class="page-content">
-			<div class="panel">
-				<div class="panel-heading">
-					<h3 class="panel-title">{{ $sub_title or null }}</h3>
-				</div>
-				<div class="panel-body">
-                    Modul HRD :
-					<ul>
-                        <li>Manajemen Pegawai secara keseluruhan</li>
-                        <li>Manaejemen Bagian / Divisi</li>
-					</ul>
-				</div>
+	<!-- Default box -->
+	<div class="box">
+		<div class="box-header with-border">
+			<h3 class="box-title">Modul HRD </h3>
+			<div class="box-tools pull-right">
+				<button class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse"><i class="fa fa-minus"></i></button>
+				<button class="btn btn-box-tool" data-widget="remove" data-toggle="tooltip" title="Remove"><i class="fa fa-times"></i></button>
 			</div>
 		</div>
-	</div>
+		<div class="box-body">
+			<ul>
+				<li>Manajemen Pegawai secara keseluruhan</li>
+				<li>Manaejemen Bagian / Divisi</li>
+			</ul>
+		</div><!-- /.box-body -->
+
+	</div><!-- /.box -->
 
 @stop

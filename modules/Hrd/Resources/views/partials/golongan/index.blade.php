@@ -1,4 +1,4 @@
-@extends('hrd::layouts.master')
+@extends('hrd::layouts_2.master')
 
 @section('css')
     <link rel="stylesheet" href="{{ asset('/vendor/toastr/toastr.css') }}">
@@ -7,19 +7,19 @@
 
 @section('content')
 
-    <div class="page animsition">
-        <div class="page-header">
-            <h4 class="page-title">{{ $title or 'Judul' }}</h4>
-            <div class="page-header-actions">
-                <button type="button" data-target="#newGolongan" class="btn btn-sm btn-icon btn-default btn-outline btn-round" data-toggle="modal" data-original-title="Add">
-                    <i class="icon wb-pencil" aria-hidden="true"></i> Add
+    <div class="box">
+        <div class="box-header with-border">
+            <h4 class="box-title"></h4>
+            <div class="box-tools pull-right">
+                <button type="button" data-target="#newGolongan" class="btn btn-sm btn-box-tool bg-navy" data-toggle="modal" data-original-title="Add">
+                    <i class="fa fa-pencil" aria-hidden="true"></i> Add
                 </button>
             </div>
         </div>
 
-        <div class="page-content">
+        <div class="box-body">
             @if($golongan)
-                <table class="table table-bordered">
+                <table class="table table-striped">
                     <thead>
                         <tr>
                             <th>Golongan</th>

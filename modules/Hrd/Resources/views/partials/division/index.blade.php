@@ -1,4 +1,4 @@
-@extends('hrd::layouts.master')
+@extends('hrd::layouts_2.master')
 
 @section('css')
     <link rel="stylesheet" href="{{ asset('/vendor/toastr/toastr.css') }}">
@@ -7,54 +7,48 @@
 
 @section('content')
 
-    <div class="page animsition">
-        <div class="page-header">
-            <h4 class="page-title">{{ $title or 'Judul' }}</h4>
-            <div class="page-header-actions">
-                <button type="button" data-target="#newDivision" class="btn btn-sm btn-icon btn-default btn-outline btn-round" data-toggle="modal" data-original-title="Add">
-                    <i class="icon wb-pencil" aria-hidden="true"></i> Add
+    <div class="box">
+        <div class="box-header with-border">
+            <h4 class="box-title"></h4>
+            <div class="box-tools pull-left">
+                <button type="button" data-target="#newDivision" class="btn bg-navy btn-box-tool " data-toggle="modal" data-original-title="Add">
+                    <i class="fa fa-pencil"></i> Add
                 </button>
             </div>
         </div>
-        <div class="page-content">
-            <div class="panel">
-                <div class="panel-heading">
-                    <h3 class="panel-title">{{ $sub_title or null }}</h3>
-                </div>
-                <div class="panel-body">
-                    @if($divisions)
-                        <table class="table">
-                            <thead>
-                            <tr>
-                                <th>Nama</th>
-                                <th>Options</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            @foreach($divisions as $div)
-                                <tr>
-                                    <td>{{ $div->division }}</td>
-                                    <td>
-                                        <form class="deleteForm" action="{{ url('/hrd/division/'.$div->id) }}" method="post">
-                                            <input type="hidden" name="_token" value="{{ csrf_token() }}" >
-                                            <input type="hidden" name="_method" value="DELETE">
-                                            <button href="{{ url('/hrd/division/'.$div->id) }}" class="btn btn-warning btn-sm deleteDivision" type="submit" id="deleteDivision">
-                                                <i class="icon wb-trash"></i>
-                                            </button>
-                                            <a href="{{ url('/hrd/division/'.$div->id) }}" class="btn btn-info btn-sm updateDivision" type="button">
-                                                <i class="icon wb-pencil"></i>Edit
-                                            </a>
-                                        </form>
-                                    </td>
-                                </tr>
-                            @endforeach
-                            </tbody>
-                        </table>
-                    @else
-                        No data
-                    @endif
-                </div>
-            </div>
+        <div class="box-body">
+            
+            @if($divisions)
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>Nama</th>
+                        <th>Options</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    @foreach($divisions as $div)
+                        <tr>
+                            <td>{{ $div->division }}</td>
+                            <td>
+                                <form class="deleteForm" action="{{ url('/hrd/division/'.$div->id) }}" method="post">
+                                    <input type="hidden" name="_token" value="{{ csrf_token() }}" >
+                                    <input type="hidden" name="_method" value="DELETE">
+                                    <button href="{{ url('/hrd/division/'.$div->id) }}" class="btn btn-warning btn-sm deleteDivision" type="submit" id="deleteDivision">
+                                        <i class="fa fa-trash"></i>
+                                    </button>
+                                    <a href="{{ url('/hrd/division/'.$div->id) }}" class="btn btn-info btn-sm updateDivision" type="button">
+                                        <i class="fa fa-pencil"></i>
+                                    </a>
+                                </form>
+                            </td>
+                        </tr>
+                    @endforeach
+                    </tbody>
+                </table>
+            @else
+                No data
+            @endif
         </div>
     </div>
 
@@ -73,8 +67,8 @@
                     <div class="modal-body">
                         <div class="form-group form-material floating row">
                             <div class="col-sm-12">
-                                <input type="text" class="form-control" name="division" />
-                                <label class="floating-label">Nama</label>
+                                <input type="text" placeholder="Nama" class="form-control" name="division" />
+                            
                             </div>
                         </div>
                     </div>

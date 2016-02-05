@@ -1,70 +1,68 @@
-@extends('hrd::layouts.master')
+@extends('hrd::layouts_2.master')
 
 @section('css')
-    <link rel="stylesheet" href="{{ asset('/vendor/toastr/toastr.css') }}">
-    <link rel="stylesheet" href="{{ asset('/vendor/webui-popover/webui-popover.css') }}">
-
-    <link rel="stylesheet" href="{{ asset('/vendor/datatables-bootstrap/dataTables.bootstrap.css') }}">
-    <link rel="stylesheet" href="{{ asset('/vendor/datatables-fixedheader/dataTables.fixedHeader.css') }}">
-    <link rel="stylesheet" href="{{ asset('/vendor/datatables-responsive/dataTables.responsive.css') }}">
-    <link rel="stylesheet" href="{{ asset('/vendor/bootstrap-sweetalert/sweet-alert.css') }}">
-    <link rel="stylesheet" href="{{ asset('/vendor/webui-popover/webui-popover.css') }}">
-    <link rel="stylesheet" href="{{ asset('/vendor/toolbar/toolbar.css') }}">
+    <link rel="stylesheet" href="{{ asset('adminlte/plugins/datatables/dataTables.bootstrap.css') }}">
 @stop
 
 @section('content')
 
-    <div class="page animsition">
-        <div class="hidden" id="popFormExcel">
-            <form class="form-inline " enctype="multipart/form-data" method="post" action="{{ url('/tool/upload-raport-pegawai') }}">
-                <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                <div class="form-group">
-                    <div class="input-group">
-                        <span class="input-group-addon" id="basic-addon1">Import Excel</span>
-                        <input type="file" name="upload_pegawai"  class="form-control">
-                        <span class="input-group-btn">
-                            <button type="submit" class="btn btn-info">Import</button>
-                        </span>
-                    </div><!-- /input-group -->
-                    <br>
-                    <br>
-                    <a class="btn btn-xs btn-info btn-block" href="{{ url('/tool/download-format-report-pegawai') }}">
-                        <i class="icon wb-download" aria-hidden="true"></i>
-                        Download Format Excel
-                    </a>
-                </div>
-            </form>
-        </div>
+    <div class="hidden" id="popFormExcel">
+        <form class="form-inline " enctype="multipart/form-data" method="post" action="{{ url('/tool/upload-raport-pegawai') }}">
+            <input type="hidden" name="_token" value="{{ csrf_token() }}">
+            <div class="form-group">
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1">Import Excel</span>
+                    <input type="file" name="upload_pegawai"  class="form-control">
+                    <span class="input-group-btn">
+                        <button type="submit" class="btn btn-info">Import</button>
+                    </span>
+                </div><!-- /input-group -->
+                
+                <a class="btn btn-xs btn-info btn-block" href="{{ url('/tool/download-format-report-pegawai') }}">
+                    <i class="fa fa-download" aria-hidden="true"></i>
+                    Download Format Excel
+                </a>
+            </div>
+        </form>
+    </div>
 
-        <div class="page-header">
-            <h4 class="page-title">{{ $title or 'Judul' }}</h4>
-            <div class="page-header-actions">
+    <div class="box">
+
+        <div class="box-header with-border">
+            <h4 class="box-title">
+            </h4>
+            <div class="box-tools">
                 <form action="{{ url('/hrd/report') }}" method="get" class="form-inline" autocomplete="off">
                     <div class="form-group">
-                        <input type="text" class="form-control" id="stakeholder" name="stakeholder" placeholder="Pengurus / Pegawai">
+                        <input type="text" class="form-control input-sm" id="stakeholder" name="stakeholder" placeholder="Pengurus / Pegawai">
                         <input type="hidden" name="stakeholder_id" id="stakeholder_id">
                     </div>
                     <div class="form-group">
-                        <select name="semester" id="semester" class="form-control">
+                        <select name="semester" id="semester" class="form-control input-sm">
                             <option selected >Pilih Semester</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <button class="btn btn-primary" type="submit">Submit</button>
+                        <button class="btn btn-primary btn-sm" type="submit">Submit</button>
                     </div>
-                    <button type="button" class="btn btn-sm btn-icon btn-default btn-outline btn-round"
+                    <div class="form-group">
+                        <a class="btn btn-sm" href="{{ url('/tool/export-report-pegawai') }}">Download Excel</a>
+                    </div>
+                    <button type="button" class="btn btn-sm btn-icon btn-default"
                             data-toggle="tooltip" data-original-title="Upload" id="btnPopFormExcel" href="javascript:void(0)">
-                        <i class="icon wb-upload" aria-hidden="true"></i>
+                        <i class="fa fa-upload" aria-hidden="true"></i>
                     </button>
+                    
                 </form>
             </div>
         </div>
-        <div class="page-content">
+
+        <div class="box-body">
             @if($showall)
                 @if($stakeholder)
-                    <a href="{{ url('/tool/export-report-pegawai') }}">Download Excel</a>
+                    
                     <table class="table table-hover dataTable table-striped table-bordered width-full" id="tableStakeholder">
                         <thead>
                         <tr>
@@ -79,7 +77,7 @@
                             <tr>
                                 <td class="no-sort">{{ $i+1 }}</td>
                                 <td>{{ $v->nama }}</td>
-                                <td>
+                                <td class="col-md-2">
                                     <a href="{{ url('/hrd/report?semester=1&stakeholder_id='.$v->id) }}" class="btn btn-success btn-sm" type="button">
                                         Semester 1
                                     </a>
@@ -87,28 +85,33 @@
                                         Semester 2
                                     </a>
                                 </td>
-                                <td>
-                                    <form action="{{ url('/tool/save-pdf-report-stakeholder') }}" method="post">
-                                        <input type="hidden" name="_token" value="{{ csrf_token() }}" >
-                                        <input type="hidden" name="semester" value="1">
-                                        <input type="hidden" name="stakeholder" value="{{ $v->id }}">
-                                        <div class="form-group">
-                                            <button class="btn btn-info btn-sm" type="submit">
-                                                <i class="icon wb-print"></i>
-                                                Print Semester 1</button>
+                                <td class="col-md-2">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <form action="{{ url('/tool/save-pdf-report-stakeholder') }}" method="post">
+                                                <input type="hidden" name="_token" value="{{ csrf_token() }}" >
+                                                <input type="hidden" name="semester" value="1">
+                                                <input type="hidden" name="stakeholder" value="{{ $v->id }}">
+                                                <div class="form-group">
+                                                    <button class="btn btn-info btn-sm" type="submit">
+                                                        <i class="icon wb-print"></i>
+                                                        Semester 1</button>
+                                                </div>
+                                            </form>
                                         </div>
-                                    </form>
-                                    <br>
-                                    <form action="{{ url('/tool/save-pdf-report-stakeholder') }}" method="post">
-                                        <input type="hidden" name="_token" value="{{ csrf_token() }}" >
-                                        <input type="hidden" name="semester" value="2">
-                                        <input type="hidden" name="stakeholder" value="{{ $v->id }}">
-                                        <div class="form-group">
-                                            <button class="btn btn-info btn-sm" type="submit">
-                                                <i class="icon wb-print"></i>
-                                                Print Semester 2</button>
-                                        </div>
-                                    </form>
+                                        <div class="col-md-6">
+                                            <form action="{{ url('/tool/save-pdf-report-stakeholder') }}" method="post">
+                                                <input type="hidden" name="_token" value="{{ csrf_token() }}" >
+                                                <input type="hidden" name="semester" value="2">
+                                                <input type="hidden" name="stakeholder" value="{{ $v->id }}">
+                                                <div class="form-group">
+                                                    <button class="btn btn-info btn-sm" type="submit">
+                                                        <i class="icon wb-print"></i>
+                                                        Semester 2</button>
+                                                </div>
+                                            </form>
+                                        </div>            
+                                    </div>
                                 </td>
                             </tr>
                         @endforeach
@@ -211,39 +214,23 @@
 
 @section('js')
     <script src="{{ asset('/js/jquery.autocomplete.js') }}"></script>
-    <script src="{{ asset('/vendor/toastr/toastr.js') }}"></script>
-    <script src="{{ asset('/js/components/toastr.js') }}"></script>
-    <script src="{{ asset('/vendor/webui-popover/jquery.webui-popover.min.js') }}"></script>
-    <script src="{{ asset('/js/components/webui-popover.js') }}"></script>
-
-    <script src="{{ asset('/vendor/datatables/jquery.dataTables.min.js') }}"></script>
-    <script src="{{ asset('/vendor/datatables-fixedheader/dataTables.fixedHeader.js') }}"></script>
-    <script src="{{ asset('/vendor/datatables-bootstrap/dataTables.bootstrap.js') }}"></script>
-    <script src="{{ asset('/vendor/datatables-responsive/dataTables.responsive.js') }}"></script>
-    <script src="{{ asset('/vendor/datatables-tabletools/dataTables.tableTools.js') }}"></script>
-    <script src="{{ asset('/vendor/webui-popover/jquery.webui-popover.min.js') }}"></script>
-    <script src="{{ asset('/vendor/bootstrap-sweetalert/sweet-alert.js') }}"></script>
-    <script src="{{ asset('/js/components/datatables.js') }}"></script>
-    <script src="{{ asset('/js/components/webui-popover.js') }}"></script>
-    <script src="{{ asset('/js/components/toolbar.js') }}"></script>
-
-
-
+    <script src="{{ asset('/adminlte/plugins/datatables/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('/adminlte/plugins/datatables/dataTables.bootstrap.min.js') }}"></script>
 
     <script>
         $(function(){
-            var defaults = $.components.getDefaults("webuiPopover");
+            // var defaults = $.components.getDefaults("webuiPopover");
 
-            var tableContent = $('#popFormExcel').html(),
-                    tableSettings = {
-                        title: 'Import data siswa',
-                        content: tableContent,
-                        width: 500,
-                        animation : 'pop'
-                    };
+            // var tableContent = $('#popFormExcel').html(),
+            //         tableSettings = {
+            //             title: 'Import data siswa',
+            //             content: tableContent,
+            //             width: 500,
+            //             animation : 'pop'
+            //         };
 
-            $('#btnPopFormExcel').webuiPopover($.extend({}, defaults,
-                    tableSettings));
+            // $('#btnPopFormExcel').webuiPopover($.extend({}, defaults,
+            //         tableSettings));
 
             $('#stakeholder').autocomplete({
                 serviceUrl: "{{ url('/hrd/stakeholder/search') }}",
@@ -261,10 +248,10 @@
                     },
                 ],
                 "order": [[ 1, 'asc' ]],
-                "sDom": '<"dt-panelmenu clearfix">fr - lt<"dt-panelfooter clearfix"ip>',
-                "oTableTools": {
-                    "sSwfPath": "{{ asset('/vendor/datatables-tabletools/swf/copy_csv_xls_pdf.swf') }}"
-                }
+                // "sDom": '<"dt-panelmenu clearfix">fr - lt<"dt-panelfooter clearfix"ip>',
+                // "oTableTools": {
+                //     "sSwfPath": "{{ asset('/vendor/datatables-tabletools/swf/copy_csv_xls_pdf.swf') }}"
+                // }
             });
 
             myTable.api().on('order.dt', function () {

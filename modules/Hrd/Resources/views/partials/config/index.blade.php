@@ -1,4 +1,4 @@
-@extends('hrd::layouts.master')
+@extends('hrd::layouts_2.master')
 
 @section('css')
     <link rel="stylesheet" href="{{ asset('/vendor/toastr/toastr.css') }}">
@@ -8,11 +8,11 @@
 
 @section('content')
 
-    <div class="page animsition">
-        <div class="page-header">
-            <h4 class="page-title">{{ $title or 'Judul' }}</h4>
+    <div class="box">
+        <div class="box-header">
+            <h4 class="box-title"></h4>
         </div>
-        <div class="page-content">
+        <div class="box-body">
             <div class="row">
                 <div class="col-md-6">
                     <form action="{{ url('/hrd/config') }}" method="post">
