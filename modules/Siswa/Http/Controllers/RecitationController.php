@@ -47,6 +47,10 @@ class RecitationController extends Controller {
             $recitations = false;
         }
 
+//        echo "<prE>";
+//        print_r($recitations);
+//        exit;
+
         $data['recitations'] = ($recitations) ? $recitations : false;
         $data['students'] = $students;
 		$data['classrooms'] = (!$classroom->isEmpty()) ? $classroom : false;
@@ -77,14 +81,40 @@ class RecitationController extends Controller {
         }
     }
 
+    public function edit(Request $request, $id)
+    {
+        $recitation = Recitation::find($id);
+
+//        echo "<pre>";
+//        print_r($recitation);
+//        exit;
+
+        $data['rec'] = $recitation;
+        return view('siswa::partials.recitation.edit', $data);
+    }
+
     public function update(Request $request, $id)
     {
         if($request->all()){
             $update = Recitation::find($id);
             $update->score = $request->get('score');
+            if($request->get('all')){
+                $update->juz = $request->get('juz');
+                $update->surah = $request->get('surah');
+                $update->from = $request->get('from');
+                $update->to = $request->get('to');
+            }
             $update->save();
 
-            return redirect('/siswa/recitation?kelas='.$request->get('kelas').'&date='.$request->get('date').'&semester='.$request->get('semester'));
+            $year = Config::where('slug', '=', 'tahun-ajar')->first()->value;
+
+            $kelas = ClassroomStudent::where('student_id', '=', $update->student_id)
+                ->where('year', '=', $year)
+                ->first();
+
+            return redirect('/siswa/recitation?kelas='.$kelas->classroom_id.
+            '&date='. $update->date.
+            '&semester='. $update->semester);
         }
     }
 }

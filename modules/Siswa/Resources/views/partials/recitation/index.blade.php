@@ -140,20 +140,25 @@
                                                 <input type="hidden" name="date" value="{{ $_GET['date'] or null }}">
                                                 <input type="hidden" name="semester" value="{{ $_GET['semester'] or null }}">
                                                 @if(count(@$recitations[$std->student_id]) > 0)
-                                                    <div class="input-group">
-                                                        <input type="text" class="form-control" placeholder="Nilai" name="score" value="{{ $recitations[$std->student_id][0]->score or '' }}">
+                                                    <div class="input-group ">
+                                                        <input type="text" class="form-control input-sm" placeholder="Nilai" name="score" value="{{ $recitations[$std->student_id][0]->score or '' }}">
                                                           <span class="input-group-btn">
-                                                            <button class="btn btn-default" type="submit">Simpan</button>
+                                                            <button class="btn btn-default btn-sm" type="submit">Simpan</button>
                                                           </span>
                                                     </div>
                                                 @endif
                                             </form>
                                         </td>
                                         <td>
-                                            <button type="button" class="btn btn-sm btn-icon btn-default btn-outline btn-round add-hafalan" data-target="#modalAddSubject" data-toggle="modal"
-                                                    data-toggle="tooltip" id="btnPopFormKelas" data-siswa="{{ $std->student_id }}">
-                                                <i class="icon wb-pencil" aria-hidden="true"></i> Hafalan
-                                            </button>
+                                            <form action="">
+                                                <button type="button" class="btn btn-xs btn-icon btn-default btn-outline btn-round add-hafalan" data-target="#modalAddSubject" data-toggle="modal"
+                                                        data-toggle="tooltip" id="btnPopFormKelas" data-siswa="{{ $std->student_id }}">
+                                                    <i class="icon wb-pencil" aria-hidden="true"></i> Hafalan
+                                                </button>
+                                                @if(count(@$recitations[$std->student_id]) > 0)
+                                                    <a class="btn btn-info btn-xs" href="{{ url('siswa/recitation/'.$recitations[$std->student_id][0]->id.'/edit') }}">Edit</a>
+                                                @endif
+                                            </form>
                                         </td>
                                     </tr>
                                 @endforeach
