@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9c1d9262-9728-434c-b6c9-c29860564306" name="Default" comment="add edit hafalan">
+    <list default="true" id="9c1d9262-9728-434c-b6c9-c29860564306" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Siswa/Http/Controllers/RecitationController.php" afterPath="$PROJECT_DIR$/modules/Siswa/Http/Controllers/RecitationController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Siswa/Resources/views/partials/recitation/index.blade.php" afterPath="$PROJECT_DIR$/modules/Siswa/Resources/views/partials/recitation/index.blade.php" />
     </list>
     <ignored path="almultazam.2.2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -483,6 +481,13 @@
       <option name="number" value="Default" />
       <updated>1444614568188</updated>
     </task>
+    <task id="LOCAL-00001" summary="add edit hafalan">
+      <created>1456980284567</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1456980284567</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
