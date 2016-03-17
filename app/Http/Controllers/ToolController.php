@@ -24,6 +24,7 @@ use Excel;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Cache;
 use Modules\Hrd\Entities\Golongan;
+
 class ToolController extends Controller
 {
 
@@ -442,10 +443,10 @@ class ToolController extends Controller
     public function postUploadRaportPegawai(Request $request)
     {
         $uploaded_name = $request->file('upload_pegawai')->getClientOriginalName();
-
+        $semester = $request->get('semester');
         $request->file('upload_pegawai')->move(base_path() . '/storage/uploads/', $uploaded_name);
 
-        Excel::load(base_path() . '/storage/uploads/'.$uploaded_name, function($reader) {
+        Excel::load(base_path() . '/storage/uploads/'.$uploaded_name, function($reader) use ($request) {
             $results = $reader->get();
 
             foreach ($results as $p => $v) {
@@ -464,14 +465,14 @@ class ToolController extends Controller
                                    $array = array(
                                        'stakeholder_id' => $stk->id,
                                        'performance_id' => $performance->id,
-                                       'semester' => '1',
+                                       'semester' => $request->get('semester'),
                                        'score' => $val,
                                        'year' => $year
                                    );
 
                                    $exist = Report::where('stakeholder_id', '=', $stk->id)
                                             ->where('performance_id', '=', $performance->id)
-                                            ->where('semester', '=', '1')
+                                            ->where('semester', '=', $request->get('semester'))
                                             ->where('year', '=', $year)
                                             ->first();
 
@@ -479,33 +480,38 @@ class ToolController extends Controller
                                        $update = Report::where('id', $exist->id)
                                            ->update(array('score' => $val));
 
-//                                        echo "Update <br>";
-//                                        flush();
-//                                        ob_flush();
-                                        usleep(150000);
+                                       echo "Update <br>";
+                                       flush();
+                                       ob_flush();
+                                        usleep(1000);
                                    }else{
                                        $insert = Report::create($array);
                                        if($insert){
-//                                           echo "Insert <br>";
-//                                           flush();
-//                                           ob_flush();
-                                           usleep(150000);
+                                          echo "Insert <br>";
+                                          flush();
+                                          ob_flush();
+                                           usleep(1000);
                                        }else{
-//                                           echo "error Insert <br>";
-//                                           flush();
-//                                           ob_flush();
-                                           usleep(150000);
+                                          echo "error Insert <br>";
+                                          flush();
+                                          ob_flush();
+                                           usleep(1000);
                                        }
                                    }
-
+                                   flush();
+                                   ob_flush();
+                                   usleep(1000);
                                }
                            }
+                           flush();
+                           ob_flush();
+                           usleep(1000);
                        }
                    }else{
-//                       echo "NRP ".$item['nrp']." tidak ditemukan <br>";
-//                       flush();
-//                       ob_flush();
-                       usleep(150000);
+                       echo "NRP ".$item['nrp']." tidak ditemukan <br>";
+                       flush();
+                       ob_flush();
+                       usleep(1000);
                    }
                 }
 

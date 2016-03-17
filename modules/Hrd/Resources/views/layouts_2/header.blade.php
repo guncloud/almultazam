@@ -15,30 +15,30 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </a>
-    
-      <ul class="nav navbar-nav">
-        <li class="hidden-float" style="margin-left: auto; margin-right: auto;">
-            <a class="icon " href="#" role="button" disabled>
-                |
-            </a>
-        </li>
-        <li class="hidden-float" style="margin-left: auto; margin-right: auto;">
-            <a class="icon " href="{{ url('hrd/report') }}" role="button">
-                Rapor Penilaian
-            </a>
-        </li>
-        <li class="hidden-float" style="margin-left: auto; margin-right: auto;">
-            <a class="icon " href="{{ url('hrd/vacation') }}" role="button">
-                Cuti
-            </a>
-        </li>
-        <li class="hidden-float" style="margin-left: auto; margin-right: auto;">
-            <a class="icon " href="{{ url('/tool') }}" role="button">
-                Cover Penilaian
-            </a>
-        </li>
-      </ul>
-              
+
+        <ul class="nav navbar-nav">
+            <li class="hidden-float" style="margin-left: auto; margin-right: auto;">
+                <a class="icon " href="#" role="button" disabled>
+                    |
+                </a>
+            </li>
+            <li class="hidden-float" style="margin-left: auto; margin-right: auto;">
+                <a class="icon " href="{{ url('hrd/report') }}" role="button">
+                    Rapor Penilaian
+                </a>
+            </li>
+            <li class="hidden-float" style="margin-left: auto; margin-right: auto;">
+                <a class="icon " href="{{ url('hrd/vacation') }}" role="button">
+                    Cuti
+                </a>
+            </li>
+            <li class="hidden-float" style="margin-left: auto; margin-right: auto;">
+                <a class="icon " href="{{ url('/tool') }}" role="button">
+                    Cover Penilaian
+                </a>
+            </li>
+        </ul>
+
         <div class="navbar-custom-menu">
 
             <ul class="nav navbar-nav">
@@ -46,11 +46,11 @@
                 <li class="hidden-float" style="margin-left: auto; margin-right: auto;">
                     <a class="icon " href="#" role="button" style="color:orange">
                         Tahun Ajar : {{ $year }}
-                    </a>    
+                    </a>
                 </li>
 
                 <li class="dropdown messages-menu">
-                
+
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <i class="fa fa-envelope-o"></i>
                         <span class="label label-success">4</span>
@@ -116,7 +116,9 @@
                                             <small class="pull-right">20%</small>
                                         </h3>
                                         <div class="progress xs">
-                                            <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress-bar progress-bar-aqua" style="width: 20%"
+                                                 role="progressbar" aria-valuenow="20" aria-valuemin="0"
+                                                 aria-valuemax="100">
                                                 <span class="sr-only">20% Complete</span>
                                             </div>
                                         </div>
@@ -133,15 +135,15 @@
                 <li class="dropdown user user-menu">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <img src="{{ asset('/photos/5.jpg') }}" class="user-image" alt="User Image">
-                        <span class="hidden-xs">Alexander Pierce</span>
+                        <span class="hidden-xs">{{ Auth::user()->username }}</span>
                     </a>
                     <ul class="dropdown-menu">
                         <!-- User image -->
                         <li class="user-header">
-                            <img src="{{ asset('/photos/5.jpg') }}" class="img-circle" alt="...">
+                            <img src="{{ base_path('public/photos/'.Auth::user()->photo) }}" class="img-circle" alt="...">
                             <p>
-                                Alexander Pierce - Web Developer
-                                <small>Member since Nov. 2012</small>
+                                {{ Auth::user()->username }}
+                                <small>{{ Auth::user()->roles[0]->name }}</small>
                             </p>
                         </li>
                         <!-- Menu Body -->
