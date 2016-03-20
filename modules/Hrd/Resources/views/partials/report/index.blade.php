@@ -207,7 +207,7 @@
                                                 </tbody>
                                             </table>
                                             <button class="btn btn-floating btn-primary btn-fixed">
-                                                <i class="icon wb-check-circle"></i>
+                                                <i class="fa fa-check"> Simpan</i>
                                             </button>
                                         </form>
                                     @endif

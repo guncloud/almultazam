@@ -3,6 +3,7 @@
 <head>
     <title>Home</title>
     <link rel="stylesheet" href="{{ asset('/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('/login_form/css/style.css') }}">
     <style>
 
         body {
@@ -17,7 +18,7 @@
 
         .footer{
             /*padding-top: 150px;*/
-            margin-top: 300px;
+            margin-top: 90px;
             padding-left: 20px;
             border-bottom: solid 1px lightgrey;
         }
@@ -26,11 +27,10 @@
 <body>
 
 
-<div class="jumbotron" style="background-color: #8E9513; color: white">
+<div class="jumbotron" style="background-color: #8E9513; color: white; padding-top: 3px; padding-bottom: 3px">
     <div class="container">
         <h1>Selamat Datang</h1>
         <p>Sistem Akademik Al Multazam</p>
-
     </div>
 </div>
 
@@ -45,33 +45,36 @@
         </div>
     @endif
 
-    <div class="col-md-6 col-md-offset-3 column productbox">
-        <h4 style="text-align: center">Silahkan Login</h4>
-        <form action="{{ url('/auth/login') }}" method="post" class="form-horizontal">
-            <input type="hidden" name="_token" value="{{ csrf_token() }}">
-            <div class="form-group">
-                <div class="input-group">
-                    <span class="input-group-addon" id="basic-addon3">Username</span>
-                    <input type="text" name="username" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+    <div class="container">
+        <section id="content">
+            <form action="{{ url('/auth/login') }}" method="post">
+                <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                <h1>Login Form</h1>
+                <div>
+                    <input type="text" name="username" placeholder="Username" required="" id="username" />
                 </div>
-            </div>
-            <div class="form-group">
-                <div class="input-group">
-                    <span class="input-group-addon" id="basic-addon3">Password</span>
-                    <input type="password" name="password" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                <div>
+                    <input type="password" name="password" placeholder="Password" required="" id="password" />
                 </div>
-            </div>
-            <div class="form-group">
-                <button class="btn btn-block btn-primary" type="submit">Masuk</button>
-            </div>
-        </form>
-
-    </div>
+                <div>
+                    <input type="hidden" class="btn btn-primary" value="Log in" />
+                    <button type="submit" class="btn btn-success pull-right" style="margin-right: 35px">
+                        Login
+                    </button>
+                    <div class="clearfix"></div>
+                    <br>
+                    <br>
+                </div>
+            </form><!-- form -->
+        </section><!-- content -->
+    </div><!-- container -->
 
     <div class="footer">
         &copy Al Multazam 2015
     </div>
 </div>
+
+<script src="{{ asset('/login_form/js/index.js') }}"></script>
 
 </body>
 </html>

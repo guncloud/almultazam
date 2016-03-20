@@ -2,6 +2,8 @@
 
 @section('css')
     <link rel="stylesheet" href="{{ asset('adminlte/plugins/datatables/dataTables.bootstrap.css') }}">
+
+    <link rel="stylesheet" href="{{ asset('/vendor/bootstrap-datepicker/bootstrap-datepicker.css') }}">
 @stop
 
 @section('content')
@@ -70,9 +72,7 @@
                                 <form class="deleteForm" action="{{ url('/hrd/vacation/'.$vact->id) }}" method="post">
                                     <input type="hidden" name="_token" value="{{ csrf_token() }}" >
                                     <input type="hidden" name="_method" value="DELETE">
-                                    <button href="{{ url('/hrd/vacation/'.$vact->id) }}" class="btn btn-warning btn-sm deleteVacation" type="submit" id="deleteIndicator">
-                                        <i class="fa fa-trash"></i>
-                                    </button>
+                                    <button class="btn btn-danger" type="submit" data-toggle="confirmation"><i class="fa fa-trash"></i></button>
                                 </form>
                             </td>
                         </tr>
@@ -132,8 +132,11 @@
 @section('js')
     
     <script src="{{ asset('/js/jquery.autocomplete.js') }}"></script>
+    <script src="{{ asset('/js/bs-confirm.js') }}"></script>
     <script src="{{ asset('/adminlte/plugins/datatables/jquery.dataTables.min.js') }}"></script>
     <script src="{{ asset('/adminlte/plugins/datatables/dataTables.bootstrap.min.js') }}"></script>
+    <script src="{{ asset('/vendor/bootstrap-datepicker/bootstrap-datepicker.js') }}"></script>
+    <script src="{{ asset('/js/components/bootstrap-datepicker.js') }}"></script>
 
     <script>
         $(function(){
@@ -154,62 +157,20 @@
                 }
             });
 
-            // $('#start, #end, #date').datepicker({
-            //     format : 'yyyy-mm-dd',
-            //     autoclose : true
-            // });
+             $('#start, #end, #date').datepicker({
+                 format : 'yyyy-mm-dd',
+                 autoclose : true,
+                 placement : 'bottom'
+             });
 
-            $('.deleteVacation').click(function(e) {
-                var url = $(this).attr("href");
-
-                e.preventDefault();
-                swal ({
-                            title: 'Yakin ?',
-                            text: 'Data akan di hapus!',
-                            type: 'warning',
-                            showCancelButton: true,
-                            confirmButtonColor: '#DD6B55',
-                            confirmButtonText: 'Delete',
-                            cancelButtonText: 'Batal !',
-                            closeOnConfirm: false,
-                            closeOnCancel: false,
-                        },function(isConfirm) {
-                            if (isConfirm) {
-                                $.ajax({
-                                    url: url,
-                                    dataType: "JSON",
-                                    method: "DELETE",
-                                    data : {
-                                        _token : "{{ csrf_token() }}",
-                                    },
-                                    success: function () {
-                                        swal("Deleted!", "Data telah dihapus.", "success");
-                                        location.reload(true);
-                                    }
-                                });
-
-                            } else {
-                                swal("Cancelled", "Cancel :)", "error");
-                            }
-                        }
-                )
+            $('[data-toggle="confirmation"]').confirmation({
+                singleton : true,
+                placement : 'left',
+                onConfirm:function(event, element) {
+                    console.log('fuck');
+                    element.closest('form').submit();
+                }
             });
-
-            // var options =  function({
-            //     "aoColumnDefs": [{
-            //         'bSortable': false,
-            //         'aTargets': [-1]
-            //     }],
-            //     "iDisplayLength": 5,
-            //     "aLengthMenu": [
-            //         [5, 10, 25, 50, -1],
-            //         [5, 10, 25, 50, "All"]
-            //     ],
-            //     // "sDom": '<"dt-panelmenu clearfix"Tfr>t<"dt-panelfooter clearfix"ip>',
-            //     // "oTableTools": {
-            //     //     "sSwfPath": "{{ asset('/vendor/datatables-tabletools/swf/copy_csv_xls_pdf.swf') }}"
-            //     // }
-            // });
 
             $('#tableVacation').dataTable();
 

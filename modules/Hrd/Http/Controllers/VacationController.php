@@ -40,6 +40,7 @@ class VacationController extends Controller {
 
     public function destroy(Request $request, $id)
     {
+
         $rec = Vacation::destroy($id);
         if($rec){
             Session::flash('info', 'Data deleted');

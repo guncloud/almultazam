@@ -27,6 +27,13 @@
             .autocomplete-suggestions strong { font-weight: normal; color: #3399FF; }
             .autocomplete-group { padding: 2px 5px; }
             .autocomplete-group strong { display: block; border-bottom: 1px solid #000; }
+
+            .content-header .breadcrumb{
+                top: 5px;
+            }
+            .box-header>.box-tools {
+                top: 10px;
+            }
         </style>
 
         @yield('css')
@@ -44,28 +51,7 @@
 
             <!-- Content Wrapper. Contains page content -->
             <div class="content-wrapper">
-                <!-- Content Header (Page header) -->
-                <section class="content-header">
-                    <h1>
-                        {{ $title or 'Kepegawaian' }}
-                        <small> {{ $subtitle or '' }} </small>
-                    </h1>
-                    <ol class="breadcrumb">
-                        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-                        <li><a href="#">Examples</a></li>
-                        <li class="active">Blank page</li>
-                    </ol>
-                </section>
-
-                <!-- Main content -->
-                <section class="content">
-
-                    <!-- Default box -->
-                    <div class="box">
-                        @yield('content')
-                    </div>
-
-                </section><!-- /.content -->
+                @yield('content')
             </div><!-- /.content-wrapper -->
 
             @include('hrd::layouts_2.footer')
@@ -83,6 +69,18 @@
         <script src="{{ asset('/adminlte/dist/js/app.min.js') }}"></script>
         <!-- AdminLTE for demo purposes -->
         <script src="{{ asset('/adminlte/dist/js/demo.js') }}"></script>
+
+        <script>
+            $(function(){
+                $('#searchStakeholder').autocomplete({
+                    serviceUrl: "{{ url('/hrd/stakeholder/search') }}",
+                    onSelect: function (suggestion) {
+                        window.location.href = "{{ url('/hrd/stakeholder') }}/"+suggestion.data;
+                        //$('#teacher_id').val(suggestion.data);
+                    }
+                });
+            });
+        </script>
 
         @yield('js')
     </body>
