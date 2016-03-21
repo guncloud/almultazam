@@ -368,7 +368,7 @@
                             </h1>
                         </div>
                         <div class="box-body">
-                            <div class="form-grouprow">
+                            <div class="form-group row">
                                 <div class="col-sm-4">
                                     <label class="floating-label">Keahlian 1</label>
                                     <input type="text" class="form-control" name="keahlian_1" value="{{ $stakeholder->keahlian_1 }}"/>
@@ -388,118 +388,79 @@
                     <div class="box box-default">
                         <div class="box-header with-border">
                             <h1 class="box-title">
-                                Keahlian
+                                Anak
                             </h1>
                         </div>
                         <div class="box-body">
-
+                            <div class="form-group row">
+                                <div class="col-sm-3">
+                                    <label class="floating-label">Anak 1</label>
+                                    <input type="text" class="form-control" name="child_1" value="{{ $stakeholder->child_1 }}"/>
+                                </div>
+                                <div class="col-sm-3">
+                                    <label class="floating-label">Lahir Anak 1</label>
+                                    <input value="{{ $stakeholder->lahir_child_1 }}" type="text" class="form-control" name="lahir_child_1" data-plugin="formatter" data-pattern="[[99]]-[[99]]-[[9999]]"/>
+                                    <small class="help-block">Tanggal-Bulan-Tahun</small>
+                                </div>
+                                <div class="col-sm-3">
+                                    <label class="floating-label">Anak 2</label>
+                                    <input type="text" class="form-control" name="child_2" value="{{ $stakeholder->child_2 }}"/>
+                                </div>
+                                <div class="col-sm-3">
+                                    <label class="floating-label">Lahir Anak 2</label>
+                                    <input value="{{ $stakeholder->lahir_child_2 }}" type="text" class="form-control" name="lahir_child_2" data-plugin="formatter" data-pattern="[[99]]-[[99]]-[[9999]]"/>
+                                    <small class="help-block">Tanggal-Bulan-Tahun</small>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-sm-3">
+                                    <label class="floating-label">Anak 5</label>
+                                    <input type="text" class="form-control" name="child_5" value="{{ $stakeholder->child_5 }}"/>
+                                </div>
+                                <div class="col-sm-3">
+                                    <label class="floating-label">Lahir Anak 5</label>
+                                    <input value="{{ $stakeholder->lahir_child_5 }}" type="text" class="form-control" name="lahir_child_5" data-plugin="formatter" data-pattern="[[99]]-[[99]]-[[9999]]"/>
+                                    <small class="help-block">Tanggal-Bulan-Tahun</small>
+                                </div>
+                                <div class="col-sm-3">
+                                    <label class="floating-label">Anak 6</label>
+                                    <input type="text" class="form-control" name="child_6" value="{{ $stakeholder->child_6 }}"/>
+                                </div>
+                                <div class="col-sm-3">
+                                    <label class="floating-label">Lahir Anak 6</label>
+                                    <input value="{{ $stakeholder->lahir_child_6 }}" type="text" class="form-control" name="lahir_child_6" data-plugin="formatter" data-pattern="[[99]]-[[99]]-[[9999]]"/>
+                                    <small class="help-block">Tanggal-Bulan-Tahun</small>
+                                </div>
+                                <div class="col-sm-3">
+                                    <label class="floating-label">Anak 7</label>
+                                    <input type="text" class="form-control" name="child_7" value="{{ $stakeholder->child_7 }}"/>
+                                </div>
+                                <div class="col-sm-3">
+                                    <label class="floating-label">Lahir Anak 7</label>
+                                    <input value="{{ $stakeholder->lahir_child_7 }}" type="text" class="form-control" name="lahir_child_7" data-plugin="formatter" data-pattern="[[99]]-[[99]]-[[9999]]"/>
+                                    <small class="help-block">Tanggal-Bulan-Tahun</small>
+                                </div>
+                                <div class="col-sm-3">
+                                    <label class="floating-label">Anak 8</label>
+                                    <input type="text" class="form-control" name="child_8" value="{{ $stakeholder->child_8 }}"/>
+                                </div>
+                                <div class="col-sm-3">
+                                    <label class="floating-label">Lahir Anak 8</label>
+                                    <input value="{{ $stakeholder->lahir_child_8 }}" type="text" class="form-control" name="lahir_child_8" data-plugin="formatter" data-pattern="[[99]]-[[99]]-[[9999]]"/>
+                                    <small class="help-block">Tanggal-Bulan-Tahun</small>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
                 </div>
+                <div class="col-md-12">
+                    <button class="btn btn-primary pull-right" type="submit" id="submit_new_stakeholder">
+                        <i class="fa fa-check" aria-hidden="true"> Simpan</i>
+                    </button>
+                </div>
             </div>
         </form>
-    </div>
-
-    <div class="content">
-        <div class="panel">
-            <div class="panel-heading">
-                <h3 class="panel-title">{{ $sub_title or null }}</h3>
-            </div>
-            <div class="panel-body container-fluid">
-                <form autocomplete="off" id="form_new_stakeholder" method="post" enctype="multipart/form-data" action="{{ url('/hrd/stakeholder/'.$stakeholder->id) }}">
-
-
-                    {{--Anak--}}
-                    <h4>Anak</h4>
-                    <hr>
-                    <div class="form-group row">
-                        <div class="col-sm-3">
-                            <label class="floating-label">Anak 1</label>
-                            <input type="text" class="form-control" name="child_1" value="{{ $stakeholder->child_1 }}"/>
-                        </div>
-                        <div class="col-sm-3">
-                            <label class="floating-label">Lahir Anak 1</label>
-                            <input value="{{ $stakeholder->lahir_child_1 }}" type="text" class="form-control" name="lahir_child_1" data-plugin="formatter" data-pattern="[[99]]-[[99]]-[[9999]]"/>
-                            <small class="help-block">Tanggal-Bulan-Tahun</small>
-                        </div>
-                        <div class="col-sm-3">
-                            <label class="floating-label">Anak 2</label>
-                            <input type="text" class="form-control" name="child_2" value="{{ $stakeholder->child_2 }}"/>
-                        </div>
-                        <div class="col-sm-3">
-                            <label class="floating-label">Lahir Anak 2</label>
-                            <input value="{{ $stakeholder->lahir_child_2 }}" type="text" class="form-control" name="lahir_child_2" data-plugin="formatter" data-pattern="[[99]]-[[99]]-[[9999]]"/>
-                            <small class="help-block">Tanggal-Bulan-Tahun</small>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="col-sm-3">
-                            <label class="floating-label">Anak 3</label>
-                            <input type="text" class="form-control" name="child_3" value="{{ $stakeholder->child_3 }}"/>
-                        </div>
-                        <div class="col-sm-3">
-                            <label class="floating-label">Lahir Anak 3</label>
-                            <input value="{{ $stakeholder->lahir_child_3 }}" type="text" class="form-control" name="lahir_child_3" data-plugin="formatter" data-pattern="[[99]]-[[99]]-[[9999]]"/>
-                            <small class="help-block">Tanggal-Bulan-Tahun</small>
-                        </div>
-                        <div class="col-sm-3">
-                            <label class="floating-label">Anak 4</label>
-                            <input type="text" class="form-control" name="child_4" value="{{ $stakeholder->child_4 }}"/>
-                        </div>
-                        <div class="col-sm-3">
-                            <label class="floating-label">Lahir Anak 4</label>
-                            <input value="{{ $stakeholder->lahir_child_4 }}" type="text" class="form-control" name="lahir_child_4" data-plugin="formatter" data-pattern="[[99]]-[[99]]-[[9999]]"/>
-                            <small class="help-block">Tanggal-Bulan-Tahun</small>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="col-sm-3">
-                            <label class="floating-label">Anak 5</label>
-                            <input type="text" class="form-control" name="child_5" value="{{ $stakeholder->child_5 }}"/>
-                        </div>
-                        <div class="col-sm-3">
-                            <label class="floating-label">Lahir Anak 5</label>
-                            <input value="{{ $stakeholder->lahir_child_5 }}" type="text" class="form-control" name="lahir_child_5" data-plugin="formatter" data-pattern="[[99]]-[[99]]-[[9999]]"/>
-                            <small class="help-block">Tanggal-Bulan-Tahun</small>
-                        </div>
-                        <div class="col-sm-3">
-                            <label class="floating-label">Anak 6</label>
-                            <input type="text" class="form-control" name="child_6" value="{{ $stakeholder->child_6 }}"/>
-                        </div>
-                        <div class="col-sm-3">
-                            <label class="floating-label">Lahir Anak 6</label>
-                            <input value="{{ $stakeholder->lahir_child_6 }}" type="text" class="form-control" name="lahir_child_6" data-plugin="formatter" data-pattern="[[99]]-[[99]]-[[9999]]"/>
-                            <small class="help-block">Tanggal-Bulan-Tahun</small>
-                        </div>
-                        <div class="col-sm-3">
-                            <label class="floating-label">Anak 7</label>
-                            <input type="text" class="form-control" name="child_7" value="{{ $stakeholder->child_7 }}"/>
-                        </div>
-                        <div class="col-sm-3">
-                            <label class="floating-label">Lahir Anak 7</label>
-                            <input value="{{ $stakeholder->lahir_child_7 }}" type="text" class="form-control" name="lahir_child_7" data-plugin="formatter" data-pattern="[[99]]-[[99]]-[[9999]]"/>
-                            <small class="help-block">Tanggal-Bulan-Tahun</small>
-                        </div>
-                        <div class="col-sm-3">
-                            <label class="floating-label">Anak 8</label>
-                            <input type="text" class="form-control" name="child_8" value="{{ $stakeholder->child_8 }}"/>
-                        </div>
-                        <div class="col-sm-3">
-                            <label class="floating-label">Lahir Anak 8</label>
-                            <input value="{{ $stakeholder->lahir_child_8 }}" type="text" class="form-control" name="lahir_child_8" data-plugin="formatter" data-pattern="[[99]]-[[99]]-[[9999]]"/>
-                            <small class="help-block">Tanggal-Bulan-Tahun</small>
-                        </div>
-                    </div>
-                    {{--/Anak--}}
-
-                    <button class="btn btn-floating btn-fixed" type="submit" id="submit_new_stakeholder">
-                        <i class="icon wb-check" aria-hidden="true"></i>
-                    </button>
-
-                </form>
-            </div>
-        </div>
     </div>
 
 @stop
