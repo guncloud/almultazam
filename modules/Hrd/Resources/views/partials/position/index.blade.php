@@ -8,31 +8,36 @@
 
 @section('content')
 
-    <div class="box">
-        <div class="box-header with-border">
-            <h4 class="box-title">
+    <section class="content-header">
+        <h1>{{ $title or '' }}</h1>
+        <ol class="breadcrumb">
+            <li>
                 <form action="{{ url('/hrd/position') }}" method="post" class="form-inline">
-                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                        <div class="form-group">
-                            <input type="text" class="form-control" name="position" placeholder="Nama Jabatan">
-                        </div>
-                        <div class="form-group">
-                            <button class="btn btn-primary" type="submit">Tambah</button>
-                        </div>
-                    </form>
-            </h4>
-        </div>
-        <div class="box-body">
+                    <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="position" placeholder="Nama Jabatan">
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary" type="submit">Tambah</button>
+                    </div>
+                </form>
+            </li>
+        </ol>
+    </section>
 
-            @if($positions)
-                <table class="table table-striped">
-                    <thead>
+    <div class="content">
+        <div class="box">
+            <div class="box-body">
+
+                @if($positions)
+                    <table class="table table-striped">
+                        <thead>
                         <tr>
                             <th>Jabatan</th>
                             <th>Options</th>
                         </tr>
-                    </thead>
-                    <tbody>
+                        </thead>
+                        <tbody>
                         @foreach($positions as $pos)
                             <tr>
                                 <td>{{ $pos->position }}</td>
@@ -48,13 +53,15 @@
                                 </td>
                             </tr>
                         @endforeach
-                    </tbody>
-                </table>
-            @else
-                <p>Data  jabatan tidak ada</p>
-            @endif
+                        </tbody>
+                    </table>
+                @else
+                    <p>Data  jabatan tidak ada</p>
+                @endif
+            </div>
         </div>
     </div>
+
 @stop
 
 @section('js')
