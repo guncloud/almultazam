@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c1d9262-9728-434c-b6c9-c29860564306" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Hrd/Resources/views/partials/division/index.blade.php" afterPath="$PROJECT_DIR$/modules/Hrd/Resources/views/partials/division/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Hrd/Resources/views/partials/position/index.blade.php" afterPath="$PROJECT_DIR$/modules/Hrd/Resources/views/partials/position/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Hrd/Resources/views/partials/position/show.blade.php" afterPath="$PROJECT_DIR$/modules/Hrd/Resources/views/partials/position/show.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Hrd/Resources/views/partials/config/index.blade.php" afterPath="$PROJECT_DIR$/modules/Hrd/Resources/views/partials/config/index.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Hrd/Resources/views/partials/golongan/index.blade.php" afterPath="$PROJECT_DIR$/modules/Hrd/Resources/views/partials/golongan/index.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Hrd/Resources/views/partials/golongan/show.blade.php" afterPath="$PROJECT_DIR$/modules/Hrd/Resources/views/partials/golongan/show.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Hrd/Resources/views/partials/indicator/index.blade.php" afterPath="$PROJECT_DIR$/modules/Hrd/Resources/views/partials/indicator/index.blade.php" />
     </list>
     <ignored path="almultazam.2.2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,31 +31,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PositionController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/Hrd/Http/Controllers/PositionController.php">
+      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/modules/Hrd/Resources/views/partials/indicator/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.4">
-              <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/Hrd/Resources/views/partials/position/index.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.2">
-              <caret line="28" column="25" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show.blade.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/modules/Hrd/Resources/views/partials/position/show.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="24" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.9482201">
+              <caret line="95" column="14" selection-start-line="95" selection-start-column="14" selection-end-line="95" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -68,10 +49,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Http/Middleware/RoleAlquran.php" />
-        <option value="$PROJECT_DIR$/app/Http/Middleware/RolePembina.php" />
-        <option value="$PROJECT_DIR$/app/Http/Middleware/ModuleRoot.php" />
-        <option value="$PROJECT_DIR$/app/Http/Middleware/ModuleHrd.php" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/ModuleSiswa.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/RootController.php" />
         <option value="$PROJECT_DIR$/resources/views/root/user/edit.blade.php" />
@@ -119,6 +96,10 @@
         <option value="$PROJECT_DIR$/modules/Hrd/Http/Controllers/PositionController.php" />
         <option value="$PROJECT_DIR$/modules/Hrd/Resources/views/partials/position/index.blade.php" />
         <option value="$PROJECT_DIR$/modules/Hrd/Resources/views/partials/position/show.blade.php" />
+        <option value="$PROJECT_DIR$/modules/Hrd/Resources/views/partials/golongan/index.blade.php" />
+        <option value="$PROJECT_DIR$/modules/Hrd/Resources/views/partials/golongan/show.blade.php" />
+        <option value="$PROJECT_DIR$/modules/Hrd/Resources/views/partials/config/index.blade.php" />
+        <option value="$PROJECT_DIR$/modules/Hrd/Resources/views/partials/indicator/index.blade.php" />
       </list>
     </option>
   </component>
@@ -401,7 +382,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="position/s&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Hrd/Resources/views/partials/position/show.blade.php&#10;position/in&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Hrd/Resources/views/partials/position/index.blade.php&#10;pos&#9;null&#9;null&#10;division/in&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Hrd/Resources/views/partials/division/index.blade.php&#10;divi&#9;null&#9;null&#10;stakeholder/create&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Hrd/Resources/views/partials/stakeholder/create.blade.php&#10;stakeholder/de&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Hrd/Resources/views/partials/stakeholder/detail.blade.php&#10;stakeholder/inde&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Hrd/Resources/views/partials/stakeholder/index.blade.php&#10;stakeholder/ed&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Hrd/Resources/views/partials/stakeholder/edit.blade.php&#10;user&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/app/User.php&#10;master&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Hrd/Resources/views/layouts_2/master.blade.php&#10;stak&#9;null&#9;null&#10;stake&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/app/Stakeholder.php&#10;report/index&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Hrd/Resources/views/partials/report/index.blade.php&#10;sidebar&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Hrd/Resources/views/layouts_2/sidebar.blade.php&#10;header&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Hrd/Resources/views/layouts_2/header.blade.php&#10;vacation&#9;null&#9;null&#10;hrd&#9;null&#9;null&#10;vacation/inde&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Hrd/Resources/views/partials/vacation/index.blade.php&#10;hrd/repor&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Hrd/Http/Controllers/ReportController.php&#10;pingpong\control&#9;null&#9;null&#10;env&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/public/.env.example&#10;tool&#9;null&#9;null&#10;tab&#9;ACTION&#9;ConvertIndentsToTabs&#10;reci&#9;null&#9;null&#10;repo&#9;FILE&#9;file://C:/xampp/htdocs/almultazam/resources/views/pdf/report-profile-stakeholder.blade.php&#10;siswaC&#9;null&#9;null&#10;Contro&#9;FILE&#9;file://C:/xampp/htdocs/almultazam/vendor/pingpong/sky/fixture/app/Http/Controllers/Controller.php&#10;AuthenticatesUsers&#9;null&#9;null&#10;databa&#9;FILE&#9;file://C:/xampp/htdocs/almultazam/config/database.php&#10;.env&#9;FILE&#9;file://C:/xampp/htdocs/almultazam/vendor/pingpong/sky/fixture/.env.example&#10;config&#9;FILE&#9;file:///home/guncloud/lab/cooking/almzm/modules/Siswa/Http/Controllers/ConfigController.php&#10;reportC&#9;null&#9;null&#10;report/in&#9;FILE&#9;file:///home/guncloud/lab/cooking/almzm/modules/Hrd/Resources/views/partials/report/index.blade.php&#10;pingpong/contr&#9;FILE&#9;file:///home/guncloud/lab/cooking/almzm/vendor/pingpong/modules/Routing/Controller.php&#10;stakeholder/in&#9;FILE&#9;file:///home/guncloud/lab/cooking/almzm/modules/Hrd/Resources/views/partials/stakeholder/index.blade.php&#10;divisio&#9;null&#9;null&#10;pingpong/contro&#9;FILE&#9;file:///home/guncloud/lab/cooking/almzm/vendor/pingpong/modules/Routing/Controller.php&#10;dash&#9;FILE&#9;file:///home/guncloud/lab/cooking/almzm/modules/Siswa/Http/Controllers/DashboardController.php&#10;ro&#9;FILE&#9;file:///home/guncloud/lab/cooking/almzm/app/Http/routes.php&#10;rou&#9;FILE&#9;file:///home/guncloud/lab/cooking/almzm/modules/Siswa/Http/routes.php&#10;route&#9;FILE&#9;file:///home/guncloud/lab/cooking/almzm/modules/Siswa/Http/routes.php&#10;siswa/r&#9;FILE&#9;file:///home/guncloud/lab/cooking/almzm/modules/Siswa/Http/routes.php&#10;user/in&#9;FILE&#9;file:///home/guncloud/lab/cooking/almzm/resources/views/root/user/index.blade.php&#10;routes&#9;FILE&#9;file:///home/guncloud/lab/cooking/almzm/app/Http/routes.php&#10;stakeholder/ind&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Hrd/Resources/views/partials/stakeholder/index.blade.php&#10;take&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/modules/Hrd/Http/Controllers/StakeholderController.php&#10;root_mas&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/resources/views/root/layout/root_master.blade.php&#10;user/inde&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/resources/views/root/user/index.blade.php&#10;root/ind&#9;FILE&#9;file:///home/guncloud/Damel/almultazam.2.2/resources/views/root/dashboard/index.blade.php" />
+    <property name="SearchEverywhereHistoryKey" value="indicator/ind&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Hrd/Resources/views/partials/indicator/index.blade.php&#10;config/index&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Hrd/Resources/views/partials/config/index.blade.php&#10;configCon&#9;null&#9;null&#10;golongan/s&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Hrd/Resources/views/partials/golongan/show.blade.php&#10;golongan/ind&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Hrd/Resources/views/partials/golongan/index.blade.php&#10;golongan&#9;null&#9;null&#10;position/s&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Hrd/Resources/views/partials/position/show.blade.php&#10;position/in&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Hrd/Resources/views/partials/position/index.blade.php&#10;pos&#9;null&#9;null&#10;division/in&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Hrd/Resources/views/partials/division/index.blade.php&#10;divi&#9;null&#9;null&#10;stakeholder/create&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Hrd/Resources/views/partials/stakeholder/create.blade.php&#10;stakeholder/de&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Hrd/Resources/views/partials/stakeholder/detail.blade.php&#10;stakeholder/inde&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Hrd/Resources/views/partials/stakeholder/index.blade.php&#10;stakeholder/ed&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Hrd/Resources/views/partials/stakeholder/edit.blade.php&#10;user&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/app/User.php&#10;master&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Hrd/Resources/views/layouts_2/master.blade.php&#10;stak&#9;null&#9;null&#10;stake&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/app/Stakeholder.php&#10;report/index&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Hrd/Resources/views/partials/report/index.blade.php&#10;sidebar&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Hrd/Resources/views/layouts_2/sidebar.blade.php&#10;header&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Hrd/Resources/views/layouts_2/header.blade.php&#10;vacation&#9;null&#9;null&#10;hrd&#9;null&#9;null&#10;vacation/inde&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Hrd/Resources/views/partials/vacation/index.blade.php&#10;hrd/repor&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Hrd/Http/Controllers/ReportController.php&#10;pingpong\control&#9;null&#9;null&#10;env&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/public/.env.example&#10;tool&#9;null&#9;null&#10;tab&#9;ACTION&#9;ConvertIndentsToTabs&#10;reci&#9;null&#9;null&#10;repo&#9;FILE&#9;file://C:/xampp/htdocs/almultazam/resources/views/pdf/report-profile-stakeholder.blade.php&#10;siswaC&#9;null&#9;null&#10;Contro&#9;FILE&#9;file://C:/xampp/htdocs/almultazam/vendor/pingpong/sky/fixture/app/Http/Controllers/Controller.php&#10;AuthenticatesUsers&#9;null&#9;null&#10;databa&#9;FILE&#9;file://C:/xampp/htdocs/almultazam/config/database.php&#10;.env&#9;FILE&#9;file://C:/xampp/htdocs/almultazam/vendor/pingpong/sky/fixture/.env.example&#10;config&#9;FILE&#9;file:///home/guncloud/lab/cooking/almzm/modules/Siswa/Http/Controllers/ConfigController.php&#10;reportC&#9;null&#9;null&#10;report/in&#9;FILE&#9;file:///home/guncloud/lab/cooking/almzm/modules/Hrd/Resources/views/partials/report/index.blade.php&#10;pingpong/contr&#9;FILE&#9;file:///home/guncloud/lab/cooking/almzm/vendor/pingpong/modules/Routing/Controller.php&#10;stakeholder/in&#9;FILE&#9;file:///home/guncloud/lab/cooking/almzm/modules/Hrd/Resources/views/partials/stakeholder/index.blade.php&#10;divisio&#9;null&#9;null&#10;pingpong/contro&#9;FILE&#9;file:///home/guncloud/lab/cooking/almzm/vendor/pingpong/modules/Routing/Controller.php&#10;dash&#9;FILE&#9;file:///home/guncloud/lab/cooking/almzm/modules/Siswa/Http/Controllers/DashboardController.php&#10;ro&#9;FILE&#9;file:///home/guncloud/lab/cooking/almzm/app/Http/routes.php&#10;rou&#9;FILE&#9;file:///home/guncloud/lab/cooking/almzm/modules/Siswa/Http/routes.php&#10;route&#9;FILE&#9;file:///home/guncloud/lab/cooking/almzm/modules/Siswa/Http/routes.php&#10;siswa/r&#9;FILE&#9;file:///home/guncloud/lab/cooking/almzm/modules/Siswa/Http/routes.php&#10;user/in&#9;FILE&#9;file:///home/guncloud/lab/cooking/almzm/resources/views/root/user/index.blade.php" />
     <property name="recentsLimit" value="5" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
@@ -540,48 +521,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.02586207">
-          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Siswa/Http/Controllers/SiswaController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46896553">
-          <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/adminlte/ext/font-awesome.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.03074141">
-          <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pdf/report-profile-stakeholder.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.61551726">
-          <caret line="21" column="38" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Hrd/Resources/views/layouts/sidebar.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.029310346">
-          <caret line="35" column="66" selection-start-line="35" selection-start-column="66" selection-end-line="35" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Siswa/Http/Controllers/RecitationController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.9086207">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/Siswa/Resources/views/partials/recitation/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5862069">
@@ -925,6 +864,54 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="24" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Hrd/Http/Controllers/GolonganController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.56">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Hrd/Resources/views/partials/golongan/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.44">
+          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Hrd/Resources/views/partials/golongan/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="24" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Hrd/Http/Controllers/ConfigController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.56">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Hrd/Resources/views/partials/config/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.90614885">
+          <caret line="35" column="14" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Hrd/Resources/views/partials/indicator/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9482201">
+          <caret line="95" column="14" selection-start-line="95" selection-start-column="14" selection-end-line="95" selection-end-column="14" />
           <folding />
         </state>
       </provider>

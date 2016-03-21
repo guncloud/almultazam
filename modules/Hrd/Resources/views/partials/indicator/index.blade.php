@@ -8,82 +8,88 @@
 
 @section('content')
 
-    <div class="box">
-        <div class="box-body">
-            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                <div class="panel">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Kriteria</h3>
-                        <div class="page-header-actions">
-                            <button type="button" data-target="#newIndicator" class="btn btn-sm" data-toggle="modal" data-original-title="Add">
-                                <i class="fa fa-pencil" aria-hidden="true"></i> Add
-                            </button>
+    <section class="content-header">
+        <h1>{{ $title or '' }}</h1>
+    </section>
+
+    <div class="content">
+        <div class="box">
+            <div class="box-body">
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Kriteria</h3>
+                            <div class="page-header-actions">
+                                <button type="button" data-target="#newIndicator" class="btn btn-sm" data-toggle="modal" data-original-title="Add">
+                                    <i class="fa fa-pencil" aria-hidden="true"></i> Add
+                                </button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="panel-body">
-                        @if($indicators)
-                            <table class="table table-striped">
-                                @foreach($indicators as $ind)
-                                    <tr>
-                                        <td>{{ $ind->indicator }}</td>
-                                        <td>
-                                            <form class="deleteForm" action="{{ url('/hrd/indicator/'.$ind->id) }}" method="post">
-                                                <input type="hidden" name="_token" value="{{ csrf_token() }}" >
-                                                <input type="hidden" name="_method" value="DELETE">
-                                                <button href="{{ url('/hrd/indicator/'.$ind->id) }}" class="btn btn-warning btn-sm deleteIndicator" type="submit" id="deleteIndicator">
-                                                    <i class="fa fa-trash"></i>
-                                                </button>
-                                                {{--<a href="{{ url('/hrd/indicator/'.$ind->id) }}" class="btn btn-info btn-sm updateDivision" type="button">--}}
+                        <div class="panel-body">
+                            @if($indicators)
+                                <table class="table table-striped">
+                                    @foreach($indicators as $ind)
+                                        <tr>
+                                            <td>{{ $ind->indicator }}</td>
+                                            <td>
+                                                <form class="deleteForm" action="{{ url('/hrd/indicator/'.$ind->id) }}" method="post">
+                                                    <input type="hidden" name="_token" value="{{ csrf_token() }}" >
+                                                    <input type="hidden" name="_method" value="DELETE">
+                                                    <button href="{{ url('/hrd/indicator/'.$ind->id) }}" class="btn btn-warning btn-sm deleteIndicator" type="submit" id="deleteIndicator">
+                                                        <i class="fa fa-trash"></i>
+                                                    </button>
+                                                    {{--<a href="{{ url('/hrd/indicator/'.$ind->id) }}" class="btn btn-info btn-sm updateDivision" type="button">--}}
                                                     {{--<i class="fa fa-pencil"></i>Edit--}}
-                                                {{--</a>--}}
-                                            </form>
-                                        </td>
-                                    </tr>
-                                @endforeach
-                            </table>
-                        @else
-                            Data not found
-                        @endif
+                                                    {{--</a>--}}
+                                                </form>
+                                            </td>
+                                        </tr>
+                                    @endforeach
+                                </table>
+                            @else
+                                Data not found
+                            @endif
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                <div class="panel">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Indikator</h3>
-                        <div class="page-header-actions">
-                            <button type="button" data-target="#newPerformance" class="btn btn-sm" data-toggle="modal" data-original-title="Add">
-                                <i class="fa fa-pencil" aria-hidden="true"></i> Add
-                            </button>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Indikator</h3>
+                            <div class="page-header-actions">
+                                <button type="button" data-target="#newPerformance" class="btn btn-sm" data-toggle="modal" data-original-title="Add">
+                                    <i class="fa fa-pencil" aria-hidden="true"></i> Add
+                                </button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="panel-body">
-                        @if($performances)
-                            <table class="table table-striped">
-                                @foreach($performances as $perm)
-                                    <tr>
-                                        <td>
-                                            {{ $perm->indicator }}
-                                            <ul>
-                                            @foreach($perm->performances as $p)
-                                                <li>{{ $p->performance }},
-                                                    <form class="deleteForm" action="{{ url('/hrd/indicator/'.$p->id) }}" method="post">
-                                                        <input type="hidden" name="_token" value="{{ csrf_token() }}" >
-                                                        <input type="hidden" name="_method" value="DELETE">
-                                                        <button href="{{ url('/hrd/performance/'.$p->id) }}" class="btn btn-warning btn-sm deletePerformance" type="submit" id="deleteIndicator">
-                                                            <i class="fa fa-trash"></i>
-                                                        </button>
-                                                    </form>
-                                                </li>
-                                            @endforeach
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                @endforeach
-                            </table>
-                        @else
-                            Data not found
-                        @endif
+                        <div class="panel-body">
+                            @if($performances)
+                                <table class="table table-striped">
+                                    @foreach($performances as $perm)
+                                        <tr>
+                                            <td>
+                                                {{ $perm->indicator }}
+                                                <ul>
+                                                    @foreach($perm->performances as $p)
+                                                        <li>{{ $p->performance }},
+                                                            <form class="deleteForm" action="{{ url('/hrd/indicator/'.$p->id) }}" method="post">
+                                                                <input type="hidden" name="_token" value="{{ csrf_token() }}" >
+                                                                <input type="hidden" name="_method" value="DELETE">
+                                                                <button href="{{ url('/hrd/performance/'.$p->id) }}" class="btn btn-warning btn-sm deletePerformance" type="submit" id="deleteIndicator">
+                                                                    <i class="fa fa-trash"></i>
+                                                                </button>
+                                                            </form>
+                                                        </li>
+                                                    @endforeach
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                    @endforeach
+                                </table>
+                            @else
+                                Data not found
+                            @endif
+                        </div>
                     </div>
                 </div>
             </div>

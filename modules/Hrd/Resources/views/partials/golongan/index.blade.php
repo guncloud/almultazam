@@ -7,26 +7,29 @@
 
 @section('content')
 
-    <div class="box">
-        <div class="box-header with-border">
-            <h4 class="box-title"></h4>
-            <div class="box-tools pull-right">
+    <section class="content-header">
+        <h1>{{ $title or '' }}</h1>
+        <ol class="breadcrumb">
+            <li>
                 <button type="button" data-target="#newGolongan" class="btn btn-sm btn-box-tool bg-navy" data-toggle="modal" data-original-title="Add">
                     <i class="fa fa-pencil" aria-hidden="true"></i> Add
                 </button>
-            </div>
-        </div>
+            </li>
+        </ol>
+    </section>
 
-        <div class="box-body">
-            @if($golongan)
-                <table class="table table-striped">
-                    <thead>
+    <div class="content">
+        <div class="box">
+            <div class="box-body">
+                @if($golongan)
+                    <table class="table table-striped">
+                        <thead>
                         <tr>
                             <th>Golongan</th>
                             <th>Options</th>
                         </tr>
-                    </thead>
-                    <tbody>
+                        </thead>
+                        <tbody>
                         @foreach($golongan as $gol)
                             <tr>
                                 <td>{{ $gol->golongan }}</td>
@@ -41,13 +44,14 @@
                                 </td>
                             </tr>
                         @endforeach
-                    </tbody>
-                </table>
-            @else
-                <p>Tidak ada data</p>
-            @endif
-        </div>
+                        </tbody>
+                    </table>
+                @else
+                    <p>Tidak ada data</p>
+                @endif
+            </div>
 
+        </div>
     </div>
 
     <!-- Modal -->
