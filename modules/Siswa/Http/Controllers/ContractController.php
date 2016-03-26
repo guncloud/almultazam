@@ -1,6 +1,7 @@
 <?php namespace Modules\Siswa\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Response;
 use Modules\Siswa\Entities\Config;
 use Modules\Siswa\Entities\Contract;
 use Pingpong\Modules\Routing\Controller;
@@ -43,6 +44,15 @@ class ContractController extends Controller {
     public function show(Request $request, $id)
     {
         $rec = Contract::find($id);
+
+        if($request->ajax()){
+            $classroom_id = $id;
+
+            $contract = new Contract;
+            $rec = $contract->getContractByClassroom($classroom_id);
+
+            return response()->json($rec);
+        }
 
         return response()->json($rec);
     }

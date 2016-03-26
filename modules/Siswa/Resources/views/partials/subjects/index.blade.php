@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="{{ asset('/vendor/webui-popover/webui-popover.css') }}">
     <link rel="stylesheet" href="{{ asset('/vendor/toolbar/toolbar.css') }}">
     <link rel="stylesheet" href="{{ asset('/vendor/select2/select2.css') }}">
+    <link rel="stylesheet" href="{{ asset('/vendor/datatables-responsive/dataTables.responsive.css') }}">
     <link rel="stylesheet" href="{{ asset('/vendor/bootstrap-sweetalert/sweet-alert.css') }}">
 @endsection
 
@@ -227,7 +228,7 @@
                                 <li class="list-group-item">
                                     <div class="media">
                                         <div class="media-body">
-                                            <table class="table table-striped">
+                                            <table class="table table-striped" id="table-siswa">
                                                 <thead>
                                                 <tr>
                                                     <th>Kode M. Pelajaran</th>
@@ -317,13 +318,16 @@
 @stop
 
 @section('js')
+    <script src="{{ asset('/vendor/datatables/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('/vendor/datatables-fixedheader/dataTables.fixedHeader.js') }}"></script>
+    <script src="{{ asset('/vendor/datatables-bootstrap/dataTables.bootstrap.js') }}"></script>
+    <script src="{{ asset('/vendor/datatables-responsive/dataTables.responsive.js') }}"></script>
+    <script src="{{ asset('/vendor/datatables-tabletools/dataTables.tableTools.js') }}"></script>
     <script src="{{ asset('/vendor/webui-popover/jquery.webui-popover.min.js') }}"></script>
     <script src="{{ asset('/vendor/toolbar/jquery.toolbar.min.js') }}"></script>
-    <script src="{{ asset('/js/jquery.autocomplete.js') }}"></script>
+    <script src="{{ asset('/js/components/datatables.js') }}"></script>
     <script src="{{ asset('/js/components/webui-popover.js') }}"></script>
     <script src="{{ asset('/js/components/toolbar.js') }}"></script>
-    <script src="{{ asset('/vendor/select2/select2.min.js') }}"></script>
-    <script src="{{ asset('/js/components/select2.js') }}"></script>
     <script src="{{ asset('/vendor/bootstrap-sweetalert/sweet-alert.js') }}"></script>
     <script src="{{ asset('/js/components/bootstrap-sweetalert.js') }}"></script>
 
@@ -467,6 +471,8 @@
                 $('#btnPopMenu').webuiPopover($.extend({}, defaults,
                         tableSettings));
             });
+
+            $('#table-siswa').datatable();
 
         })
     </script>

@@ -15,8 +15,20 @@
             <div class="page-header-actions">
                 <form action="{{ url('/siswa/score') }}" method="get" class="form-inline">
                     <div class="form-group">
+                        @if($contracts)
+                            <select name="contract" id="contract" class="form-control" placeholder="Pilih Kelas">
+                                <option >Pilih M. Pel</option>
+                                @foreach($contracts as $sbj)
+                                    <option {{ (@$_GET['contract'] == $sbj->id) ? 'selected' : '' }} value="{{ $sbj->id }}">{{ $sbj->code }} - {{ $sbj->subject }} (T. {{ $sbj->grade }}) (S. {{ $sbj->semester }})</option>
+                                @endforeach
+                            </select>
+                        @else
+                            <p>Data mata pelajaran tidak ada</p>
+                        @endif
+                    </div>
+                    <div class="form-group">
                         @if($classrooms)
-                            <select name="kelas" id="classroom" class="form-control" placeholder="Pilih Kelas">
+                            <select name="kelas" id="kelas" class="form-control" placeholder="Pilih Kelas">
                                 <option >Pilih Kelas</option>
                                 @foreach($classrooms as $cls)
                                     <option {{ (@$_GET['kelas'] == $cls->id) ? 'selected' : '' }} value="{{ $cls->id }}">{{ $cls->classroom }}</option>
@@ -25,11 +37,6 @@
                         @else
                             <p>Data kelas tidak ada</p>
                         @endif
-                    </div>
-                    <div class="form-group">
-                        <select name="contract" id="contract" class="form-control">
-                            <option >Pilih Kelas</option>
-                        </select>
                     </div>
                     <div class="form-group">
                         <button class="btn btn-primary" type="submit">Submit</button>
@@ -81,7 +88,7 @@
                                             );
 
                                             $uhAverage = array_sum($arrUh) / count($arrUh);
-                                            $summary[$std->id] = (2 * $uhAverage + $uts + $uas) / 4;
+                                            echo $summary[$std->id] = (2 * $uhAverage + $uts + $uas) / 4;
                                         }
 
                                     ?>
@@ -138,28 +145,4 @@
             </div>
         </div>
     </div>
-@stop
-
-@section('js')
-    <script>
-        $(function(){
-            $('#classroom').change(function(){
-                var val = $(this).val();
-
-                $.ajax({
-                    url : "{{ url('siswa/contract/') }}/"+val,
-                    success : function(data){
-                        $('#contract').children().remove();
-                        console.log(data);
-                        $.each(data, function(x, i){
-                            console.log(i);
-                            $('#contract').append(
-                                    '<option value="'+ i.id +'">' + i.code + ' ' + i.subject + ' ( T. ' +i.grade + ')' + '( S. ' +i.semester + ')' +'</option>'
-                            );
-                        })
-                    }
-                })
-            });
-        })
-    </script>
 @stop

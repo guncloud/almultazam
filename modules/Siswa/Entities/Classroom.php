@@ -15,6 +15,7 @@ class Classroom extends Model {
                     ->join('stakeholders', 'stakeholders.id', '=', 'classrooms.teacher_id')
                     ->join('divisions', 'divisions.id', '=', 'stakeholders.division_id')
                     ->where('divisions.slug', '=', 'smpit-al-multazam')
+                    ->orderBy('classrooms.classroom')
                     ->get();
 
         return $rec;

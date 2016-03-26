@@ -19,8 +19,11 @@ class ScoreController extends Controller {
 	
 	public function index(Request $request)
 	{
+//        DB::enableQueryLog();
+
         $classroom = new Classroom;
         $classroom = $classroom->getClassrooms();
+
         $contract = new Contract;
         $contracts = $contract->getContract();
         $selectedContract = $contract->getContractById($request->get('contract'));
@@ -71,6 +74,10 @@ class ScoreController extends Controller {
         $uh4 = $request->get('uh4');
         $uts = $request->get('uts');
         $uas = $request->get('uas');
+
+        echo "<pre>";
+            print_r($request->all());
+        exit;
 
         foreach ($uh1 as $sid => $score ) {
 

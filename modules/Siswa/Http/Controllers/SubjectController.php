@@ -25,7 +25,7 @@ class SubjectController extends Controller {
         $contract = new Contract;
         $contracts = $contract->getContract();
 
-        //dd($contracts);
+//        dd($contracts);
 
         $data['contracts'] = (count($contracts) > 0) ? $contracts : false;
         $data['classrooms'] = (!$classrooms->isEmpty()) ? $classrooms : false;
