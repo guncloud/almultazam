@@ -47,9 +47,6 @@ class RecitationController extends Controller {
             $recitations = false;
         }
 
-//        echo "<prE>";
-//        print_r($recitations);
-//        exit;
 
         $data['recitations'] = ($recitations) ? $recitations : false;
         $data['students'] = $students;
@@ -84,10 +81,6 @@ class RecitationController extends Controller {
     public function edit(Request $request, $id)
     {
         $recitation = Recitation::find($id);
-
-//        echo "<pre>";
-//        print_r($recitation);
-//        exit;
 
         $data['rec'] = $recitation;
         return view('siswa::partials.recitation.edit', $data);

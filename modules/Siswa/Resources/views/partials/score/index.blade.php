@@ -19,7 +19,9 @@
                             <select name="kelas" id="classroom" class="form-control" placeholder="Pilih Kelas">
                                 <option >Pilih Kelas</option>
                                 @foreach($classrooms as $cls)
-                                    <option {{ (@$_GET['kelas'] == $cls->id) ? 'selected' : '' }} value="{{ $cls->id }}">{{ $cls->classroom }}</option>
+                                    <option {{ (@$_GET['kelas'] == $cls->id) ? 'selected' : '' }} value="{{ $cls->id }}">
+                                        {{ $cls->classroom }}
+                                    </option>
                                 @endforeach
                             </select>
                         @else
