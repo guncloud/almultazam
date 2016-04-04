@@ -68,6 +68,7 @@
                                 <th>Siswa</th>
                                 <th>Pelanggaran</th>
                                 <th>Tanggal</th>
+                                <th>Options</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -81,6 +82,16 @@
                                         @endforeach
                                     </td>
                                     <td>{{ $v->date }}</td>
+                                    <td>
+                                        <form action="{{ url('/siswa/violation/'.$v->id) }}" method="post">
+                                            <input type="hidden" name="_token" value="{{ csrf_token() }}" >
+                                            <input type="hidden" name="_method" value="DELETE">
+                                            <button class="btn btnDelete btn-sm btn-danger">Delete</button>
+
+                                            <a class="btn btn-sm btn-info" href="{{ url('siswa/violation/'.$v->id.'/edit') }}">Edit</a>
+                                        </form>
+
+                                    </td>
                                 </tr>
                             @endforeach
                             </tbody>
@@ -105,6 +116,17 @@
 
     <script>
         $(function(){
+
+            $('.btnDelete').click(function(e){
+                e.preventDefault();
+                var r = confirm('Yakin akan menghapus');
+
+                if (r == true) {
+                    $(this).closest("form").submit();
+                } else {
+                    return false;
+                }
+            });
 
             var defaults = $.components.getDefaults("dataTable");
 

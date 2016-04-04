@@ -33,5 +33,31 @@ class ViolationController extends Controller {
         }
         return redirect('/siswa/violation');
     }
+
+    public function edit(Request $request, $id)
+    {
+        $data['viol'] = Violation::find($id);
+        $data['title'] = 'Edit Data Pelanggaran';
+
+        return view('siswa::partials.violation.edit', $data);
+    }
+
+    public function update(Request $request, $id)
+    {
+        $update = Violation::find($id);
+        $update->violation = $request->get('violation');
+        $update->date = $request->get('date');
+        $update->point = $request->get('point');
+        $update->save();
+
+        return redirect('/siswa/violation');
+    }
+
+    public function destroy($id)
+    {
+        if(Violation::destroy($id)){
+            return redirect('/siswa/violation');
+        }
+    }
 	
 }
