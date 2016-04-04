@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9c1d9262-9728-434c-b6c9-c29860564306" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.php" afterPath="$PROJECT_DIR$/config/database.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Siswa/Http/Controllers/ViolationController.php" afterPath="$PROJECT_DIR$/modules/Siswa/Http/Controllers/ViolationController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Siswa/Resources/views/partials/violation/index.blade.php" afterPath="$PROJECT_DIR$/modules/Siswa/Resources/views/partials/violation/index.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Hrd/Resources/views/partials/report/index.blade.php" afterPath="$PROJECT_DIR$/modules/Hrd/Resources/views/partials/report/index.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Hrd/Resources/views/partials/vacation/index.blade.php" afterPath="$PROJECT_DIR$/modules/Hrd/Resources/views/partials/vacation/index.blade.php" />
     </list>
     <ignored path="almultazam.2.2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,31 +30,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="ReportController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/Hrd/Http/Controllers/ReportController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/modules/Hrd/Resources/views/partials/vacation/index.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="55" column="33" selection-start-line="55" selection-start-column="33" selection-end-line="55" selection-end-column="33" />
+              <folding>
+                <element signature="e#411#2534#0#HTML" expanded="false" />
+                <element signature="e#4758#7062#0#HTML" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/Siswa/Resources/views/partials/violation/index.blade.php">
+        <entry file="file://$PROJECT_DIR$/modules/Hrd/Resources/views/partials/report/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="81" column="32" selection-start-line="81" selection-start-column="32" selection-end-line="81" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ViolationController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/Siswa/Http/Controllers/ViolationController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit.blade.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/modules/Siswa/Resources/views/partials/violation/edit.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
+            <state relative-caret-position="2499">
+              <caret line="147" column="78" selection-start-line="147" selection-start-column="78" selection-end-line="147" selection-end-column="78" />
               <folding />
             </state>
           </provider>
@@ -81,13 +83,10 @@
         <option value="$PROJECT_DIR$/app/User.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ToolController.php" />
         <option value="$PROJECT_DIR$/public/js/bs-confirm.js" />
-        <option value="$PROJECT_DIR$/modules/Hrd/Resources/views/partials/vacation/index.blade.php" />
         <option value="$PROJECT_DIR$/modules/Hrd/Http/Controllers/VacationController.php" />
         <option value="$PROJECT_DIR$/modules/Hrd/Resources/views/layouts_2/sidebar.blade.php" />
-        <option value="$PROJECT_DIR$/modules/Hrd/Resources/views/partials/report/index.blade.php" />
         <option value="$PROJECT_DIR$/public/adminlte/dist/css/AdminLTE.css" />
         <option value="$PROJECT_DIR$/public/adminlte/dist/css/AdminLTE.min.css" />
-        <option value="$PROJECT_DIR$/modules/Hrd/Resources/views/layouts_2/master.blade.php" />
         <option value="$PROJECT_DIR$/modules/Hrd/Resources/views/partials/stakeholder/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/auth/index.html" />
         <option value="$PROJECT_DIR$/public/login_form/css/style.css" />
@@ -120,6 +119,9 @@
         <option value="$PROJECT_DIR$/modules/Siswa/Resources/views/partials/violation/edit.blade.php" />
         <option value="$PROJECT_DIR$/modules/Siswa/Http/Controllers/ViolationController.php" />
         <option value="$PROJECT_DIR$/modules/Siswa/Resources/views/partials/violation/index.blade.php" />
+        <option value="$PROJECT_DIR$/modules/Hrd/Resources/views/layouts_2/master.blade.php" />
+        <option value="$PROJECT_DIR$/modules/Hrd/Resources/views/partials/report/index.blade.php" />
+        <option value="$PROJECT_DIR$/modules/Hrd/Resources/views/partials/vacation/index.blade.php" />
       </list>
     </option>
   </component>
@@ -223,156 +225,6 @@
               <option name="myItemId" value="modules" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Siswa" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="almultazam.2.2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="almultazam" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Siswa" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="almultazam.2.2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="almultazam" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Siswa" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="partials" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="violation" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="almultazam.2.2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="almultazam" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Siswa" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="partials" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="almultazam.2.2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="almultazam" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Siswa" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="partials" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="siswa" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="almultazam.2.2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="almultazam" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Siswa" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -447,40 +299,6 @@
               <option name="myItemId" value="partials" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vacation" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="almultazam.2.2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="almultazam" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Hrd" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="partials" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -512,41 +330,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="report" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="almultazam.2.2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="almultazam" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Hrd" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="partials" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="position" />
+              <option name="myItemId" value="stakeholder" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -580,7 +364,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="viola&#9;null&#9;null&#10;violation/in&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Siswa/Resources/views/partials/violation/index.blade.php&#10;controller&#9;null&#9;null&#10;.env&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/public/.env.example&#10;database.&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/config/database.php&#10;routing/cont&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/vendor/pingpong/sky/src/Pingpong/Modules/Routing/Controller.php&#10;recitation/ed&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Siswa/Resources/views/partials/recitation/edit.blade.php&#10;recitation&#9;null&#9;null&#10;recitation/index&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Siswa/Resources/views/partials/recitation/index.blade.php&#10;contractC&#9;null&#9;null&#10;score/inde&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Siswa/Resources/views/partials/score/index.blade.php&#10;scor&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Siswa/Http/Controllers/ScoreController.php&#10;siswa&#9;null&#9;null&#10;subject/index&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Siswa/Resources/views/partials/subjects/index.blade.php&#10;subjectC&#9;null&#9;null&#10;score/in&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Siswa/Resources/views/partials/score/index.blade.php&#10;score&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Siswa/Http/Controllers/ScoreController.php&#10;clas&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Siswa/Entities/Classroom.php&#10;siswa/index&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Siswa/Resources/views/partials/siswa/index.blade.php&#10;siswa/inde&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Siswa/Resources/views/index.blade.php&#10;subject/ind&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Siswa/Resources/views/partials/subjects/index.blade.php&#10;scoreContr&#9;null&#9;null&#10;en&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/.env&#10;score/index&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Siswa/Resources/views/partials/score/index.blade.php&#10;hrd/in&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Hrd/Resources/views/index.blade.php&#10;header&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Hrd/Resources/views/layouts_2/header.blade.php&#10;indicator/ind&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Hrd/Resources/views/partials/indicator/index.blade.php&#10;config/index&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Hrd/Resources/views/partials/config/index.blade.php&#10;configCon&#9;null&#9;null&#10;golongan/s&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Hrd/Resources/views/partials/golongan/show.blade.php&#10;golongan/ind&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Hrd/Resources/views/partials/golongan/index.blade.php&#10;golongan&#9;null&#9;null&#10;position/s&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Hrd/Resources/views/partials/position/show.blade.php&#10;position/in&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Hrd/Resources/views/partials/position/index.blade.php&#10;pos&#9;null&#9;null&#10;division/in&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Hrd/Resources/views/partials/division/index.blade.php&#10;divi&#9;null&#9;null&#10;stakeholder/create&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Hrd/Resources/views/partials/stakeholder/create.blade.php&#10;stakeholder/de&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Hrd/Resources/views/partials/stakeholder/detail.blade.php&#10;stakeholder/inde&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Hrd/Resources/views/partials/stakeholder/index.blade.php&#10;stakeholder/ed&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Hrd/Resources/views/partials/stakeholder/edit.blade.php&#10;user&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/app/User.php&#10;master&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Hrd/Resources/views/layouts_2/master.blade.php&#10;stak&#9;null&#9;null&#10;stake&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/app/Stakeholder.php&#10;report/index&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Hrd/Resources/views/partials/report/index.blade.php&#10;sidebar&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Hrd/Resources/views/layouts_2/sidebar.blade.php&#10;vacation&#9;null&#9;null&#10;hrd&#9;null&#9;null&#10;vacation/inde&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Hrd/Resources/views/partials/vacation/index.blade.php" />
+    <property name="SearchEverywhereHistoryKey" value="acation/ind&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Hrd/Resources/views/partials/vacation/index.blade.php&#10;master&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Hrd/Resources/views/layouts_2/master.blade.php&#10;report/index&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Hrd/Resources/views/partials/report/index.blade.php&#10;repor&#9;null&#9;null&#10;viola&#9;null&#9;null&#10;violation/in&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Siswa/Resources/views/partials/violation/index.blade.php&#10;controller&#9;null&#9;null&#10;.env&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/public/.env.example&#10;database.&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/config/database.php&#10;routing/cont&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/vendor/pingpong/sky/src/Pingpong/Modules/Routing/Controller.php&#10;recitation/ed&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Siswa/Resources/views/partials/recitation/edit.blade.php&#10;recitation&#9;null&#9;null&#10;recitation/index&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Siswa/Resources/views/partials/recitation/index.blade.php&#10;contractC&#9;null&#9;null&#10;score/inde&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Siswa/Resources/views/partials/score/index.blade.php&#10;scor&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Siswa/Http/Controllers/ScoreController.php&#10;siswa&#9;null&#9;null&#10;subject/index&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Siswa/Resources/views/partials/subjects/index.blade.php&#10;subjectC&#9;null&#9;null&#10;score/in&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Siswa/Resources/views/partials/score/index.blade.php&#10;score&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Siswa/Http/Controllers/ScoreController.php&#10;clas&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Siswa/Entities/Classroom.php&#10;siswa/index&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Siswa/Resources/views/partials/siswa/index.blade.php&#10;siswa/inde&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Siswa/Resources/views/index.blade.php&#10;subject/ind&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Siswa/Resources/views/partials/subjects/index.blade.php&#10;scoreContr&#9;null&#9;null&#10;en&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/.env&#10;score/index&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Siswa/Resources/views/partials/score/index.blade.php&#10;hrd/in&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Hrd/Resources/views/index.blade.php&#10;header&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Hrd/Resources/views/layouts_2/header.blade.php&#10;indicator/ind&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Hrd/Resources/views/partials/indicator/index.blade.php&#10;config/index&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Hrd/Resources/views/partials/config/index.blade.php&#10;configCon&#9;null&#9;null&#10;golongan/s&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Hrd/Resources/views/partials/golongan/show.blade.php&#10;golongan/ind&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Hrd/Resources/views/partials/golongan/index.blade.php&#10;golongan&#9;null&#9;null&#10;position/s&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Hrd/Resources/views/partials/position/show.blade.php&#10;position/in&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Hrd/Resources/views/partials/position/index.blade.php&#10;pos&#9;null&#9;null&#10;division/in&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Hrd/Resources/views/partials/division/index.blade.php&#10;divi&#9;null&#9;null&#10;stakeholder/create&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Hrd/Resources/views/partials/stakeholder/create.blade.php&#10;stakeholder/de&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Hrd/Resources/views/partials/stakeholder/detail.blade.php&#10;stakeholder/inde&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Hrd/Resources/views/partials/stakeholder/index.blade.php&#10;stakeholder/ed&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Hrd/Resources/views/partials/stakeholder/edit.blade.php&#10;user&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/app/User.php&#10;stak&#9;null&#9;null&#10;stake&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/app/Stakeholder.php&#10;sidebar&#9;FILE&#9;file:///home/guncloud/lab/cooking/almultazam/modules/Hrd/Resources/views/layouts_2/sidebar.blade.php&#10;vacation&#9;null&#9;null" />
     <property name="recentsLimit" value="5" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
@@ -661,7 +445,7 @@
       <option name="presentableId" value="Default" />
       <updated>1444614568188</updated>
       <workItem from="1459741796695" duration="287000" />
-      <workItem from="1459742125746" duration="3059000" />
+      <workItem from="1459742125746" duration="5811000" />
     </task>
     <task id="LOCAL-00001" summary="add edit hafalan">
       <created>1456980284567</created>
@@ -681,7 +465,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3346000" />
+    <option name="totallyTimeSpent" value="6098000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="743" extended-state="6" />
@@ -731,20 +515,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/adminlte/dist/css/AdminLTE.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Hrd/Resources/views/layouts_2/master.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="33" column="36" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1052,42 +822,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Hrd/Resources/views/partials/vacation/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2207">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Hrd/Resources/views/partials/stakeholder/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-388">
-          <caret line="137" column="4" selection-start-line="137" selection-start-column="4" selection-end-line="137" selection-end-column="96" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Hrd/Resources/views/partials/report/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3754">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/Hrd/Resources/views/partials/position/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="61" column="14" selection-start-line="61" selection-start-column="14" selection-end-line="61" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Siswa/Resources/views/partials/violation/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="81" column="32" selection-start-line="81" selection-start-column="32" selection-end-line="81" selection-end-column="32" />
           <folding />
         </state>
       </provider>
@@ -1105,6 +843,60 @@
         <state relative-caret-position="119">
           <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Siswa/Resources/views/partials/violation/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="81" column="32" selection-start-line="81" selection-start-column="32" selection-end-line="81" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Hrd/Resources/views/partials/stakeholder/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="74" column="18" selection-start-line="74" selection-start-column="18" selection-end-line="74" selection-end-column="18" />
+          <folding>
+            <element signature="e#795#2351#0#HTML" expanded="false" />
+            <element signature="e#2368#3641#0#HTML" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Hrd/Resources/views/layouts_2/master.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Hrd/Http/Controllers/ReportController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Hrd/Resources/views/partials/report/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2499">
+          <caret line="147" column="78" selection-start-line="147" selection-start-column="78" selection-end-line="147" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Hrd/Resources/views/partials/vacation/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="55" column="33" selection-start-line="55" selection-start-column="33" selection-end-line="55" selection-end-column="33" />
+          <folding>
+            <element signature="e#411#2534#0#HTML" expanded="false" />
+            <element signature="e#4758#7062#0#HTML" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -8,10 +8,10 @@
 
 @section('content')
 
-    <div class="box">
-        <div class="box-header with-border">
-            <h4 class="box-title "></h4>
-            <div class="box-tools ">
+    <section class="content-header">
+        <h1>Cuti</h1>
+        <ul class="breadcrumb">
+            <li>
                 <form action="{{ url('/hrd/vacation') }}" method="get" class="form-inline" autocomplete="off">
                     <div class="form-group">
                         <input type="text" class="form-control input-sm" id="cutier" placeholder="Nama Pegawai">
@@ -46,44 +46,53 @@
                         </button>
                     </div>
                 </form>
+            </li>
+        </ul>
+    </section>
+
+    <div class="content">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="box">
+                    <div class="box-body">
+
+                        @if($vacations)
+                            <table class="table dataTable table-striped" id="tableVacation">
+                                <thead>
+                                <tr>
+                                    <th>Pegawai</th>
+                                    <th>Keterangan</th>
+                                    <th>Mulai</th>
+                                    <th>Akhir</th>
+                                    <th class="hidden"></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                @foreach($vacations as $vact)
+                                    <tr>
+                                        <td>{{ $vact->pegawai }}</td>
+                                        <td>{{ $vact->info }}</td>
+                                        <td>{{ $vact->start }}</td>
+                                        <td>{{ $vact->end }}</td>
+                                        <td>
+                                            <form class="deleteForm" action="{{ url('/hrd/vacation/'.$vact->id) }}" method="post">
+                                                <input type="hidden" name="_token" value="{{ csrf_token() }}" >
+                                                <input type="hidden" name="_method" value="DELETE">
+                                                <button class="btn btn-danger" type="submit" data-toggle="confirmation"><i class="fa fa-trash"></i></button>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                @endforeach
+                                </tbody>
+                            </table>
+                        @else
+                            <p>Pick a date</p>
+                        @endif
+                    </div>
+
+                </div>
             </div>
         </div>
-        <div class="box-body">
-           
-            @if($vacations)
-                <table class="table dataTable table-striped" id="tableVacation">
-                    <thead>
-                        <tr>
-                            <th>Pegawai</th>
-                            <th>Keterangan</th>
-                            <th>Mulai</th>
-                            <th>Akhir</th>
-                            <th class="hidden"></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                    @foreach($vacations as $vact)
-                        <tr>
-                            <td>{{ $vact->pegawai }}</td>
-                            <td>{{ $vact->info }}</td>
-                            <td>{{ $vact->start }}</td>
-                            <td>{{ $vact->end }}</td>
-                            <td>
-                                <form class="deleteForm" action="{{ url('/hrd/vacation/'.$vact->id) }}" method="post">
-                                    <input type="hidden" name="_token" value="{{ csrf_token() }}" >
-                                    <input type="hidden" name="_method" value="DELETE">
-                                    <button class="btn btn-danger" type="submit" data-toggle="confirmation"><i class="fa fa-trash"></i></button>
-                                </form>
-                            </td>
-                        </tr>
-                    @endforeach
-                    </tbody>
-                </table>
-            @else
-                <p>Pick a date</p>
-            @endif
-        </div>
-            
     </div>
 
     {{--Modal--}}
