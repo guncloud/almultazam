@@ -8,6 +8,21 @@ class Contract extends Model {
 
     protected $guarded = ['id'];
 
+    public function teacher()
+    {
+        return $this->belongsTo('App\Stakeholder');
+    }
+
+    public function classroom()
+    {
+        return $this->belongsTo('Modules\Siswa\Entities\Classroom');
+    }
+
+    public function subject()
+    {
+        return $this->belongsTo('Modules\Siswa\Entities\Subject');
+    }
+
     public function getContract()
     {
         $year = Config::where('slug','=','tahun-ajar')->first()->value;
@@ -20,8 +35,8 @@ class Contract extends Model {
             ->join('classrooms', 'classrooms.id', '=', 'contracts.classroom_id')
 //            ->groupBy('teacher_id')
             ->where('contracts.year','=', $year)
-            ->groupBy('stakeholders.id')
-            ->groupBy('semester')
+//            ->groupBy('stakeholders.id')
+//            ->groupBy('semester')
             ->orderBy('subjects.code')
             ->get();
 

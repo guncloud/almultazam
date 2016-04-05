@@ -25,9 +25,18 @@ class SubjectController extends Controller {
         $contract = new Contract;
         $contracts = $contract->getContract();
 
-//        dd($contracts);
+        foreach ($contracts as $contract){
+            $classroom[$contract->subject_id][$contract->semester][] = $contract->classroom;
+            $ctr_arr[$contract->subject_id][$contract->semester] = $contract;
+            $ctr_arr[$contract->subject_id][$contract->semester]->classroom = $classroom[$contract->subject_id][$contract->semester];
+        }
 
-        $data['contracts'] = (count($contracts) > 0) ? $contracts : false;
+//        echo "<pre>";
+//        print_r($ctr_arr);
+//        exit;
+
+//        $data['contracts'] = (count($contracts) > 0) ? $contracts : false;
+        $data['contracts'] = (count($ctr_arr) > 0) ? $ctr_arr : false;
         $data['classrooms'] = (!$classrooms->isEmpty()) ? $classrooms : false;
         $data['teachers'] = (count($teachers) > 0) ? $teachers : false;
         $data['subjects'] = (!$subject->isEmpty()) ? $subject : false;

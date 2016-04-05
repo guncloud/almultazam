@@ -270,38 +270,42 @@
                                 <li class="list-group-item">
                                     <div class="media">
                                         <div class="media-body">
-                                            <table class="table table-striped">
+                                            <table class="table table-striped table-bordered">
                                                 <thead>
                                                 <tr>
                                                     <th>M. Pelajaran</th>
                                                     <th>Pengajar</th>
                                                     <th>Kelas</th>
-                                                    <th>Tahun Ajaran</th>
-                                                    <th>Semester</th>
                                                     <th>Options</th>
                                                 </tr>
                                                 </thead>
                                                 @if($contracts)
-                                                    @foreach($contracts as $ctr)
-                                                        <tr>
-                                                            <td>{{ $ctr->subject }}</td>
-                                                            <td>{{ $ctr->teacher }}</td>
-                                                            <td>{{ $ctr->classroom }}</td>
-                                                            <td>{{ $ctr->year }}</td>
-                                                            <td>{{ $ctr->semester }}</td>
-                                                            <td>
-                                                                <form class="deleteForm" action="{{ url('/siswa/contract/'.$ctr->id) }}" method="post">
-                                                                    <input type="hidden" name="_token" value="{{ csrf_token() }}" >
-                                                                    <input type="hidden" name="_method" value="DELETE">
-                                                                    <button href="{{ url('/siswa/contract/'.$ctr->id) }}" class="btn btn-warning btn-sm deleteContract" type="submit" id="deleteContract">
-                                                                        <i class="icon wb-trash"></i>
-                                                                    </button>
-                                                                    <a href="{{ url('/siswa/contract/'.$ctr->id) }}" class="btn btn-info btn-sm updateContract" type="button">
-                                                                        <i class="icon wb-pencil"></i>Edit
-                                                                    </a>
-                                                                </form>
-                                                            </td>
-                                                        </tr>
+                                                    @foreach($contracts as $contract)
+                                                        @foreach($contract as $s => $ctr)
+                                                            <tr>
+                                                                <td style="vertical-align: middle">{{ $ctr->subject }} (Semester {{ $s }})</td>
+                                                                <td style="vertical-align: middle">{{ $ctr->teacher }}</td>
+                                                                <td>
+                                                                    <ul>
+                                                                    @foreach($ctr->classroom as $cls)
+                                                                        <li>{{ $cls }}</li>
+                                                                    @endforeach
+                                                                    </ul>
+                                                                </td>
+                                                                <td style="vertical-align: middle">
+                                                                    <form class="deleteForm" action="{{ url('/siswa/contract/'.$ctr->id) }}" method="post">
+                                                                        <input type="hidden" name="_token" value="{{ csrf_token() }}" >
+                                                                        <input type="hidden" name="_method" value="DELETE">
+                                                                        <button href="{{ url('/siswa/contract/'.$ctr->id) }}" class="btn btn-warning btn-sm deleteContract" type="submit" id="deleteContract">
+                                                                            <i class="icon wb-trash"></i>
+                                                                        </button>
+                                                                        <a href="{{ url('/siswa/contract/'.$ctr->id) }}" class="btn btn-info btn-sm" type="button">
+                                                                            <i class="icon wb-pencil"></i>Edit
+                                                                        </a>
+                                                                    </form>
+                                                                </td>
+                                                            </tr>
+                                                        @endforeach
                                                     @endforeach
                                                 @endif
                                             </table>
@@ -472,7 +476,7 @@
                         tableSettings));
             });
 
-            $('#table-siswa').datatable();
+//            $('#table-siswa').datatable();
 
         })
     </script>

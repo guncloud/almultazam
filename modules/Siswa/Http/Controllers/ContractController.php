@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Response;
 use Modules\Siswa\Entities\Config;
 use Modules\Siswa\Entities\Contract;
+use Modules\Siswa\Entities\Subject;
 use Pingpong\Modules\Routing\Controller;
 use Illuminate\Support\Facades\Session;
 
@@ -11,6 +12,7 @@ class ContractController extends Controller {
 
     public function __construct()
     {
+        parent::__construct();
         $this->middleware('admin');
     }
 	
@@ -43,7 +45,6 @@ class ContractController extends Controller {
 
     public function show(Request $request, $id)
     {
-        $rec = Contract::find($id);
 
         if($request->ajax()){
             $classroom_id = $id;
@@ -52,9 +53,20 @@ class ContractController extends Controller {
             $rec = $contract->getContractByClassroom($classroom_id);
 
             return response()->json($rec);
+        }else{
+            $contract = Contract::find($id);
         }
 
-        return response()->json($rec);
+//        return response()->json($rec);
+//        echo $contract->teacher->nama;
+//
+//        dd($contract);
+        $data['subject'] = Subject::all();
+        
+        $data['title'] = 'Update Pengajaran';
+        $data['contract'] = $contract;
+        return view('siswa::partials.contract.edit', $data);
+
     }
 
     public function update(Request $request, $id)

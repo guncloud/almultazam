@@ -70,6 +70,8 @@
         <!-- AdminLTE for demo purposes -->
         <script src="{{ asset('/adminlte/dist/js/demo.js') }}"></script>
 
+        <script src="{{ asset('/js/jquery.autocomplete.js') }}"></script>
+
         <script>
             $(function(){
                 $('#searchStakeholder').autocomplete({
@@ -77,6 +79,17 @@
                     onSelect: function (suggestion) {
                         window.location.href = "{{ url('/hrd/stakeholder') }}/"+suggestion.data;
                         //$('#teacher_id').val(suggestion.data);
+                    }
+                });
+
+                $('.btn_delete_action').click(function(e){
+                    e.preventDefault();
+                    var r = confirm('Yakin akan menghapus');
+
+                    if (r == true) {
+                        $(this).closest("form").submit();
+                    } else {
+                        return false;
                     }
                 });
             });

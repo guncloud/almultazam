@@ -105,10 +105,11 @@
                                 </td>
                                 <td>{{ $v->kontak }}</td>
                                 <td class="col-md-2">
-                                    <form class="deleteForm" action="{{ url('/hrd/stakeholder/'.$v->id) }}" method="post">
+                                    <form action="{{ url('/hrd/stakeholder/'.$v->id) }}" method="post">
                                         <input type="hidden" name="_token" value="{{ csrf_token() }}" >
                                         <input type="hidden" name="_method" value="DELETE">
-                                        <button href="{{ url('/hrd/stakeholder/'.$v->id) }}" class="btn btn-warning btn-sm deleteStakeholder tooltip-danger tooltip-rotate" data-toggle="tooltip" data-original-title="Delete Pegawai !" type="submit" id="deleteStakeholder">
+                                        <button href="{{ url('/hrd/stakeholder/'.$v->id) }}"
+                                                class="btn btn-warning btn-sm btn_delete_action" data-toggle="tooltip" data-original-title="Delete Pegawai !">
                                             <i class="fa fa-trash"></i>
                                         </button>
                                         <a href="{{ url('/hrd/stakeholder/'.$v->id.'/edit') }}" class="btn btn-info btn-sm tooltip-info tooltip-rotate" data-toggle="tooltip" data-original-title="Edit Pegawai" type="button">
@@ -167,40 +168,7 @@
                 });
             }).draw();
 
-            $('.deleteStakeholder').click(function(e) {
-                var url = $(this).attr("href");
-                e.preventDefault();
-                swal ({
-                    title: 'Yakin ?',
-                    text: 'Data will not be shown!',
-                    type: 'warning',
-                    showCancelButton: true,
-                    confirmButtonColor: '#DD6B55',
-                    confirmButtonText: 'Yes, delete it!',
-                    cancelButtonText: 'Cancel !',
-                    closeOnConfirm: false,
-                    closeOnCancel: false,
-                },function(isConfirm) {
-                    if (isConfirm) {
-                        $.ajax({
-                            url: url,
-                            dataType: "JSON",
-                            method: "DELETE",
-                            data : {
-                                _token : "{{ csrf_token() }}",
-                            },
-                            success: function () {
-                                swal("Deleted!", "Data telah dihapus.", "success");
-                                location.reload(true);
-                            }
-                        });
 
-                    } else {
-                        swal("Cancelled", "Cancel :)", "error");
-                    }
-                }
-                )
-            });
 
         })
     </script>

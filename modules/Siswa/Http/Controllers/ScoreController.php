@@ -74,11 +74,7 @@ class ScoreController extends Controller {
         $uh4 = $request->get('uh4');
         $uts = $request->get('uts');
         $uas = $request->get('uas');
-
-        echo "<pre>";
-            print_r($request->all());
-        exit;
-
+        
         foreach ($uh1 as $sid => $score ) {
 
             //cek if students has already a score

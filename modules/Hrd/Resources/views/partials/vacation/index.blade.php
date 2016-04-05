@@ -78,7 +78,8 @@
                                             <form class="deleteForm" action="{{ url('/hrd/vacation/'.$vact->id) }}" method="post">
                                                 <input type="hidden" name="_token" value="{{ csrf_token() }}" >
                                                 <input type="hidden" name="_method" value="DELETE">
-                                                <button class="btn btn-danger" type="submit" data-toggle="confirmation"><i class="fa fa-trash"></i></button>
+                                                <button class="btn btn-danger" type="submit" data-toggle="confirmation">
+                                                    <i class="fa fa-trash"></i></button>
                                             </form>
                                         </td>
                                     </tr>
@@ -176,7 +177,6 @@
                 singleton : true,
                 placement : 'left',
                 onConfirm:function(event, element) {
-                    console.log('fuck');
                     element.closest('form').submit();
                 }
             });
