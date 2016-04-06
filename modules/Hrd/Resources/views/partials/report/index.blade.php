@@ -5,7 +5,8 @@
     <section class="content-header">
         <h1>
             {{ $title or 'Kepegawaian' }}
-            <small> {{ $stakeholder->nama or '' }} </small>
+            <small> {{ $stakeholder->nama or '' }},
+            Semester {{ $_GET['semester'] }}</small>
         </h1>
         <ul class="breadcrumb">
             <li>

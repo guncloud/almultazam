@@ -26,38 +26,42 @@
     </section>
 
     <div class="content">
-        <div class="box">
-            <div class="box-body">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="box">
+                    <div class="box-body">
 
-                @if($positions)
-                    <table class="table table-striped">
-                        <thead>
-                        <tr>
-                            <th>Jabatan</th>
-                            <th>Options</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        @foreach($positions as $pos)
-                            <tr>
-                                <td>{{ $pos->position }}</td>
-                                <td>
-                                    <form action="{{ url('/hrd/position/'.$pos->id) }}" method="post" class="formDelete">
-                                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                                        <input type="hidden" name="_method" value="delete">
-                                        <button class="btn btn-link btnSubmit" type="submit" >Hapus</button>
+                        @if($positions)
+                            <table class="table table-striped">
+                                <thead>
+                                <tr>
+                                    <th>Jabatan</th>
+                                    <th>Options</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                @foreach($positions as $pos)
+                                    <tr>
+                                        <td>{{ $pos->position }}</td>
+                                        <td>
+                                            <form action="{{ url('/hrd/position/'.$pos->id) }}" method="post" class="formDelete">
+                                                <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                                                <input type="hidden" name="_method" value="delete">
+                                                <button class="btn btn-link btnSubmit" type="submit" >Hapus</button>
 
-                                        <a href="{{ url('/hrd/position/'.$pos->id) }}">Edit</a>
-                                    </form>
+                                                <a href="{{ url('/hrd/position/'.$pos->id) }}">Edit</a>
+                                            </form>
 
-                                </td>
-                            </tr>
-                        @endforeach
-                        </tbody>
-                    </table>
-                @else
-                    <p>Data  jabatan tidak ada</p>
-                @endif
+                                        </td>
+                                    </tr>
+                                @endforeach
+                                </tbody>
+                            </table>
+                        @else
+                            <p>Data  jabatan tidak ada</p>
+                        @endif
+                    </div>
+                </div>
             </div>
         </div>
     </div>

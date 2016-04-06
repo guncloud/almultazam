@@ -39,7 +39,7 @@
 			</div>
 			<div class="box-body">
 				<blockquote>
-					<small>Untuk pelaporan error atau sistem tidak sesuai kebutuhan, mohon email : hankseur@gmail.com</small>
+					<small>Untuk pelaporan error atau sistem tidak sesuai kebutuhan, mohon email : guncloud@yandex.com</small>
 				</blockquote>
 				<p>20-03-2016</p>
 				<ul>

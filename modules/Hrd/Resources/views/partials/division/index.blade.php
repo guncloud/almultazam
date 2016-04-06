@@ -1,7 +1,6 @@
 @extends('hrd::layouts_2.master')
 
 @section('css')
-    <link rel="stylesheet" href="{{ asset('/vendor/toastr/toastr.css') }}">
     <link rel="stylesheet" href="{{ asset('/vendor/bootstrap-sweetalert/sweet-alert.css') }}">
 @stop
 
@@ -20,40 +19,44 @@
     </section>
 
     <div class="content">
-        <div class="box">
-            <div class="box-body">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="box">
+                    <div class="box-body">
 
-                @if($divisions)
-                    <table class="table">
-                        <thead>
-                        <tr>
-                            <th>Nama</th>
-                            <th>Options</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        @foreach($divisions as $div)
-                            <tr>
-                                <td>{{ $div->division }}</td>
-                                <td>
-                                    <form class="deleteForm" action="{{ url('/hrd/division/'.$div->id) }}" method="post">
-                                        <input type="hidden" name="_token" value="{{ csrf_token() }}" >
-                                        <input type="hidden" name="_method" value="DELETE">
-                                        <button href="{{ url('/hrd/division/'.$div->id) }}" class="btn btn-warning btn-sm deleteDivision" type="submit" id="deleteDivision">
-                                            <i class="fa fa-trash"></i>
-                                        </button>
-                                        <a href="{{ url('/hrd/division/'.$div->id) }}" class="btn btn-info btn-sm updateDivision" type="button">
-                                            <i class="fa fa-pencil"></i>
-                                        </a>
-                                    </form>
-                                </td>
-                            </tr>
-                        @endforeach
-                        </tbody>
-                    </table>
-                @else
-                    No data
-                @endif
+                        @if($divisions)
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Nama</th>
+                                    <th>Options</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                @foreach($divisions as $div)
+                                    <tr>
+                                        <td>{{ $div->division }}</td>
+                                        <td>
+                                            <form class="deleteForm" action="{{ url('/hrd/division/'.$div->id) }}" method="post">
+                                                <input type="hidden" name="_token" value="{{ csrf_token() }}" >
+                                                <input type="hidden" name="_method" value="DELETE">
+                                                <button href="{{ url('/hrd/division/'.$div->id) }}" class="btn btn-warning btn-sm deleteDivision" type="submit" id="deleteDivision">
+                                                    <i class="fa fa-trash"></i>
+                                                </button>
+                                                <a href="{{ url('/hrd/division/'.$div->id) }}" class="btn btn-info btn-sm updateDivision" type="button">
+                                                    <i class="fa fa-pencil"></i>
+                                                </a>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                @endforeach
+                                </tbody>
+                            </table>
+                        @else
+                            No data
+                        @endif
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -74,7 +77,6 @@
                         <div class="form-group form-material floating row">
                             <div class="col-sm-12">
                                 <input type="text" placeholder="Nama" class="form-control" name="division" />
-                            
                             </div>
                         </div>
                     </div>
@@ -102,8 +104,8 @@
                     <div class="modal-body">
                         <div class="form-group form-material floating row">
                             <div class="col-sm-12">
-                                <input type="text" class="form-control" name="division" id="updateDivision"/>
                                 <label class="floating-label">Nama</label>
+                                <input type="text" class="form-control" name="division" id="updateDivision"/>
                             </div>
                         </div>
                     </div>
@@ -120,8 +122,6 @@
 @stop
 
 @section('js')
-    <script src="{{ asset('/vendor/toastr/toastr.js') }}"></script>
-    <script src="{{ asset('/js/components/toastr.js') }}"></script>
     <script src="{{ asset('/vendor/bootstrap-sweetalert/sweet-alert.js') }}"></script>
     <script src="{{ asset('/js/components/bootstrap-sweetalert.js') }}"></script>
 
@@ -147,34 +147,34 @@
 
                 e.preventDefault();
                 swal ({
-                            title: 'Yakin ?',
-                            text: 'Data akan di hapus!',
-                            type: 'warning',
-                            showCancelButton: true,
-                            confirmButtonColor: '#DD6B55',
-                            confirmButtonText: 'Delete',
-                            cancelButtonText: 'Batal !',
-                            closeOnConfirm: false,
-                            closeOnCancel: false,
-                        },function(isConfirm) {
-                            if (isConfirm) {
-                                $.ajax({
-                                    url: url,
-                                    dataType: "JSON",
-                                    method: "DELETE",
-                                    data : {
-                                        _token : "{{ csrf_token() }}",
-                                    },
-                                    success: function () {
-                                        swal("Deleted!", "Data telah dihapus.", "success");
-                                        location.reload(true);
-                                    }
-                                });
+                        title: 'Yakin ?',
+                        text: 'Data akan di hapus!',
+                        type: 'warning',
+                        showCancelButton: true,
+                        confirmButtonColor: '#DD6B55',
+                        confirmButtonText: 'Delete',
+                        cancelButtonText: 'Batal !',
+                        closeOnConfirm: false,
+                        closeOnCancel: false,
+                    },function(isConfirm) {
+                        if (isConfirm) {
+                            $.ajax({
+                                url: url,
+                                dataType: "JSON",
+                                method: "DELETE",
+                                data : {
+                                    _token : "{{ csrf_token() }}",
+                                },
+                                success: function () {
+                                    swal("Deleted!", "Data telah dihapus.", "success");
+                                    location.reload(true);
+                                }
+                            });
 
-                            } else {
-                                swal("Cancelled", "Cancel :)", "error");
-                            }
+                        } else {
+                            swal("Cancelled", "Cancel :)", "error");
                         }
+                    }
                 )
             });
         })
