@@ -6,7 +6,7 @@
         <h1>
             {{ $title or 'Kepegawaian' }}
             <small> {{ $stakeholder->nama or '' }},
-            Semester {{ $_GET['semester'] }}</small>
+            Semester {{ $_GET['semester'] or '' }}</small>
         </h1>
         <ul class="breadcrumb">
             <li>

@@ -41,6 +41,12 @@
 				<blockquote>
 					<small>Untuk pelaporan error atau sistem tidak sesuai kebutuhan, mohon email : guncloud@yandex.com</small>
 				</blockquote>
+				<p>19-06-2016</p>
+				<ul>
+					<li>
+						Fixed error saat simpan pegawai
+					</li>
+				</ul>
 				<p>20-03-2016</p>
 				<ul>
 					<li>

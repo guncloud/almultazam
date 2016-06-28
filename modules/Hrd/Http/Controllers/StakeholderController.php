@@ -75,7 +75,8 @@ class StakeholderController extends Controller {
 
     public function store(Request $request)
     {
-
+        echo "test";
+        exit;
         $post =$request->except('position');
         $post['tanggal_lahir'] = date('Y-m-d', strtotime( $post['tanggal_lahir']));
         $post['mulai_kerja'] = date('Y-m-d', strtotime( $post['mulai_kerja']));

@@ -16,7 +16,8 @@
     </section>
 
     <div class="content">
-        <form autocomplete="off" id="form_new_stakeholder" method="post" action="{{ url('/hrd/stakeholder') }}" enctype="multipart/form-data">
+        <form id="form_input_stakeholder" autocomplete="off" id="form_new_stakeholder" method="post" action="{{ url('/hrd/stakeholder') }}" enctype="multipart/form-data">
+            <input type="hidden" name="_token" value="{{ csrf_token() }}"> 
             <div class="row">
                 <div class="col-md-12">
                     <div class="box box-default">
@@ -117,7 +118,7 @@
                                     <select name="division_id" id="" class="form-control">
                                         <option>&nbsp;</option>
                                         @foreach($divisions as $div)
-                                            <option value="" {{ $div->id }}>{{ $div->division }}</option>
+                                            <option value="{{ $div->id }}">{{ $div->division }}</option>
                                         @endforeach
                                     </select>
 
@@ -141,6 +142,14 @@
                                         <option value="boarding">Boarding</option>
                                         <option value="fullday">Fullday</option>
                                     </select>
+                                </div>
+
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-sm-3">
+                                    <input type="text" class="form-control" name="mulai_kerja" id="mulai_kerja" data-plugin="formatter" data-pattern="[[99]]-[[99]]-[[9999]]"/>
+                                    <label class="floating-label">Mulai Kerja<span class="required">*</span></label>
+                                    <small class="help-block">Tanggal-Bulan-Tahun</small>
                                 </div>
                             </div>
 
@@ -415,6 +424,26 @@
                             </div>
                             <div class="form-group row">
                                 <div class="col-sm-3">
+                                    <label class="floating-label">Anak 3</label>
+                                    <input type="text" class="form-control" name="child_3" value=""/>
+                                </div>
+                                <div class="col-sm-3">
+                                    <label class="floating-label">Lahir Anak 3</label>
+                                    <input value="" type="text" class="form-control" name="lahir_child_3" data-plugin="formatter" data-pattern="[[99]]-[[99]]-[[9999]]"/>
+                                    <small class="help-block">Tanggal-Bulan-Tahun</small>
+                                </div>
+                                <div class="col-sm-3">
+                                    <label class="floating-label">Anak 4</label>
+                                    <input type="text" class="form-control" name="child_4" value=""/>
+                                </div>
+                                <div class="col-sm-3">
+                                    <label class="floating-label">Lahir Anak 4</label>
+                                    <input value="" type="text" class="form-control" name="lahir_child_4" data-plugin="formatter" data-pattern="[[99]]-[[99]]-[[9999]]"/>
+                                    <small class="help-block">Tanggal-Bulan-Tahun</small>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-sm-3">
                                     <label class="floating-label">Anak 5</label>
                                     <input type="text" class="form-control" name="child_5" value=""/>
                                 </div>
@@ -468,14 +497,14 @@
 @stop
 
 @section('js')
-    <script src="{{ asset('/vendor/formvalidation/formValidation.min.js') }}"></script>
+    <!-- <script src="{{ asset('/vendor/formvalidation/formValidation.min.js') }}"></script>
     <script src="{{ asset('/vendor/formvalidation/framework/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('/vendor/formatter-js/jquery.formatter.js') }}"></script>
+    <script src="{{ asset('/vendor/formatter-js/jquery.formatter.js') }}"></script> -->
     <script src="{{ asset('/vendor/select2/select2.min.js') }}"></script>
 
-    <script src="{{ asset('/vendor/toastr/toastr.js') }}"></script>
+    <!-- <script src="{{ asset('/vendor/toastr/toastr.js') }}"></script>
     <script src="{{ asset('/js/components/toastr.js') }}"></script>
-    <script src="{{ asset('/js/components/formatter-js.js') }}"></script>
+    <script src="{{ asset('/js/components/formatter-js.js') }}"></script> -->
 
     <script>
         $(function(){
@@ -491,117 +520,14 @@
                     positionClass : 'toast-top-full-width',
                 });
             };
-
-
-//            $('#form_new_stakeholder').formValidation({
-//                framework: "bootstrap",
-//                button: {
-//                    selector: '#submit_new_stakeholder',
-//                    disabled: 'disabled'
-//                },
-//                icon: null,
-//                fields: {
-//                    nama: {
-//                        validators: {
-//                            notEmpty: {
-//                                message: 'The full name is required and cannot be empty'
-//                            }
-//                        }
-//                    },
-//                    tempat_lahir: {
-//                        validators: {
-//                            notEmpty: {
-//                                message: 'The content address is required and cannot be empty'
-//                            }
-//                        }
-//                    },
-//                    tanggal_lahir: {
-//                        validators: {
-//                            notEmpty: {
-//                                message: 'The content address is required and cannot be empty'
-//                            }
-//                        }
-//                    },
-//                    mulai_kerja: {
-//                        validators: {
-//                            notEmpty: {
-//                                message: 'The content address is required and cannot be empty'
-//                            }
-//                        }
-//                    },
-//                    jenis_kelamin: {
-//                        validators: {
-//                            notEmpty: {
-//                                message: 'The content is required and cannot be empty'
-//                            }
-//                        }
-//                    },
-//                    status: {
-//                        validators: {
-//                            notEmpty: {
-//                                message: 'The content is required and cannot be empty'
-//                            }
-//                        }
-//                    },
-//                    nrp: {
-//                        validators: {
-//                            notEmpty: {
-//                                message: 'The content is required and cannot be empty'
-//                            }
-//                        }
-//                    },
-//                    jenis_kelamin: {
-//                        validators: {
-//                            notEmpty: {
-//                                message: 'The content is required and cannot be empty'
-//                            }
-//                        }
-//                    },
-//                    status_kepegawaian: {
-//                        validators: {
-//                            notEmpty: {
-//                                message: 'The content is required and cannot be empty'
-//                            }
-//                        }
-//                    },
-//                    status_marital: {
-//                        validators: {
-//                            notEmpty: {
-//                                message: 'The content is required and cannot be empty'
-//                            }
-//                        }
-//                    },
-//                    golongan: {
-//                        validators: {
-//                            notEmpty: {
-//                                message: 'The content is required and cannot be empty'
-//                            }
-//                        }
-//                    },
-//                    alamat_rumah: {
-//                        validators: {
-//                            notEmpty: {
-//                                message: 'The content is required and cannot be empty'
-//                            }
-//                        }
-//                    },
-//                    alamat_sekarang: {
-//                        validators: {
-//                            notEmpty: {
-//                                message: 'The content is required and cannot be empty'
-//                            }
-//                        }
-//                    },
-//                    division_id: {
-//                        validators: {
-//                            notEmpty: {
-//                                message: 'The content is required and cannot be empty'
-//                            }
-//                        }
-//                    }
-//                }
-//            });
-
+          
+            $(document).ready(function(){
+                        $('#submit_new_stakeholder').click(function(e){
+                            e.preventDefault();
+                            alert('test');
+                            $('#form_input_stakeholder').submit();
+                        });
+            });
         })
     </script>
 @stop

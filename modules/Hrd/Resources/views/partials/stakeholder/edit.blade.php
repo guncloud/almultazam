@@ -142,6 +142,13 @@
                                     </select>
                                 </div>
                             </div>
+                            <div class="form-group row">
+                                <div class="col-sm-3">
+                                    <input type="text" class="form-control" name="mulai_kerja" id="mulai_kerja" data-plugin="formatter" data-pattern="[[99]]-[[99]]-[[9999]]" value="{{ $stakeholder->mulai_kerja }}" />
+                                    <label class="floating-label">Mulai Kerja<span class="required">*</span></label>
+                                    <small class="help-block">Tanggal-Bulan-Tahun</small>
+                                </div>
+                            </div>
 
                     </div>
                         </div>
