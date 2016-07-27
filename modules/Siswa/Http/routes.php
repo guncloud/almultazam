@@ -25,4 +25,9 @@ Route::group(['prefix' => 'siswa', 'namespace' => 'Modules\Siswa\Http\Controller
 	Route::resource('/reading', 'ReadingController');
 	Route::resource('/language-student', 'LanguageStudentController');
 	Route::resource('/student-ekskul', 'StudentEkskulController');
+		
+	Route::get('naik-kelas/count-next-grade', 'GradeUpController@countNextGrade');
+	Route::resource('/naik-kelas', 'GradeUpController');
+
+
 });

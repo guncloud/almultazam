@@ -49,6 +49,12 @@
                                         <span class="site-menu-title">Mata Pelajaran</span>
                                     </a>
                                 </li>
+                                <li class="site-menu-item">
+                                    <a class="animsition-link" href="{{ url('/siswa/naik-kelas') }}" data-slug="page-faq">
+                                        <i class="wb-menu-icon" aria-hidden="true"></i>
+                                        <span class="site-menu-title">Kenaikan Kelas</span>
+                                    </a>
+                                </li>
                             @endif
 
                             @if(Auth::user()->is('pembina') or Auth::user()->is('root'))
